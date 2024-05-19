@@ -19,7 +19,7 @@ void menus::menuPrincipal() {
         cout << "1) Comenzar partida" << endl;
         cout << "2) Descripción del juego" << endl;
         cout << "3) Salir" << endl;
-        //Validacion de opciones
+        //Validacion de opciones menu principal
         while (!(cin >> opcionMenuPrincipal)) {
             cout << "Opción no valida. Por favor, intentelo de nuevo: ";
             cin.clear();
@@ -47,7 +47,6 @@ void menus::menuJuego() {
     int opcionMenuJuego = 0;
     while (opcionMenuJuego != 6){
 
-
         cout << "Menú:"<< endl;
         cout << "Ingrese su opción:"<< endl;
         cout << "1) Avanzar a la siquierda" << endl;
@@ -57,7 +56,7 @@ void menus::menuJuego() {
         cout << "5) Estadísticas" << endl;
         cout << "6) Salir del juego" << endl;
 
-        //Validacion de opciones
+        //Validacion de opciones menu juego
         while (!(cin >> opcionMenuJuego)) {
             cout << "Opción no valida. Por favor, intentelo de nuevo: ";
             cin.clear();
@@ -84,7 +83,6 @@ void menus::menuJuego() {
             case 6:
                 cout << "Volviendo al Menú Principal" << endl;
                 return;
-
         }
     }
 }
@@ -104,7 +102,7 @@ void menus::menuHabitacion() {
 
         //ANALIZAR SI SE HACE UNA OPCION EXTRA PARA HUIR O SI LOS COMBATES SON OBLIGATORIOS
 
-        //Validacion de opciones
+        //Validacion de opciones menu habitacion
         while (!(cin >> opcionMenuHabitacion)) {
             cout << "Opción no valida. Por favor, intentelo de nuevo: ";
             cin.clear();
@@ -140,7 +138,7 @@ void menus::menuCombate() {
         cout << "4) Utilizar objeto" << endl;
         cout << "5) Volver" << endl;
 
-        //Validacion de opciones
+        //Validacion de opciones menu combate
         while (!(cin >> opcionMenuCombate)) {
             cout << "Opción no valida. Por favor, intentelo de nuevo: ";
             cin.clear();
@@ -161,6 +159,7 @@ void menus::menuCombate() {
                 break;
 
             case 5:
+                cout << "5) Volviendo al menú anterior" << endl;
                 return;
         }
     }
@@ -180,7 +179,7 @@ void menus::menuHabilidades() {
         cout << "5) Magia de rayo" << endl;
         cout << "6) Menú anterior" << endl;
 
-        //Validacion de opciones
+        //Validacion de opciones menu habilidades
         while (!(cin >> opcionMenuHabilidades)) {
             cout << "Opción no valida. Por favor, intentelo de nuevo: ";
             cin.clear();
@@ -203,6 +202,7 @@ void menus::menuHabilidades() {
                 break;
 
             case 6:
+                cout << "5) Volviendo al menú anterior" << endl;
                 return;
         }
     }
