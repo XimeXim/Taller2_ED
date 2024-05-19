@@ -82,30 +82,30 @@ CMakeFiles/Taller2_ED.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/main.cpp.s"
 	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\main.cpp -o CMakeFiles\Taller2_ED.dir\main.cpp.s
 
-CMakeFiles/Taller2_ED.dir/sistema.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/sistema.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/sistema.cpp
-CMakeFiles/Taller2_ED.dir/sistema.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Taller2_ED.dir/sistema.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/sistema.cpp.obj -MF CMakeFiles\Taller2_ED.dir\sistema.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\sistema.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\sistema.cpp
+CMakeFiles/Taller2_ED.dir/menus.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/menus.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/menus.cpp
+CMakeFiles/Taller2_ED.dir/menus.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Taller2_ED.dir/menus.cpp.obj"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/menus.cpp.obj -MF CMakeFiles\Taller2_ED.dir\menus.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\menus.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\menus.cpp
 
-CMakeFiles/Taller2_ED.dir/sistema.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/sistema.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\sistema.cpp > CMakeFiles\Taller2_ED.dir\sistema.cpp.i
+CMakeFiles/Taller2_ED.dir/menus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/menus.cpp.i"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\menus.cpp > CMakeFiles\Taller2_ED.dir\menus.cpp.i
 
-CMakeFiles/Taller2_ED.dir/sistema.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/sistema.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\sistema.cpp -o CMakeFiles\Taller2_ED.dir\sistema.cpp.s
+CMakeFiles/Taller2_ED.dir/menus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/menus.cpp.s"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\menus.cpp -o CMakeFiles\Taller2_ED.dir\menus.cpp.s
 
 # Object files for target Taller2_ED
 Taller2_ED_OBJECTS = \
 "CMakeFiles/Taller2_ED.dir/main.cpp.obj" \
-"CMakeFiles/Taller2_ED.dir/sistema.cpp.obj"
+"CMakeFiles/Taller2_ED.dir/menus.cpp.obj"
 
 # External object files for target Taller2_ED
 Taller2_ED_EXTERNAL_OBJECTS =
 
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/main.cpp.obj
-Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/sistema.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/menus.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/build.make
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/linkLibs.rsp
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/objects1.rsp

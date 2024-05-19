@@ -85,10 +85,10 @@
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/main.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/sistema.cpp">
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/menus.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/sistema.h">
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/menus.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/CMakeLists.txt">

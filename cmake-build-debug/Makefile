@@ -152,29 +152,29 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-sistema.obj: sistema.cpp.obj
-.PHONY : sistema.obj
+menus.obj: menus.cpp.obj
+.PHONY : menus.obj
 
 # target to build an object file
-sistema.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/sistema.cpp.obj
-.PHONY : sistema.cpp.obj
+menus.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/menus.cpp.obj
+.PHONY : menus.cpp.obj
 
-sistema.i: sistema.cpp.i
-.PHONY : sistema.i
+menus.i: menus.cpp.i
+.PHONY : menus.i
 
 # target to preprocess a source file
-sistema.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/sistema.cpp.i
-.PHONY : sistema.cpp.i
+menus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/menus.cpp.i
+.PHONY : menus.cpp.i
 
-sistema.s: sistema.cpp.s
-.PHONY : sistema.s
+menus.s: menus.cpp.s
+.PHONY : menus.s
 
 # target to generate assembly for a file
-sistema.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/sistema.cpp.s
-.PHONY : sistema.cpp.s
+menus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/menus.cpp.s
+.PHONY : menus.cpp.s
 
 # Help Target
 help:
@@ -188,9 +188,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... sistema.obj
-	@echo ... sistema.i
-	@echo ... sistema.s
+	@echo ... menus.obj
+	@echo ... menus.i
+	@echo ... menus.s
 .PHONY : help
 
 
