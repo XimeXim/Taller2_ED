@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/enemigo.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/enemigo.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/habilidades.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/habilidades.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/jugador.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
@@ -95,6 +107,12 @@
 			<Option target="Taller2_ED"/>
 		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/menus.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/objetos.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/objetos.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/CMakeLists.txt">

@@ -5,12 +5,12 @@
 #include "jugador.h"
 
 jugador::jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
-                 int fuerza, int magia, int velocidad, int suerte, const std::vector<std::string> &mochila,
-                 const std::vector<std::string> &habilidades) : nombre(nombre), nivel(nivel), experiencia(experiencia),
-                                                                oro(oro), puntosSalud(puntosSalud),
-                                                                puntosHabilidad(puntosHabilidad), fuerza(fuerza),
-                                                                magia(magia), velocidad(velocidad), suerte(suerte),
-                                                                mochila(mochila), habilidades(habilidades) {}
+                 int fuerza, int magia, int velocidad, int suerte, const std::vector<objetos *> &mochila,
+                 const std::vector<habilidades *> &skills) : nombre(nombre), nivel(nivel), experiencia(experiencia),
+                                                             oro(oro), puntosSalud(puntosSalud),
+                                                             puntosHabilidad(puntosHabilidad), fuerza(fuerza),
+                                                             magia(magia), velocidad(velocidad), suerte(suerte),
+                                                             mochila(mochila), skills(skills) {}
 
 jugador::~jugador() {
 
@@ -96,18 +96,24 @@ void jugador::setSuerte(int suerte) {
     jugador::suerte = suerte;
 }
 
-const std::vector<std::string> &jugador::getMochila() const {
+const std::vector<objetos *> &jugador::getMochila() const {
     return mochila;
 }
 
-void jugador::setMochila(const std::vector<std::string> &mochila) {
+void jugador::setMochila(const std::vector<objetos *> &mochila) {
     jugador::mochila = mochila;
 }
 
-const std::vector<std::string> &jugador::getHabilidades() const {
-    return habilidades;
+const std::vector<habilidades *> &jugador::getSkills() const {
+    return skills;
 }
 
-void jugador::setHabilidades(const std::vector<std::string> &habilidades) {
-    jugador::habilidades = habilidades;
+void jugador::setSkills(const std::vector<habilidades *> &skills) {
+    jugador::skills = skills;
 }
+
+
+
+
+
+

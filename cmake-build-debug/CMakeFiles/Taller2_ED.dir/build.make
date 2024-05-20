@@ -110,11 +110,56 @@ CMakeFiles/Taller2_ED.dir/jugador.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/jugador.cpp.s"
 	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\jugador.cpp -o CMakeFiles\Taller2_ED.dir\jugador.cpp.s
 
+CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/enemigo.cpp
+CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj -MF CMakeFiles\Taller2_ED.dir\enemigo.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\enemigo.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\enemigo.cpp
+
+CMakeFiles/Taller2_ED.dir/enemigo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/enemigo.cpp.i"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\enemigo.cpp > CMakeFiles\Taller2_ED.dir\enemigo.cpp.i
+
+CMakeFiles/Taller2_ED.dir/enemigo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/enemigo.cpp.s"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\enemigo.cpp -o CMakeFiles\Taller2_ED.dir\enemigo.cpp.s
+
+CMakeFiles/Taller2_ED.dir/objetos.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/objetos.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/objetos.cpp
+CMakeFiles/Taller2_ED.dir/objetos.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Taller2_ED.dir/objetos.cpp.obj"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/objetos.cpp.obj -MF CMakeFiles\Taller2_ED.dir\objetos.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\objetos.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\objetos.cpp
+
+CMakeFiles/Taller2_ED.dir/objetos.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/objetos.cpp.i"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\objetos.cpp > CMakeFiles\Taller2_ED.dir\objetos.cpp.i
+
+CMakeFiles/Taller2_ED.dir/objetos.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/objetos.cpp.s"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\objetos.cpp -o CMakeFiles\Taller2_ED.dir\objetos.cpp.s
+
+CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/habilidades.cpp
+CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj -MF CMakeFiles\Taller2_ED.dir\habilidades.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\habilidades.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\habilidades.cpp
+
+CMakeFiles/Taller2_ED.dir/habilidades.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/habilidades.cpp.i"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\habilidades.cpp > CMakeFiles\Taller2_ED.dir\habilidades.cpp.i
+
+CMakeFiles/Taller2_ED.dir/habilidades.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/habilidades.cpp.s"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\habilidades.cpp -o CMakeFiles\Taller2_ED.dir\habilidades.cpp.s
+
 # Object files for target Taller2_ED
 Taller2_ED_OBJECTS = \
 "CMakeFiles/Taller2_ED.dir/main.cpp.obj" \
 "CMakeFiles/Taller2_ED.dir/menus.cpp.obj" \
-"CMakeFiles/Taller2_ED.dir/jugador.cpp.obj"
+"CMakeFiles/Taller2_ED.dir/jugador.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/objetos.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj"
 
 # External object files for target Taller2_ED
 Taller2_ED_EXTERNAL_OBJECTS =
@@ -122,11 +167,14 @@ Taller2_ED_EXTERNAL_OBJECTS =
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/main.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/menus.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/jugador.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/objetos.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/build.make
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/linkLibs.rsp
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/objects1.rsp
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Taller2_ED.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Taller2_ED.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Taller2_ED.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

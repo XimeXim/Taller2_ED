@@ -3,13 +3,17 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include "objetos.h"
+#include "habilidades.h"
+
+
 
 class jugador {
 
 
 private:
 
-    //DATOS DEL JUGADOR
+    //PARAMETROS DEL JUGADOR
     std::string nombre;
     int nivel;
     int experiencia;
@@ -20,15 +24,15 @@ private:
     int magia;
     int velocidad;
     int suerte;
-    std::vector<std::string> mochila;
-    std::vector<std::string> habilidades;
+    std::vector<objetos*> mochila;
+    std::vector<habilidades*> skills;
 
 public:
 
     //DOCUMENTAR
     jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
-            int fuerza, int magia, int velocidad, int suerte, const std::vector<std::string> &mochila,
-            const std::vector<std::string> &habilidades);
+            int fuerza, int magia, int velocidad, int suerte, const std::vector<objetos *> &mochila,
+            const std::vector<habilidades *> &skills);
 
     virtual ~jugador();
 
@@ -72,13 +76,13 @@ public:
 
     void setSuerte(int suerte);
 
-    const std::vector<std::string> &getMochila() const;
+    const std::vector<objetos *> &getMochila() const;
 
-    void setMochila(const std::vector<std::string> &mochila);
+    void setMochila(const std::vector<objetos *> &mochila);
 
-    const std::vector<std::string> &getHabilidades() const;
+    const std::vector<habilidades *> &getSkills() const;
 
-    void setHabilidades(const std::vector<std::string> &habilidades);
+    void setSkills(const std::vector<habilidades *> &skills);
 
 
 };

@@ -9,4 +9,10 @@ add_executable(Taller2_ED main.cpp
         jugador.h
         jugador.cpp
         jugador.h
+        enemigo.cpp
+        enemigo.h
+        objetos.cpp
+        objetos.h
+        habilidades.cpp
+        habilidades.h
 )

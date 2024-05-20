@@ -128,6 +128,54 @@ Taller2_ED/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/build
 .PHONY : Taller2_ED/fast
 
+enemigo.obj: enemigo.cpp.obj
+.PHONY : enemigo.obj
+
+# target to build an object file
+enemigo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj
+.PHONY : enemigo.cpp.obj
+
+enemigo.i: enemigo.cpp.i
+.PHONY : enemigo.i
+
+# target to preprocess a source file
+enemigo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/enemigo.cpp.i
+.PHONY : enemigo.cpp.i
+
+enemigo.s: enemigo.cpp.s
+.PHONY : enemigo.s
+
+# target to generate assembly for a file
+enemigo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/enemigo.cpp.s
+.PHONY : enemigo.cpp.s
+
+habilidades.obj: habilidades.cpp.obj
+.PHONY : habilidades.obj
+
+# target to build an object file
+habilidades.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj
+.PHONY : habilidades.cpp.obj
+
+habilidades.i: habilidades.cpp.i
+.PHONY : habilidades.i
+
+# target to preprocess a source file
+habilidades.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habilidades.cpp.i
+.PHONY : habilidades.cpp.i
+
+habilidades.s: habilidades.cpp.s
+.PHONY : habilidades.s
+
+# target to generate assembly for a file
+habilidades.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habilidades.cpp.s
+.PHONY : habilidades.cpp.s
+
 jugador.obj: jugador.cpp.obj
 .PHONY : jugador.obj
 
@@ -200,6 +248,30 @@ menus.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/menus.cpp.s
 .PHONY : menus.cpp.s
 
+objetos.obj: objetos.cpp.obj
+.PHONY : objetos.obj
+
+# target to build an object file
+objetos.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/objetos.cpp.obj
+.PHONY : objetos.cpp.obj
+
+objetos.i: objetos.cpp.i
+.PHONY : objetos.i
+
+# target to preprocess a source file
+objetos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/objetos.cpp.i
+.PHONY : objetos.cpp.i
+
+objetos.s: objetos.cpp.s
+.PHONY : objetos.s
+
+# target to generate assembly for a file
+objetos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/objetos.cpp.s
+.PHONY : objetos.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -209,6 +281,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Taller2_ED
+	@echo ... enemigo.obj
+	@echo ... enemigo.i
+	@echo ... enemigo.s
+	@echo ... habilidades.obj
+	@echo ... habilidades.i
+	@echo ... habilidades.s
 	@echo ... jugador.obj
 	@echo ... jugador.i
 	@echo ... jugador.s
@@ -218,6 +296,9 @@ help:
 	@echo ... menus.obj
 	@echo ... menus.i
 	@echo ... menus.s
+	@echo ... objetos.obj
+	@echo ... objetos.i
+	@echo ... objetos.s
 .PHONY : help
 
 
