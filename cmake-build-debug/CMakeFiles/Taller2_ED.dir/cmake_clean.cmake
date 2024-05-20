@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Taller2_ED.dir/jugador.cpp.obj"
+  "CMakeFiles/Taller2_ED.dir/jugador.cpp.obj.d"
   "CMakeFiles/Taller2_ED.dir/main.cpp.obj"
   "CMakeFiles/Taller2_ED.dir/main.cpp.obj.d"
   "CMakeFiles/Taller2_ED.dir/menus.cpp.obj"

@@ -128,6 +128,30 @@ Taller2_ED/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/build
 .PHONY : Taller2_ED/fast
 
+jugador.obj: jugador.cpp.obj
+.PHONY : jugador.obj
+
+# target to build an object file
+jugador.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/jugador.cpp.obj
+.PHONY : jugador.cpp.obj
+
+jugador.i: jugador.cpp.i
+.PHONY : jugador.i
+
+# target to preprocess a source file
+jugador.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/jugador.cpp.i
+.PHONY : jugador.cpp.i
+
+jugador.s: jugador.cpp.s
+.PHONY : jugador.s
+
+# target to generate assembly for a file
+jugador.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/jugador.cpp.s
+.PHONY : jugador.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -185,6 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Taller2_ED
+	@echo ... jugador.obj
+	@echo ... jugador.i
+	@echo ... jugador.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
