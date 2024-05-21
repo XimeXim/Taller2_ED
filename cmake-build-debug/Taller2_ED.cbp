@@ -94,6 +94,12 @@
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/habilidades.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/habitacion.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/habitacion.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/jugador.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
@@ -107,6 +113,18 @@
 			<Option target="Taller2_ED"/>
 		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/menus.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabilidad.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabilidad.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabitacion.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabitacion.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/objetos.cpp">

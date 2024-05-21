@@ -6,11 +6,19 @@
 
 jugador::jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
                  int fuerza, int magia, int velocidad, int suerte, const std::vector<objetos *> &mochila,
-                 const std::vector<habilidades *> &skills) : nombre(nombre), nivel(nivel), experiencia(experiencia),
-                                                             oro(oro), puntosSalud(puntosSalud),
-                                                             puntosHabilidad(puntosHabilidad), fuerza(fuerza),
-                                                             magia(magia), velocidad(velocidad), suerte(suerte),
-                                                             mochila(mochila), skills(skills) {}
+                 const std::vector<habilidades *> &skills, habitacion *habitacionActual) : nombre(nombre), nivel(nivel),
+                                                                                           experiencia(experiencia),
+                                                                                           oro(oro),
+                                                                                           puntosSalud(puntosSalud),
+                                                                                           puntosHabilidad(
+                                                                                                   puntosHabilidad),
+                                                                                           fuerza(fuerza), magia(magia),
+                                                                                           velocidad(velocidad),
+                                                                                           suerte(suerte),
+                                                                                           mochila(mochila),
+                                                                                           skills(skills),
+                                                                                           habitacionActual(
+                                                                                                   habitacionActual) {}
 
 jugador::~jugador() {
 
@@ -110,6 +118,14 @@ const std::vector<habilidades *> &jugador::getSkills() const {
 
 void jugador::setSkills(const std::vector<habilidades *> &skills) {
     jugador::skills = skills;
+}
+
+habitacion *jugador::getHabitacionActual() const {
+    return habitacionActual;
+}
+
+void jugador::setHabitacionActual(habitacion *habitacionActual) {
+    jugador::habitacionActual = habitacionActual;
 }
 
 

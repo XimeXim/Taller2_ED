@@ -5,11 +5,9 @@
 #include <vector>
 #include "objetos.h"
 #include "habilidades.h"
-
-
+#include "habitacion.h"
 
 class jugador {
-
 
 private:
 
@@ -26,13 +24,14 @@ private:
     int suerte;
     std::vector<objetos*> mochila;
     std::vector<habilidades*> skills;
+    habitacion* habitacionActual;
 
 public:
 
     //DOCUMENTAR
     jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
             int fuerza, int magia, int velocidad, int suerte, const std::vector<objetos *> &mochila,
-            const std::vector<habilidades *> &skills);
+            const std::vector<habilidades *> &skills, habitacion *habitacionActual);
 
     virtual ~jugador();
 
@@ -83,6 +82,10 @@ public:
     const std::vector<habilidades *> &getSkills() const;
 
     void setSkills(const std::vector<habilidades *> &skills);
+
+    habitacion *getHabitacionActual() const;
+
+    void setHabitacionActual(habitacion *habitacionActual);
 
 
 };

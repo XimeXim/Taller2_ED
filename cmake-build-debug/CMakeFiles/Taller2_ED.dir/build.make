@@ -152,6 +152,48 @@ CMakeFiles/Taller2_ED.dir/habilidades.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/habilidades.cpp.s"
 	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\habilidades.cpp -o CMakeFiles\Taller2_ED.dir\habilidades.cpp.s
 
+CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/habitacion.cpp
+CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj -MF CMakeFiles\Taller2_ED.dir\habitacion.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\habitacion.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\habitacion.cpp
+
+CMakeFiles/Taller2_ED.dir/habitacion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/habitacion.cpp.i"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\habitacion.cpp > CMakeFiles\Taller2_ED.dir\habitacion.cpp.i
+
+CMakeFiles/Taller2_ED.dir/habitacion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/habitacion.cpp.s"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\habitacion.cpp -o CMakeFiles\Taller2_ED.dir\habitacion.cpp.s
+
+CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabitacion.cpp
+CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj -MF CMakeFiles\Taller2_ED.dir\nodoHabitacion.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\nodoHabitacion.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\nodoHabitacion.cpp
+
+CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.i"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\nodoHabitacion.cpp > CMakeFiles\Taller2_ED.dir\nodoHabitacion.cpp.i
+
+CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.s"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\nodoHabitacion.cpp -o CMakeFiles\Taller2_ED.dir\nodoHabitacion.cpp.s
+
+CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabilidad.cpp
+CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj -MF CMakeFiles\Taller2_ED.dir\nodoHabilidad.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\nodoHabilidad.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\nodoHabilidad.cpp
+
+CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.i"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\nodoHabilidad.cpp > CMakeFiles\Taller2_ED.dir\nodoHabilidad.cpp.i
+
+CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.s"
+	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\nodoHabilidad.cpp -o CMakeFiles\Taller2_ED.dir\nodoHabilidad.cpp.s
+
 # Object files for target Taller2_ED
 Taller2_ED_OBJECTS = \
 "CMakeFiles/Taller2_ED.dir/main.cpp.obj" \
@@ -159,7 +201,10 @@ Taller2_ED_OBJECTS = \
 "CMakeFiles/Taller2_ED.dir/jugador.cpp.obj" \
 "CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj" \
 "CMakeFiles/Taller2_ED.dir/objetos.cpp.obj" \
-"CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj"
+"CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj"
 
 # External object files for target Taller2_ED
 Taller2_ED_EXTERNAL_OBJECTS =
@@ -170,11 +215,14 @@ Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/jugador.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/objetos.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/build.make
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/linkLibs.rsp
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/objects1.rsp
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Taller2_ED.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Taller2_ED.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Taller2_ED.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

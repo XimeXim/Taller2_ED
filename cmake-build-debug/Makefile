@@ -176,6 +176,30 @@ habilidades.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habilidades.cpp.s
 .PHONY : habilidades.cpp.s
 
+habitacion.obj: habitacion.cpp.obj
+.PHONY : habitacion.obj
+
+# target to build an object file
+habitacion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj
+.PHONY : habitacion.cpp.obj
+
+habitacion.i: habitacion.cpp.i
+.PHONY : habitacion.i
+
+# target to preprocess a source file
+habitacion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habitacion.cpp.i
+.PHONY : habitacion.cpp.i
+
+habitacion.s: habitacion.cpp.s
+.PHONY : habitacion.s
+
+# target to generate assembly for a file
+habitacion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habitacion.cpp.s
+.PHONY : habitacion.cpp.s
+
 jugador.obj: jugador.cpp.obj
 .PHONY : jugador.obj
 
@@ -248,6 +272,54 @@ menus.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/menus.cpp.s
 .PHONY : menus.cpp.s
 
+nodoHabilidad.obj: nodoHabilidad.cpp.obj
+.PHONY : nodoHabilidad.obj
+
+# target to build an object file
+nodoHabilidad.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj
+.PHONY : nodoHabilidad.cpp.obj
+
+nodoHabilidad.i: nodoHabilidad.cpp.i
+.PHONY : nodoHabilidad.i
+
+# target to preprocess a source file
+nodoHabilidad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.i
+.PHONY : nodoHabilidad.cpp.i
+
+nodoHabilidad.s: nodoHabilidad.cpp.s
+.PHONY : nodoHabilidad.s
+
+# target to generate assembly for a file
+nodoHabilidad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.s
+.PHONY : nodoHabilidad.cpp.s
+
+nodoHabitacion.obj: nodoHabitacion.cpp.obj
+.PHONY : nodoHabitacion.obj
+
+# target to build an object file
+nodoHabitacion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj
+.PHONY : nodoHabitacion.cpp.obj
+
+nodoHabitacion.i: nodoHabitacion.cpp.i
+.PHONY : nodoHabitacion.i
+
+# target to preprocess a source file
+nodoHabitacion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.i
+.PHONY : nodoHabitacion.cpp.i
+
+nodoHabitacion.s: nodoHabitacion.cpp.s
+.PHONY : nodoHabitacion.s
+
+# target to generate assembly for a file
+nodoHabitacion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.s
+.PHONY : nodoHabitacion.cpp.s
+
 objetos.obj: objetos.cpp.obj
 .PHONY : objetos.obj
 
@@ -287,6 +359,9 @@ help:
 	@echo ... habilidades.obj
 	@echo ... habilidades.i
 	@echo ... habilidades.s
+	@echo ... habitacion.obj
+	@echo ... habitacion.i
+	@echo ... habitacion.s
 	@echo ... jugador.obj
 	@echo ... jugador.i
 	@echo ... jugador.s
@@ -296,6 +371,12 @@ help:
 	@echo ... menus.obj
 	@echo ... menus.i
 	@echo ... menus.s
+	@echo ... nodoHabilidad.obj
+	@echo ... nodoHabilidad.i
+	@echo ... nodoHabilidad.s
+	@echo ... nodoHabitacion.obj
+	@echo ... nodoHabitacion.i
+	@echo ... nodoHabitacion.s
 	@echo ... objetos.obj
 	@echo ... objetos.i
 	@echo ... objetos.s

@@ -15,4 +15,10 @@ add_executable(Taller2_ED main.cpp
         objetos.h
         habilidades.cpp
         habilidades.h
+        habitacion.cpp
+        habitacion.h
+        nodoHabitacion.cpp
+        nodoHabitacion.h
+        nodoHabilidad.cpp
+        nodoHabilidad.h
 )
