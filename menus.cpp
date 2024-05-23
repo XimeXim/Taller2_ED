@@ -291,7 +291,7 @@ void menus::habilidadesMinHeap(string nombre,string descripcion,string dano, str
     int nivel = stoi(niv);
     // bool AoE = stringtobool(aoe);
 
-    nodoHabilidad* habilidad = new nodoHabilidad(nombre,descripcion,danio,nivel,AoE);
+    //nodoHabilidad* habilidad = new nodoHabilidad(nombre,descripcion,danio,nivel,AoE);
 
     //ordenar segun el nivel al ir guardando en el minheap ligar con el metodo desde calse minheap
     //minHeap->insertar(habilidad);
