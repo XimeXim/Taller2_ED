@@ -1,0 +1,23 @@
+NOMBRE,DESCRIPCION,DAÑO,NIVEL,ELEMENTO,AoE
+AGI,Daño leve de fuego,10,1,fuego,no
+MARAGI,daño leve de fuego en area,10,10,fuego,si
+AGIDYNE,Daño grave de fuego,40,15,fuego,no
+MARAGIDYNE,Daño grave de fuego,40,22,fuego,si
+ZIO,Daño leve de rayo,10,2,rayo,no
+MAZIO,daño leve de rayo en area,10,11,rayo,si
+ZIODYNE,Daño grave de rayo,40,16,rayo,no
+MAZIODYNE,Daño grave de rayo,40,23,rayo,si
+BUFU,Daño leve de hielo,10,3,hielo,no
+MABUFU,daño leve de hielo en area,10,12,hielo,si
+BUFUDYNE,Daño grave de hielo,40,17,hielo,no
+MABUFUDYNE,Daño grave de hielo,40,24,hielo,si
+ZAN,Daño leve de viento,10,4,viento,no
+MAZAN,daño leve de viento en area,10,13,viento,si
+ZANDYNE,Daño grave de viento,40,18,viento,no
+MAZANDYNE,Daño grave de viento,40,25,viento,si
+DIA,Curacion leve,5,40,curacion,no
+DIARAMA,Curacion media,80,14,curacion,no
+DIARAHAN,Cura todo el Hp,5,20,curacion,no
+DRAIN,Hace daño y cura un 50% del daño realizado,40,26,daño,no
+MIGHTY HIT, Daño físico que asegura un golpe critico,25,21,daño,no
+HASSOHAPPA, Daño físico que golpea a todos los enemigos,40,19,daño,si

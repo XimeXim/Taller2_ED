@@ -57,6 +57,70 @@ build CMakeFiles/Taller2_ED.dir/main.cpp.obj: CXX_COMPILER__Taller2_ED_unscanned
   TARGET_COMPILE_PDB = CMakeFiles\Taller2_ED.dir\
   TARGET_PDB = Taller2_ED.pdb
 
+build CMakeFiles/Taller2_ED.dir/menus.cpp.obj: CXX_COMPILER__Taller2_ED_unscanned_Debug C$:/Users/Ximena/OneDrive$ -$ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/menus.cpp || cmake_object_order_depends_target_Taller2_ED
+  DEP_FILE = CMakeFiles\Taller2_ED.dir\menus.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Taller2_ED.dir
+  OBJECT_FILE_DIR = CMakeFiles\Taller2_ED.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Taller2_ED.dir\
+  TARGET_PDB = Taller2_ED.pdb
+
+build CMakeFiles/Taller2_ED.dir/jugador.cpp.obj: CXX_COMPILER__Taller2_ED_unscanned_Debug C$:/Users/Ximena/OneDrive$ -$ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/jugador.cpp || cmake_object_order_depends_target_Taller2_ED
+  DEP_FILE = CMakeFiles\Taller2_ED.dir\jugador.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Taller2_ED.dir
+  OBJECT_FILE_DIR = CMakeFiles\Taller2_ED.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Taller2_ED.dir\
+  TARGET_PDB = Taller2_ED.pdb
+
+build CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj: CXX_COMPILER__Taller2_ED_unscanned_Debug C$:/Users/Ximena/OneDrive$ -$ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/enemigo.cpp || cmake_object_order_depends_target_Taller2_ED
+  DEP_FILE = CMakeFiles\Taller2_ED.dir\enemigo.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Taller2_ED.dir
+  OBJECT_FILE_DIR = CMakeFiles\Taller2_ED.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Taller2_ED.dir\
+  TARGET_PDB = Taller2_ED.pdb
+
+build CMakeFiles/Taller2_ED.dir/objetos.cpp.obj: CXX_COMPILER__Taller2_ED_unscanned_Debug C$:/Users/Ximena/OneDrive$ -$ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/objetos.cpp || cmake_object_order_depends_target_Taller2_ED
+  DEP_FILE = CMakeFiles\Taller2_ED.dir\objetos.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Taller2_ED.dir
+  OBJECT_FILE_DIR = CMakeFiles\Taller2_ED.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Taller2_ED.dir\
+  TARGET_PDB = Taller2_ED.pdb
+
+build CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj: CXX_COMPILER__Taller2_ED_unscanned_Debug C$:/Users/Ximena/OneDrive$ -$ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/habilidades.cpp || cmake_object_order_depends_target_Taller2_ED
+  DEP_FILE = CMakeFiles\Taller2_ED.dir\habilidades.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Taller2_ED.dir
+  OBJECT_FILE_DIR = CMakeFiles\Taller2_ED.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Taller2_ED.dir\
+  TARGET_PDB = Taller2_ED.pdb
+
+build CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj: CXX_COMPILER__Taller2_ED_unscanned_Debug C$:/Users/Ximena/OneDrive$ -$ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/habitacion.cpp || cmake_object_order_depends_target_Taller2_ED
+  DEP_FILE = CMakeFiles\Taller2_ED.dir\habitacion.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Taller2_ED.dir
+  OBJECT_FILE_DIR = CMakeFiles\Taller2_ED.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Taller2_ED.dir\
+  TARGET_PDB = Taller2_ED.pdb
+
+build CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj: CXX_COMPILER__Taller2_ED_unscanned_Debug C$:/Users/Ximena/OneDrive$ -$ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/nodoHabitacion.cpp || cmake_object_order_depends_target_Taller2_ED
+  DEP_FILE = CMakeFiles\Taller2_ED.dir\nodoHabitacion.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Taller2_ED.dir
+  OBJECT_FILE_DIR = CMakeFiles\Taller2_ED.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Taller2_ED.dir\
+  TARGET_PDB = Taller2_ED.pdb
+
+build CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj: CXX_COMPILER__Taller2_ED_unscanned_Debug C$:/Users/Ximena/OneDrive$ -$ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/nodoHabilidad.cpp || cmake_object_order_depends_target_Taller2_ED
+  DEP_FILE = CMakeFiles\Taller2_ED.dir\nodoHabilidad.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Taller2_ED.dir
+  OBJECT_FILE_DIR = CMakeFiles\Taller2_ED.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Taller2_ED.dir\
+  TARGET_PDB = Taller2_ED.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Taller2_ED
@@ -65,7 +129,7 @@ build CMakeFiles/Taller2_ED.dir/main.cpp.obj: CXX_COMPILER__Taller2_ED_unscanned
 #############################################
 # Link the executable Taller2_ED.exe
 
-build Taller2_ED.exe: CXX_EXECUTABLE_LINKER__Taller2_ED_Debug CMakeFiles/Taller2_ED.dir/main.cpp.obj
+build Taller2_ED.exe: CXX_EXECUTABLE_LINKER__Taller2_ED_Debug CMakeFiles/Taller2_ED.dir/main.cpp.obj CMakeFiles/Taller2_ED.dir/menus.cpp.obj CMakeFiles/Taller2_ED.dir/jugador.cpp.obj CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj CMakeFiles/Taller2_ED.dir/objetos.cpp.obj CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Taller2_ED.dir

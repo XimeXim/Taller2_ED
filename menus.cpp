@@ -3,7 +3,12 @@
 //
 
 #include "menus.h"
+#include "nodoHabilidad.h"
+
+#include <vector>
+
 #include "iostream"
+#include "fstream"
 #include "limits"
 using namespace std;
 
@@ -206,4 +211,89 @@ void menus::menuHabilidades() {
                 return;
         }
     }
+}
+
+void menus::lecturaTXT(string nomArchivo) {
+
+    fstream archivoTXT(nomArchivo);
+    string linea = "";
+    bool habilidades = false;
+
+    // leeremos la primera linea del archivo para saber cuantos datos debemos considerar a guardar
+    int cantDeDatos = 0;
+    if(nomArchivo == "Items.txt") {
+        cantDeDatos = 6;
+    }else if(nomArchivo == "Habilidades.txt"){
+        cantDeDatos = 6;
+        habilidades = true;
+    }else if (nomArchivo == "Habitaciones.txt") {
+        cantDeDatos = 8;
+    }else if(nomArchivo == "Enemigos.txt") {
+        cantDeDatos = 10;
+    }
+
+
+    while(getline(archivoTXT, linea)) {
+        string dato1 = "";
+        string dato2 = "";
+        string dato3 = "";
+        string dato4 = "";
+        string dato5 = "";
+        string dato6 = "";
+        string dato7 = "";
+        string dato8 = "";
+        string dato9 = "";
+        string dato10 = "";
+
+        stringstream stream(linea);
+
+        if(cantDeDatos == 6 ) {
+            getline(stream, dato1, ',');
+            getline(stream, dato2, ',');
+            getline(stream, dato3, ',');
+            getline(stream, dato4, ',');
+            getline(stream, dato5, ',');
+            getline(stream, dato6, ',');
+            if(habilidades) {
+                // llamar metodo para almacenarlos en minheap
+                habilidadesMinHeap(dato1,dato2,dato3,dato4,dato5,dato6);
+            }else {
+
+            }
+        }else if(cantDeDatos==8) {
+            getline(stream, dato1, ',');
+            getline(stream, dato2, ',');
+            getline(stream, dato3, ',');
+            getline(stream, dato4, ',');
+            getline(stream, dato5, ',');
+            getline(stream, dato6, ',');
+            getline(stream, dato7, ',');
+            getline(stream, dato8, ',');
+            // llamar metodo para almacenarlos en min o alv
+        }else if (cantDeDatos == 10) {
+            getline(stream, dato1, ',');
+            getline(stream, dato2, ',');
+            getline(stream, dato3, ',');
+            getline(stream, dato4, ',');
+            getline(stream, dato5, ',');
+            getline(stream, dato6, ',');
+            getline(stream, dato7, ',');
+            getline(stream, dato8, ',');
+            getline(stream, dato9, ',');
+            getline(stream, dato10, ',');
+            // llamar metodo para almacenarlos en min o alv
+        }
+    }
+}
+
+void menus::habilidadesMinHeap(string nombre,string descripcion,string dano, string niv,string elemento,string aoe) {
+    int danio = stoi(dano);
+    int nivel = stoi(niv);
+    // bool AoE = stringtobool(aoe);
+
+    nodoHabilidad* habilidad = new nodoHabilidad(nombre,descripcion,danio,nivel,AoE);
+
+    //ordenar segun el nivel al ir guardando en el minheap ligar con el metodo desde calse minheap
+    //minHeap->insertar(habilidad);
+    
 }

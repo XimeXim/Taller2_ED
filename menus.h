@@ -26,6 +26,10 @@ void menuCombate();
 
 void menuHabilidades();
 
+void habilidadesMinHeap(std::string nombre, std::string descripcion, std::string dano, std::string niv,
+                      std::string elemento, std::string aoe);
+void lecturaTXT(std::string nomArchivo);
+
 };
 
 
