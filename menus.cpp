@@ -49,7 +49,7 @@ void menus::menuJuego() {
 
         cout << "Menú:"<< endl;
         cout << "Ingrese su opción:"<< endl;
-        cout << "1) Avanzar a la siquierda" << endl;
+        cout << "1) Avanzar a la izquierda" << endl;
         cout << "2) Avanzar a la derecha" << endl;
         cout << "3) Ver mapa" << endl;
         cout << "4) Inventario" << endl;
