@@ -30,6 +30,7 @@ void habilidadesMinHeap(std::string nombre, std::string descripcion, std::string
                       std::string elemento, std::string aoe);
 void lecturaTXT(std::string nomArchivo);
 
+bool stringToBool(std::string str);
 };
 
 

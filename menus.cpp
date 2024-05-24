@@ -18,6 +18,16 @@ void menus::menuPrincipal() {
     while (opcionMenuPrincipal != 3){
 
         //AQUI DEBE IR LA LECTURA DE LOS 4 ARCHIVOS DE TEXTO
+        string txt1 ="Enemigos.txt";
+        lecturaTXT(txt1);
+        txt1 ="Habitaciones.txt";
+        lecturaTXT(txt1);
+        txt1 ="Items.txt";
+        lecturaTXT(txt1);
+        txt1 ="Habilidades.txt";
+        lecturaTXT(txt1);
+
+
         cout << "Bienvenido al GOTY" << endl;
         cout << "Cuentame viajero..." << endl;
         cout << "¿Qué deseas hacer?:"<< endl;
@@ -246,7 +256,6 @@ void menus::lecturaTXT(string nomArchivo) {
         string dato10 = "";
 
         stringstream stream(linea);
-
         if(cantDeDatos == 6 ) {
             getline(stream, dato1, ',');
             getline(stream, dato2, ',');
@@ -285,11 +294,14 @@ void menus::lecturaTXT(string nomArchivo) {
         }
     }
 }
-
+bool menus::stringToBool(string str){
+    return (str == "true" || str == "1");
+}
 void menus::habilidadesMinHeap(string nombre,string descripcion,string dano, string niv,string elemento,string aoe) {
     int danio = stoi(dano);
     int nivel = stoi(niv);
-    // bool AoE = stringtobool(aoe);
+    bool AoE = stringToBool(aoe);
+
 
     //nodoHabilidad* habilidad = new nodoHabilidad(nombre,descripcion,danio,nivel,AoE);
 

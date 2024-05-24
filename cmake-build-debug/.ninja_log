@@ -1,0 +1,11 @@
+# ninja log v5
+71	395	7382906086337953	CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj	ffc2af5282b1f13e
+68	396	7382906086337953	CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj	58caef4244e4e5fc
+63	670	7382906089102747	CMakeFiles/Taller2_ED.dir/objetos.cpp.obj	d88e005d8fe332f2
+20	697	7382906089369552	CMakeFiles/Taller2_ED.dir/main.cpp.obj	3bf94a1ce4186f19
+65	699	7382906089393233	CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj	74d22103eba19b05
+73	699	7382906089393233	CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj	ba6667df3d2b4384
+60	761	7382906090027815	CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj	1af6cd9d2a407ca0
+6	463	7382907310761797	CMakeFiles/Taller2_ED.dir/menus.cpp.obj	a30724b35893b81e
+56	823	7382906090633342	CMakeFiles/Taller2_ED.dir/jugador.cpp.obj	ca3c2afb4aa6b3ad
+464	561	7382907311701549	Taller2_ED.exe	35e17bd92b3da055

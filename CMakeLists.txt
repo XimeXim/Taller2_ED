@@ -21,4 +21,8 @@ add_executable(Taller2_ED main.cpp
         nodoHabitacion.h
         nodoHabilidad.cpp
         nodoHabilidad.h
+        AVL.cpp
+        AVL.h
+        MinHeap.cpp
+        MinHeap.h
 )
