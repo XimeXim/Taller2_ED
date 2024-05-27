@@ -136,6 +136,10 @@ void menus::menuHabitacion() {
 
             case 4:
                 break;
+
+            case 5:
+                cout << "Volviendo al menu anterior" << endl;
+                return;
         }
     }
 }
