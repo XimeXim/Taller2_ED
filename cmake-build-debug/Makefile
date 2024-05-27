@@ -128,6 +128,54 @@ Taller2_ED/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/build
 .PHONY : Taller2_ED/fast
 
+AVL.obj: AVL.cpp.obj
+.PHONY : AVL.obj
+
+# target to build an object file
+AVL.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/AVL.cpp.obj
+.PHONY : AVL.cpp.obj
+
+AVL.i: AVL.cpp.i
+.PHONY : AVL.i
+
+# target to preprocess a source file
+AVL.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/AVL.cpp.i
+.PHONY : AVL.cpp.i
+
+AVL.s: AVL.cpp.s
+.PHONY : AVL.s
+
+# target to generate assembly for a file
+AVL.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/AVL.cpp.s
+.PHONY : AVL.cpp.s
+
+MinHeap.obj: MinHeap.cpp.obj
+.PHONY : MinHeap.obj
+
+# target to build an object file
+MinHeap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj
+.PHONY : MinHeap.cpp.obj
+
+MinHeap.i: MinHeap.cpp.i
+.PHONY : MinHeap.i
+
+# target to preprocess a source file
+MinHeap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/MinHeap.cpp.i
+.PHONY : MinHeap.cpp.i
+
+MinHeap.s: MinHeap.cpp.s
+.PHONY : MinHeap.s
+
+# target to generate assembly for a file
+MinHeap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/MinHeap.cpp.s
+.PHONY : MinHeap.cpp.s
+
 enemigo.obj: enemigo.cpp.obj
 .PHONY : enemigo.obj
 
@@ -353,6 +401,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Taller2_ED
+	@echo ... AVL.obj
+	@echo ... AVL.i
+	@echo ... AVL.s
+	@echo ... MinHeap.obj
+	@echo ... MinHeap.i
+	@echo ... MinHeap.s
 	@echo ... enemigo.obj
 	@echo ... enemigo.i
 	@echo ... enemigo.s

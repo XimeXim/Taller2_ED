@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/AVL.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/AVL.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/MinHeap.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/MinHeap.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/enemigo.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
