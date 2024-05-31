@@ -21,14 +21,14 @@ private:
     int magia;
     int velocidad;
     int suerte;
-    std::vector<habilidades*> skillsEnemigo;
     std::string debilidad;
+    std::vector<habilidades*> skillsEnemigo;
 
 public:
 
     //DOCUMENTAR
     enemigo(const std::string &nombre, int nivel, int oroSoltado, int puntosHabilidad, int vida, int feurza, int magia,
-            int velocidad, int suerte, const std::vector<habilidades *> &skillsEnemigo, const std::string &debilidad);
+            int velocidad, int suerte, const std::string &debilidad, const std::vector<habilidades *> &skillsEnemigo);
 
     virtual ~enemigo();
 
@@ -68,14 +68,13 @@ public:
 
     void setSuerte(int suerte);
 
-    const std::vector<habilidades *> &getSkillsEnemigo() const;
-
-    void setSkillsEnemigo(const std::vector<habilidades *> &skillsEnemigo);
-
     const std::string &getDebilidad() const;
 
     void setDebilidad(const std::string &debilidad);
 
+    const std::vector<habilidades *> &getSkillsEnemigo() const;
+
+    void setSkillsEnemigo(const std::vector<habilidades *> &skillsEnemigo);
 };
 
 

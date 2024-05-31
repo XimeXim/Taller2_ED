@@ -3,3 +3,18 @@
 //
 
 #include "AVL.h"
+
+AVL::AVL(nodoHabitacion *habitacion) : habitacion(habitacion) {}
+
+AVL::~AVL() {
+}
+
+nodoHabitacion *AVL::getHabitacion() const {
+    return habitacion;
+}
+
+void AVL::setHabitacion(nodoHabitacion *habitacion) {
+    AVL::habitacion = habitacion;
+}
+
+

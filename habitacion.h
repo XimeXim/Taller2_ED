@@ -11,22 +11,49 @@ class habitacion {
 private:
 
     //PARAMETROS DE HABITACION
-    int cantEnemigos;
-    int cantBolsasOro;
+    int enemigo1;
+    int enemigo2;
+    int enemigo3;
+    int enemigo4;
+    int enemigo5;
     int cantObjetos;
+    int cantBolsasOro;
+    int peligro;
     bool salaBoss;
     bool tienda;
+    int idHabitacion;
 
 public:
 
     //DOCUMENTAR
-    habitacion(int cantEnemigos, int cantBolsasOro, int cantObjetos, bool salaBoss, bool tienda);
+    habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos, int cantBolsasOro,
+               int peligro, bool salaBoss, bool tienda, int idHabitacion);
 
     virtual ~habitacion();
 
-    int getCantEnemigos() const;
+    int getEnemigo1() const;
 
-    void setCantEnemigos(int cantEnemigos);
+    void setEnemigo1(int enemigo1);
+
+    int getEnemigo2() const;
+
+    void setEnemigo2(int enemigo2);
+
+    int getEnemigo3() const;
+
+    void setEnemigo3(int enemigo3);
+
+    int getEnemigo4() const;
+
+    void setEnemigo4(int enemigo4);
+
+    int getEnemigo5() const;
+
+    void setEnemigo5(int enemigo5);
+
+    int getPeligro() const;
+
+    void setPeligro(int peligro);
 
     int getCantBolsasOro() const;
 
@@ -44,7 +71,9 @@ public:
 
     void setTienda(bool tienda);
 
+    int getIdHabitacion() const;
 
+    void setIdHabitacion(int idHabitacion);
 };
 
 

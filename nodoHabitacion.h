@@ -15,11 +15,12 @@ private:
     habitacion sala;
     nodoHabitacion* habIzquierda;
     nodoHabitacion* habDerecha;
+    int factorBalance;
 
 public:
 
     //DOCUMENTAR
-    nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha);
+    nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha, int factorBalance);
 
     virtual ~nodoHabitacion();
 
@@ -34,6 +35,10 @@ public:
     nodoHabitacion *getHabDerecha() const;
 
     void setHabDerecha(nodoHabitacion *habDerecha);
+
+    int getFactorBalance() const;
+
+    void setFactorBalance(int factorBalance);
 };
 
 

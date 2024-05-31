@@ -5,14 +5,15 @@
 #include "enemigo.h"
 
 enemigo::enemigo(const std::string &nombre, int nivel, int oroSoltado, int puntosHabilidad, int vida, int feurza,
-                 int magia, int velocidad, int suerte, const std::vector<habilidades *> &skillsEnemigo,
-                 const std::string &debilidad) : nombre(nombre), nivel(nivel), oroSoltado(oroSoltado),
-                                                 puntosHabilidad(puntosHabilidad), vida(vida), feurza(feurza),
-                                                 magia(magia), velocidad(velocidad), suerte(suerte),
-                                                 skillsEnemigo(skillsEnemigo), debilidad(debilidad) {}
+                 int magia, int velocidad, int suerte, const std::string &debilidad,
+                 const std::vector<habilidades *> &skillsEnemigo) : nombre(nombre), nivel(nivel),
+                                                                    oroSoltado(oroSoltado),
+                                                                    puntosHabilidad(puntosHabilidad), vida(vida),
+                                                                    feurza(feurza), magia(magia), velocidad(velocidad),
+                                                                    suerte(suerte), debilidad(debilidad),
+                                                                    skillsEnemigo(skillsEnemigo) {}
 
 enemigo::~enemigo() {
-
 }
 
 const std::string &enemigo::getNombre() const {
@@ -102,3 +103,5 @@ const std::string &enemigo::getDebilidad() const {
 void enemigo::setDebilidad(const std::string &debilidad) {
     enemigo::debilidad = debilidad;
 }
+
+

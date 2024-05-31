@@ -4,12 +4,11 @@
 
 #include "nodoHabitacion.h"
 
-
-nodoHabitacion::nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha) : sala(
-        sala), habIzquierda(habIzquierda), habDerecha(habDerecha) {}
+nodoHabitacion::nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha,
+                               int factorBalance) : sala(sala), habIzquierda(habIzquierda), habDerecha(habDerecha),
+                                                    factorBalance(factorBalance) {}
 
 nodoHabitacion::~nodoHabitacion() {
-
 }
 
 const habitacion &nodoHabitacion::getSala() const {
@@ -35,3 +34,15 @@ nodoHabitacion *nodoHabitacion::getHabDerecha() const {
 void nodoHabitacion::setHabDerecha(nodoHabitacion *habDerecha) {
     nodoHabitacion::habDerecha = habDerecha;
 }
+
+int nodoHabitacion::getFactorBalance() const {
+    return factorBalance;
+}
+
+void nodoHabitacion::setFactorBalance(int factorBalance) {
+    nodoHabitacion::factorBalance = factorBalance;
+}
+
+
+
+

@@ -7,15 +7,25 @@
 #ifndef AVL_H
 #define AVL_H
 
-
-
 class AVL {
+
 private:
-    nodoHabitacion* raiz;//no estoy sure
-    int cant;
+
+    nodoHabitacion* habitacion;
 
 public:
-    AVL();
+
+    explicit AVL(nodoHabitacion *habitacion);
+
+    virtual ~AVL();
+
+    nodoHabitacion *getHabitacion() const;
+
+    void setHabitacion(nodoHabitacion *habitacion);
+
+    void insertarNodoAVL();
+
+
 };
 
 
