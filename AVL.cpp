@@ -17,4 +17,25 @@ void AVL::setHabitacion(nodoHabitacion *habitacion) {
     AVL::habitacion = habitacion;
 }
 
+void AVL::insertarNodoAVL(nodoHabitacion *raiz) {
+}
+
+int AVL::alturaNodo(nodoHabitacion* nodo) {
+
+    if (nodo == nullptr){
+        return 0;
+    }
+    return nodo->getAlturaNodo();
+}
+
+int AVL::facBalanceNodo(nodoHabitacion *nodo) {
+
+    if (nodo == nullptr){
+        return 0;
+    }
+    return alturaNodo(nodo->getHabIzquierda()) - alturaNodo(nodo->getHabDerecha());
+}
+
+
+
 

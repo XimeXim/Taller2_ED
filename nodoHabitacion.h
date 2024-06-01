@@ -5,6 +5,8 @@
 #ifndef TALLER2_ED_NODOHABITACION_H
 #define TALLER2_ED_NODOHABITACION_H
 #include "habitacion.h"
+#include "algorithm"
+
 
 
 class nodoHabitacion {
@@ -15,12 +17,14 @@ private:
     habitacion sala;
     nodoHabitacion* habIzquierda;
     nodoHabitacion* habDerecha;
+    int alturaNodo;
     int factorBalance;
 
 public:
 
     //DOCUMENTAR
-    nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha, int factorBalance);
+    nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha, int alturaNodo,
+                   int factorBalance);
 
     virtual ~nodoHabitacion();
 
@@ -36,9 +40,16 @@ public:
 
     void setHabDerecha(nodoHabitacion *habDerecha);
 
+    int getAlturaNodo() const;
+
+    void setAlturaNodo(int alturaNodo);
+
     int getFactorBalance() const;
 
     void setFactorBalance(int factorBalance);
+
+    //DOCUMENTAR
+    int calcularAltNodo();
 };
 
 

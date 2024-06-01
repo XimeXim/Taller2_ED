@@ -3,6 +3,8 @@
 //
 #include <iostream>
 #include "nodoHabitacion.h"
+#include "algorithm"
+
 
 #ifndef AVL_H
 #define AVL_H
@@ -23,7 +25,14 @@ public:
 
     void setHabitacion(nodoHabitacion *habitacion);
 
-    void insertarNodoAVL();
+    //DOCUMENTAR
+    void insertarNodoAVL(nodoHabitacion* raiz);
+
+    int alturaNodo(nodoHabitacion* nodo);
+
+    int facBalanceNodo(nodoHabitacion* nodo);
+
+
 
 
 };

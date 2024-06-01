@@ -5,8 +5,9 @@
 #include "nodoHabitacion.h"
 
 nodoHabitacion::nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha,
-                               int factorBalance) : sala(sala), habIzquierda(habIzquierda), habDerecha(habDerecha),
-                                                    factorBalance(factorBalance) {}
+                               int alturaNodo, int factorBalance) : sala(sala), habIzquierda(habIzquierda),
+                                                                    habDerecha(habDerecha), alturaNodo(alturaNodo),
+                                                                    factorBalance(factorBalance) {}
 
 nodoHabitacion::~nodoHabitacion() {
 }
@@ -35,6 +36,14 @@ void nodoHabitacion::setHabDerecha(nodoHabitacion *habDerecha) {
     nodoHabitacion::habDerecha = habDerecha;
 }
 
+int nodoHabitacion::getAlturaNodo() const {
+    return alturaNodo;
+}
+
+void nodoHabitacion::setAlturaNodo(int profundidadNodo) {
+    nodoHabitacion::alturaNodo = alturaNodo;
+}
+
 int nodoHabitacion::getFactorBalance() const {
     return factorBalance;
 }
@@ -42,6 +51,22 @@ int nodoHabitacion::getFactorBalance() const {
 void nodoHabitacion::setFactorBalance(int factorBalance) {
     nodoHabitacion::factorBalance = factorBalance;
 }
+
+int nodoHabitacion::calcularAltNodo(){
+
+    int alturaIzq = (habIzquierda == nullptr) ? 0 : habIzquierda->calcularAltNodo();
+    int alturaDer = (habDerecha == nullptr) ? 0 : habDerecha->calcularAltNodo();
+    alturaNodo = 1 + std::max(alturaIzq, alturaDer);
+    return alturaNodo;
+}
+
+
+
+
+
+
+
+
 
 
 
