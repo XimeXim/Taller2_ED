@@ -10,15 +10,16 @@
 
 class MinHeap {
 private:
-    nodoHabilidad* listaHabilidades;
-    int size;
+    nodoHabilidad* min_heap_habilidad;
     int capacidad;
+    int tamano;
 
 public:
     MinHeap();
-    void insertar(nodoHabilidad* nodo_habilidad);
+    MinHeap(int capacidad);
+    void insertar(const nodoHabilidad *nodo_habilidad);
     nodoHabilidad devolverRaiz();
-    void orden(int i);
+    void heapifyOrden(int i);
     int eliminacion();
     void imprimir();
     ~MinHeap();

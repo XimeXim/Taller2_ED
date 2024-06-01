@@ -7,7 +7,8 @@
 habilidades::habilidades(const std::string &nombre, const std::string &descripcion, int danio, int nivel,
                          const std::string &elemento, bool aoE) : nombre(nombre), descripcion(descripcion),
                                                                   danio(danio), nivel(nivel), elemento(elemento),
-                                                                  AoE(aoE) {}
+                                                                  AoE(aoE) {
+}
 
 habilidades::~habilidades() {
 

@@ -4,6 +4,10 @@
 
 #include "nodoHabilidad.h"
 
+nodoHabilidad::nodoHabilidad() {
+    this->skills;
+}
+
 nodoHabilidad::nodoHabilidad(const habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha)
         : skills(skills), skillIzquierda(skillIzquierda), skillDerecha(skillDerecha) {}
 

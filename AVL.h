@@ -32,9 +32,6 @@ public:
 
     int facBalanceNodo(nodoHabitacion* nodo);
 
-
-
-
 };
 
 
