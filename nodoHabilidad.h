@@ -18,6 +18,7 @@ private:
 public:
 
     //DOCUMENTAR
+    nodoHabilidad();
     nodoHabilidad(const habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha);
 
     virtual ~nodoHabilidad();
