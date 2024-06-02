@@ -25,12 +25,22 @@ public:
 
     void setHabitacion(nodoHabitacion *habitacion);
 
-    //DOCUMENTAR
-    void insertarNodoAVL(nodoHabitacion* raiz);
-
+    //DOCUMENTAR_TODO_HACIA_ABAJO
     int alturaNodo(nodoHabitacion* nodo);
 
+    int calcularAltNodo(nodoHabitacion* nodo);
+
     int facBalanceNodo(nodoHabitacion* nodo);
+
+    nodoHabitacion* rotacionRR(nodoHabitacion* nodoDesbalanceado);
+
+    nodoHabitacion* rotacionLL(nodoHabitacion* nodoDesbalanceado);
+
+    nodoHabitacion* rotacionLR(nodoHabitacion* nodoDesbalanceado);
+
+    nodoHabitacion* rotacionRL(nodoHabitacion* nodoDesbalanceado);
+
+    void insertarNodoAVL(nodoHabitacion* raiz);
 
 
 

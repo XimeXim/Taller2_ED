@@ -48,8 +48,12 @@ public:
 
     void setFactorBalance(int factorBalance);
 
-    //DOCUMENTAR
     int calcularAltNodo();
+
+    //DOCUMENTAR
+    int altNodoHab(nodoHabitacion* nodo);
+
+
 };
 
 

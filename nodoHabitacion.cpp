@@ -60,6 +60,16 @@ int nodoHabitacion::calcularAltNodo(){
     return alturaNodo;
 }
 
+int nodoHabitacion::altNodoHab(nodoHabitacion *nodo) {
+
+    if (nodo == nullptr){
+        return 0;
+    }
+    return nodo->getAlturaNodo();
+}
+
+
+
 
 
 
