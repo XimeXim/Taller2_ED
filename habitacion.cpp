@@ -5,10 +5,16 @@
 #include "habitacion.h"
 
 habitacion::habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos,
-                       int cantBolsasOro, int peligro, bool salaBoss, bool tienda, int idHabitacion) : enemigo1(
-        enemigo1), enemigo2(enemigo2), enemigo3(enemigo3), enemigo4(enemigo4), enemigo5(enemigo5), cantObjetos(
-        cantObjetos), cantBolsasOro(cantBolsasOro), peligro(peligro), salaBoss(salaBoss), tienda(tienda), idHabitacion(
-        idHabitacion) {}
+                       int cantBolsasOro, int peligro, bool salaBoss, bool tienda) : enemigo1(enemigo1),
+                                                                                     enemigo2(enemigo2),
+                                                                                     enemigo3(enemigo3),
+                                                                                     enemigo4(enemigo4),
+                                                                                     enemigo5(enemigo5),
+                                                                                     cantObjetos(cantObjetos),
+                                                                                     cantBolsasOro(cantBolsasOro),
+                                                                                     peligro(peligro),
+                                                                                     salaBoss(salaBoss),
+                                                                                     tienda(tienda) {}
 
 habitacion::~habitacion() {
 }
@@ -93,13 +99,9 @@ void habitacion::setTienda(bool tienda) {
     habitacion::tienda = tienda;
 }
 
-int habitacion::getIdHabitacion() const {
-    return idHabitacion;
-}
 
-void habitacion::setIdHabitacion(int idHabitacion) {
-    habitacion::idHabitacion = idHabitacion;
-}
+
+
 
 
 

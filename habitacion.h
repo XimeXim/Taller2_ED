@@ -21,13 +21,12 @@ private:
     int peligro;
     bool salaBoss;
     bool tienda;
-    int idHabitacion;
 
 public:
 
     //DOCUMENTAR
     habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos, int cantBolsasOro,
-               int peligro, bool salaBoss, bool tienda, int idHabitacion);
+               int peligro, bool salaBoss, bool tienda);
 
     virtual ~habitacion();
 
@@ -70,10 +69,6 @@ public:
     bool isTienda() const;
 
     void setTienda(bool tienda);
-
-    int getIdHabitacion() const;
-
-    void setIdHabitacion(int idHabitacion);
 };
 
 

@@ -5,9 +5,12 @@
 #include "nodoHabitacion.h"
 
 nodoHabitacion::nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha,
-                               int alturaNodo, int factorBalance) : sala(sala), habIzquierda(habIzquierda),
-                                                                    habDerecha(habDerecha), alturaNodo(alturaNodo),
-                                                                    factorBalance(factorBalance) {}
+                               int alturaNodo, int factorBalance, float idNodoSala) : sala(sala),
+                                                                                      habIzquierda(habIzquierda),
+                                                                                      habDerecha(habDerecha),
+                                                                                      alturaNodo(alturaNodo),
+                                                                                      factorBalance(factorBalance),
+                                                                                      idNodoSala(idNodoSala) {}
 
 nodoHabitacion::~nodoHabitacion() {
 }
@@ -52,6 +55,14 @@ void nodoHabitacion::setFactorBalance(int factorBalance) {
     nodoHabitacion::factorBalance = factorBalance;
 }
 
+float nodoHabitacion::getIdNodoSala() const {
+    return idNodoSala;
+}
+
+void nodoHabitacion::setIdNodoSala(float idNodoSala) {
+    nodoHabitacion::idNodoSala = idNodoSala;
+}
+
 int nodoHabitacion::calcularAltNodo(){
 
     int alturaIzq = (habIzquierda == nullptr) ? 0 : habIzquierda->calcularAltNodo();
@@ -67,6 +78,17 @@ int nodoHabitacion::altNodoHab(nodoHabitacion *nodo) {
     }
     return nodo->getAlturaNodo();
 }
+
+float nodoHabitacion::idNodoHabitacion(int peligroSala) {
+
+    peligroSala = this->getSala().getPeligro();
+    this->setIdNodoSala(peligroSala);
+    return this->getIdNodoSala();
+}
+
+
+
+
 
 
 

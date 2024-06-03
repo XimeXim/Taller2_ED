@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include "nodoHabitacion.h"
+#include "habitacion.h"
 #include "algorithm"
 
 
@@ -40,11 +41,12 @@ public:
 
     nodoHabitacion* rotacionRL(nodoHabitacion* nodoDesbalanceado);
 
-    void insertarNodoAVL(nodoHabitacion* raiz);
+    bool buscarNodoRepetido(nodoHabitacion* nodo, float idNodo);
 
+    float difPeligrosIguales (nodoHabitacion* nodo);
 
-
-
+    nodoHabitacion* insertarNodoAVL(nodoHabitacion* nodoAInsertar, class habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha, int alturaNodo,
+                         int factorBalance, float idNodoSala);
 
 
 };

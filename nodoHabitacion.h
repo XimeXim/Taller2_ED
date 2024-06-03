@@ -19,12 +19,13 @@ private:
     nodoHabitacion* habDerecha;
     int alturaNodo;
     int factorBalance;
+    float idNodoSala;
 
 public:
 
     //DOCUMENTAR
     nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha, int alturaNodo,
-                   int factorBalance);
+                   int factorBalance, float idNodoSala);
 
     virtual ~nodoHabitacion();
 
@@ -48,10 +49,18 @@ public:
 
     void setFactorBalance(int factorBalance);
 
-    int calcularAltNodo();
+    float getIdNodoSala() const;
+
+    void setIdNodoSala(float idNodoSala);
 
     //DOCUMENTAR
+    int calcularAltNodo();
+
     int altNodoHab(nodoHabitacion* nodo);
+
+    float idNodoHabitacion(int peligroSala);
+
+
 
 
 };
