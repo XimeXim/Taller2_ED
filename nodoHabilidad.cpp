@@ -4,8 +4,8 @@
 
 #include "nodoHabilidad.h"
 
-nodoHabilidad::nodoHabilidad() {
-    this->skills;
+nodoHabilidad::nodoHabilidad(habilidades hability) {
+    this->hability = hability;
 }
 
 nodoHabilidad::nodoHabilidad(const habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha)

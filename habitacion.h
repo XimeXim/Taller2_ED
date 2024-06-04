@@ -28,6 +28,9 @@ public:
     habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos, int cantBolsasOro,
                int peligro, bool salaBoss, bool tienda);
 
+    habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos, int cantBolsasOro,
+               int peligro);
+
     virtual ~habitacion();
 
     int getEnemigo1() const;

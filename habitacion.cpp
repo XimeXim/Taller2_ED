@@ -16,6 +16,17 @@ habitacion::habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, i
                                                                                      salaBoss(salaBoss),
                                                                                      tienda(tienda) {}
 
+habitacion::habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos,
+                       int cantBolsasOro, int peligro) {
+    this->enemigo1=enemigo1;
+    this->enemigo2=enemigo2;
+    this->enemigo3=enemigo3;
+    this->enemigo4=enemigo4;
+    this->enemigo5=enemigo5;
+    this->cantObjetos=cantObjetos;
+    this->cantBolsasOro=cantBolsasOro;
+    this->peligro=peligro;
+}
 habitacion::~habitacion() {
 }
 

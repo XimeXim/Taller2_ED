@@ -26,7 +26,7 @@ MinHeap::MinHeap(int capacidad)
 {
     this->tamano = 0;
     this->capacidad = capacidad;
-    this->min_heap_habilidad = new nodoHabilidad[capacidad];
+    //this->min_heap_habilidad = new nodoHabilidad[capacidad];
 }
 
 nodoHabilidad MinHeap::devolverRaiz() {

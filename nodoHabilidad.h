@@ -11,14 +11,16 @@ class nodoHabilidad {
 private:
 
     //PARAMETROS DE NODO HABILIDAD
-    habilidades skills;
+    habilidades hability;
+    habilidades *skills;
     nodoHabilidad* skillIzquierda;
     nodoHabilidad* skillDerecha;
 
 public:
 
     //DOCUMENTAR
-    nodoHabilidad();
+    nodoHabilidad(habilidades hability);
+
     nodoHabilidad(const habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha);
 
     virtual ~nodoHabilidad();

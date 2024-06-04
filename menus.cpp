@@ -4,12 +4,14 @@
 
 #include "menus.h"
 #include "nodoHabilidad.h"
+#include "habitacion.h"
 
 #include <vector>
 
 #include "iostream"
 #include "fstream"
 #include "limits"
+#include "MinHeap.h"
 using namespace std;
 
 void menus::menuPrincipal() {
@@ -283,6 +285,7 @@ void menus::lecturaTXT(string nomArchivo) {
             getline(stream, dato7, ',');
             getline(stream, dato8, ',');
             // llamar metodo para almacenarlos en min o alv
+            habitacionesAVL(dato1,dato2, dato3, dato4, dato5, dato6, dato7, dato8);
         }else if (cantDeDatos == 10) {
             getline(stream, dato1, ',');
             getline(stream, dato2, ',');
@@ -306,10 +309,23 @@ void menus::habilidadesMinHeap(string nombre,string descripcion,string dano, str
     int nivel = stoi(niv);
     bool AoE = stringToBool(aoe);
 
+    habilidades* habilidad = new habilidades(nombre, descripcion, danio, nivel, AoE);
+    nodoHabilidad* nodo = new nodoHabilidad(*habilidad);
+    minHeap->insertar(nodo);
+}
+void menus::habitacionesAVL(string enemigo1,string enemigo2, string enemigo3, string enemigo4, string enemigo5, string cantObjetos, string cantBolsasOro, string peligro) {
+    int enemy1 = stoi(enemigo1);
+    int enemy2 = stoi(enemigo2);
+    int enemy3 = stoi(enemigo3);
+    int enemy4 = stoi(enemigo4);
+    int enemy5 = stoi(enemigo5);
+    int items = stoi(cantObjetos);
+    int bolsasOro = stoi(cantBolsasOro);
+    int danger = stoi(peligro);
 
-    //nodoHabilidad* habilidad = new nodoHabilidad(nombre,descripcion,danio,nivel,AoE);
+    habitacion* habitaciones = new habitacion(enemy1,enemy2,enemy3,enemy4,enemy5,items,bolsasOro,danger);
+    nodoHabitacion* nodo_habitacion = new nodoHabitacion(habitaciones) ;
+    //avl->insertarNodoAVL(nodo_habitacion,habitaciones,)
 
-    //ordenar segun el nivel al ir guardando en el minheap ligar con el metodo desde calse minheap
-    //minHeap->insertar(habilidad);
-    
+
 }

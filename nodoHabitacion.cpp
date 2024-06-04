@@ -12,6 +12,10 @@ nodoHabitacion::nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquie
                                                                                       factorBalance(factorBalance),
                                                                                       idNodoSala(idNodoSala) {}
 
+nodoHabitacion::nodoHabitacion(const habitacion &habitacion): sala(habitacion) {
+    this->sala = habitacion;
+}
+
 nodoHabitacion::~nodoHabitacion() {
 }
 

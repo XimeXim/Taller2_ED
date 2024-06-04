@@ -27,6 +27,8 @@ public:
     nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha, int alturaNodo,
                    int factorBalance, float idNodoSala);
 
+    nodoHabitacion(const habitacion &habitacion);
+
     virtual ~nodoHabitacion();
 
     const habitacion &getSala() const;

@@ -102,7 +102,7 @@ float AVL::difPeligrosIguales(nodoHabitacion *nodoAEncontrar) {
 }
 
 nodoHabitacion* AVL::insertarNodoAVL(nodoHabitacion* nodoAInsertar, class habitacion& sala, nodoHabitacion* habIzquierda, nodoHabitacion* habDerecha, int alturaNodo,
-                          int factorBalance, float idNodoSala) {
+                          int factorBalance, float idNodoSala) {//revisar  y cambiar
 
     if (nodoAInsertar == nullptr){
         return new nodoHabitacion(sala, habIzquierda, habDerecha, alturaNodo, factorBalance, idNodoSala);
