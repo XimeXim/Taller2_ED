@@ -4,6 +4,7 @@
 
 #include "menus.h"
 #include "nodoHabilidad.h"
+#include "nodoHabitacion.h"
 #include "habitacion.h"
 
 #include <vector>
@@ -298,12 +299,29 @@ void menus::lecturaTXT(string nomArchivo) {
             getline(stream, dato9, ',');
             getline(stream, dato10, ',');
             // llamar metodo para almacenarlos en min o alv
+            arregloEnemigos(dato1,dato2,dato3,dato4,dato5,dato6,dato7,dato8,dato9,dato10);
         }
     }
 }
 bool menus::stringToBool(string str){
     return (str == "true" || str == "1");
 }
+
+void menus::arregloEnemigos(std::string nombre, std::string nivel, std::string oroDropeable, std::string hp,
+    std::string atk, std::string ma, std::string spd, std::string su, std::string debilidad,
+    std::string listaHabilidades) {
+
+    int level = stoi(nivel);
+    int oro = stoi(oroDropeable);
+    int health = stoi(hp);
+    int ataque = stoi(atk);
+    int magic = stoi(ma);
+    int speed = stoi(spd);
+    int luck = stoi(su);
+
+    
+}
+
 void menus::habilidadesMinHeap(string nombre,string descripcion,string dano, string niv,string elemento,string aoe) {
     int danio = stoi(dano);
     int nivel = stoi(niv);
@@ -326,6 +344,7 @@ void menus::habitacionesAVL(string enemigo1,string enemigo2, string enemigo3, st
     habitacion* habitaciones = new habitacion(enemy1,enemy2,enemy3,enemy4,enemy5,items,bolsasOro,danger);
     nodoHabitacion* nodo_habitacion = new nodoHabitacion(habitaciones) ;
     //avl->insertarNodoAVL(nodo_habitacion,habitaciones,)
-
-
 }
+
+
+
