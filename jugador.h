@@ -94,9 +94,9 @@ public:
 
     bool elegirDer(nodoHabitacion* habitacionActual);
 
-    void salaVisitada(std::vector<float> salasVisitadas);
+    void salaVisitada();
 
-    void verMapa(std::vector<float> salasVisitadas);
+    void verMapa();
 
     bool subirNivel();
 

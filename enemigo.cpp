@@ -104,6 +104,9 @@ void enemigo::setSkillsEnemigo(const std::vector<habilidades *> &skillsEnemigo) 
     enemigo::skillsEnemigo = skillsEnemigo;
 }
 
+void enemigo::turnoATKEnemigo() {
+}
+
 const std::string &enemigo::getDebilidad() const {
     return debilidad;
 }

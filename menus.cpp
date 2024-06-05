@@ -16,12 +16,16 @@
 #include "MinHeap.h"
 using namespace std;
 
+/*
+ * Este metodo contiene el menu principal, el cual realiza los llamados a los metodos pertinentes
+ * a las opciones ingresadas.
+ */
 void menus::menuPrincipal() {
 
     int opcionMenuPrincipal = 0;
     while (opcionMenuPrincipal != 3){
 
-        //AQUI DEBE IR LA LECTURA DE LOS 4 ARCHIVOS DE TEXTO
+        //Se realiza la llamada al metodo de lectura del archivo para el archivo habitaciones.txt
         string txt1 ="Habitaciones.txt";
         lecturaTXT(txt1);
 
@@ -55,8 +59,13 @@ void menus::menuPrincipal() {
     }
 }
 
+/*
+ * Este metodo contiene el submenu menu del juego donde se enlistan las opciones de tal manera que el
+ * usuario pueda moverse e interactuar ya dentro del juego
+ */
 void menus::menuJuego() {
 
+    //Se llaman los metodos de lectura para el resto de os archivos.
     string txt1 ="Items.txt";
     lecturaTXT(txt1);
     string txt2 ="Habilidades.txt";
@@ -92,12 +101,15 @@ void menus::menuJuego() {
                 break;
 
             case 3:
+                personaje.verMapa();
                 break;
 
             case 4:
+                personaje.getMochila();
                 break;
 
             case 5:
+
                 break;
 
             case 6:
@@ -106,7 +118,9 @@ void menus::menuJuego() {
         }
     }
 }
-
+/*
+ *
+ */
 void menus::menuHabitacion() {
 
     int opcionMenuHabitacion = 0;

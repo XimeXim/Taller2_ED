@@ -142,13 +142,13 @@ bool jugador::elegirDer(nodoHabitacion *habitacionActual) {
     return false;
 }
 
-void jugador::salaVisitada(std::vector<float> salasVisitadas) {
+void jugador::salaVisitada() {
 
     float idSalaVisitada = this->getHabitacionActual()->getIdNodoSala();
     salasVisitadas.push_back(idSalaVisitada);
 }
 
-void jugador::verMapa(std::vector<float> salasVisitadas) {
+void jugador::verMapa() {
 
     nodoHabitacion* salaVisitada;
     int largo = salasVisitadas.size();
