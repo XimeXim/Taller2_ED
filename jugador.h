@@ -6,6 +6,7 @@
 #include "objetos.h"
 #include "habilidades.h"
 #include "habitacion.h"
+#include "nodoHabitacion.h"
 
 class jugador {
 
@@ -24,14 +25,16 @@ private:
     int suerte;
     std::vector<objetos*> mochila;
     std::vector<habilidades*> skills;
-    habitacion* habitacionActual;
+    nodoHabitacion* habitacionActual;
+    std::vector<float> salasVisitadas;
 
 public:
 
     //DOCUMENTAR
     jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
             int fuerza, int magia, int velocidad, int suerte, const std::vector<objetos *> &mochila,
-            const std::vector<habilidades *> &skills, habitacion *habitacionActual);
+            const std::vector<habilidades *> &skills, nodoHabitacion *habitacionActual,
+            const std::vector<float> &salasVisitadas);
 
     virtual ~jugador();
 
@@ -83,9 +86,26 @@ public:
 
     void setSkills(const std::vector<habilidades *> &skills);
 
-    habitacion *getHabitacionActual() const;
+    nodoHabitacion *getHabitacionActual() const;
 
-    void setHabitacionActual(habitacion *habitacionActual);
+    void setHabitacionActual(nodoHabitacion *habitacionActual);
+
+    bool elegirIzq(nodoHabitacion* habitacionActual);
+
+    bool elegirDer(nodoHabitacion* habitacionActual);
+
+    void salaVisitada(std::vector<float> salasVisitadas);
+
+    void verMapa(std::vector<float> salasVisitadas);
+
+    bool subirNivel();
+
+    void recuperarPH(nodoHabitacion* habitacionActual);
+
+
+
+
+
 
 
 };

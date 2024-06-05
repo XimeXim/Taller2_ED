@@ -3,22 +3,18 @@
 //
 
 #include "jugador.h"
+using namespace std;
 
 jugador::jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
                  int fuerza, int magia, int velocidad, int suerte, const std::vector<objetos *> &mochila,
-                 const std::vector<habilidades *> &skills, habitacion *habitacionActual) : nombre(nombre), nivel(nivel),
-                                                                                           experiencia(experiencia),
-                                                                                           oro(oro),
-                                                                                           puntosSalud(puntosSalud),
-                                                                                           puntosHabilidad(
-                                                                                                   puntosHabilidad),
-                                                                                           fuerza(fuerza), magia(magia),
-                                                                                           velocidad(velocidad),
-                                                                                           suerte(suerte),
-                                                                                           mochila(mochila),
-                                                                                           skills(skills),
-                                                                                           habitacionActual(
-                                                                                                   habitacionActual) {}
+                 const std::vector<habilidades *> &skills, nodoHabitacion *habitacionActual,
+                 const std::vector<float> &salasVisitadas) : nombre(nombre), nivel(nivel), experiencia(experiencia),
+                                                             oro(oro), puntosSalud(puntosSalud),
+                                                             puntosHabilidad(puntosHabilidad), fuerza(fuerza),
+                                                             magia(magia), velocidad(velocidad), suerte(suerte),
+                                                             mochila(mochila), skills(skills),
+                                                             habitacionActual(habitacionActual),
+                                                             salasVisitadas(salasVisitadas) {}
 
 jugador::~jugador() {
 
@@ -120,13 +116,87 @@ void jugador::setSkills(const std::vector<habilidades *> &skills) {
     jugador::skills = skills;
 }
 
-habitacion *jugador::getHabitacionActual() const {
+nodoHabitacion *jugador::getHabitacionActual() const {
     return habitacionActual;
 }
 
-void jugador::setHabitacionActual(habitacion *habitacionActual) {
+void jugador::setHabitacionActual(nodoHabitacion *habitacionActual) {
     jugador::habitacionActual = habitacionActual;
 }
+
+bool jugador::elegirIzq(nodoHabitacion *habitacionActual) {
+
+    if (habitacionActual->getHabIzquierda() != nullptr){
+        setHabitacionActual(habitacionActual->getHabIzquierda());
+        return true;
+    }
+    return false;
+}
+
+bool jugador::elegirDer(nodoHabitacion *habitacionActual) {
+
+    if (habitacionActual->getHabDerecha() != nullptr){
+        setHabitacionActual(habitacionActual->getHabDerecha());
+        return true;
+    }
+    return false;
+}
+
+void jugador::salaVisitada(std::vector<float> salasVisitadas) {
+
+    float idSalaVisitada = this->getHabitacionActual()->getIdNodoSala();
+    salasVisitadas.push_back(idSalaVisitada);
+}
+
+void jugador::verMapa(std::vector<float> salasVisitadas) {
+
+    nodoHabitacion* salaVisitada;
+    int largo = salasVisitadas.size();
+    int aux = 0;
+    cout << "Las habitaciones visitadas son: "<< endl;
+    while (aux < largo){
+        cout << salasVisitadas[aux] << ", " << endl;
+        aux++;
+    }
+}
+
+bool jugador::subirNivel() {
+
+    int experiencia = this->getExperiencia();
+    int nivel = this->getNivel();
+    int factorEXP = 5;
+    int expRequerida = (nivel ^ 2) * factorEXP;
+    int expRestante = experiencia - expRequerida;
+    int vida = this->getPuntosSalud();
+    if (experiencia >= expRequerida){
+        nivel = nivel + 1;
+        this->setExperiencia(expRestante);
+        this->setPuntosSalud(vida + 10);
+        return true;
+    }
+    return false;
+}
+
+void jugador::recuperarPH(nodoHabitacion* habitacionActual) {
+
+    int puntosHab = this->getPuntosHabilidad();
+    if (elegirDer(habitacionActual) || elegirIzq(habitacionActual)){
+        puntosHab = puntosHab + 10;
+        if (puntosHab > 50){
+            puntosHab = 50;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
