@@ -5,16 +5,26 @@
 #include "jugador.h"
 using namespace std;
 
-jugador::jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
-                 int fuerza, int magia, int velocidad, int suerte, const std::vector<objetos *> &mochila,
-                 const std::vector<habilidades *> &skills, nodoHabitacion *habitacionActual,
-                 const std::vector<float> &salasVisitadas) : nombre(nombre), nivel(nivel), experiencia(experiencia),
-                                                             oro(oro), puntosSalud(puntosSalud),
-                                                             puntosHabilidad(puntosHabilidad), fuerza(fuerza),
-                                                             magia(magia), velocidad(velocidad), suerte(suerte),
-                                                             mochila(mochila), skills(skills),
-                                                             habitacionActual(habitacionActual),
-                                                             salasVisitadas(salasVisitadas) {}
+jugador::jugador(const string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
+                 int fuerza, int magia, int velocidad, int suerte, int armaDmg, int habilidadDmg,
+                 const vector<objetos *> &mochila, const vector<habilidades *> &skills,
+                 nodoHabitacion *habitacionActual, const vector<float> &salasVisitadas) : nombre(nombre), nivel(nivel),
+                                                                                          experiencia(experiencia),
+                                                                                          oro(oro),
+                                                                                          puntosSalud(puntosSalud),
+                                                                                          puntosHabilidad(
+                                                                                                  puntosHabilidad),
+                                                                                          fuerza(fuerza), magia(magia),
+                                                                                          velocidad(velocidad),
+                                                                                          suerte(suerte),
+                                                                                          armaDMG(armaDmg),
+                                                                                          habilidadDMG(habilidadDmg),
+                                                                                          mochila(mochila),
+                                                                                          skills(skills),
+                                                                                          habitacionActual(
+                                                                                                  habitacionActual),
+                                                                                          salasVisitadas(
+                                                                                                  salasVisitadas) {}
 
 jugador::~jugador() {
 
@@ -124,6 +134,30 @@ void jugador::setHabitacionActual(nodoHabitacion *habitacionActual) {
     jugador::habitacionActual = habitacionActual;
 }
 
+int jugador::getArmaDmg() const {
+    return armaDMG;
+}
+
+void jugador::setArmaDmg(int armaDmg) {
+    armaDMG = armaDmg;
+}
+
+int jugador::getHabilidadDmg() const {
+    return habilidadDMG;
+}
+
+void jugador::setHabilidadDmg(int habilidadDmg) {
+    habilidadDMG = habilidadDmg;
+}
+
+const vector<float> &jugador::getSalasVisitadas() const {
+    return salasVisitadas;
+}
+
+void jugador::setSalasVisitadas(const vector<float> &salasVisitadas) {
+    jugador::salasVisitadas = salasVisitadas;
+}
+
 bool jugador::elegirIzq(nodoHabitacion *habitacionActual) {
 
     if (habitacionActual->getHabIzquierda() != nullptr){
@@ -187,6 +221,45 @@ void jugador::recuperarPH(nodoHabitacion* habitacionActual) {
         }
     }
 }
+
+int jugador::combatDMG() {
+
+    int dmgArma = this->getArmaDmg();
+    int STMA = this->getFuerza();
+    float FD = 1.5;
+    int combatDMG = dmgArma + (STMA * FD);
+    if (critico(combatDMG)){
+        combatDMG = combatDMG * 2;
+    }
+    return combatDMG;
+}
+
+int jugador::skillDMG() {
+
+    int dmgHabilidad = this->getHabilidadDmg();
+    int STMA = this->getMagia();
+    float FD = 1.5;
+    int magicDMG = dmgHabilidad + (STMA * FD);
+    return magicDMG;
+}
+
+bool jugador::critico(int DMG) {
+
+    srand(time(NULL));
+    int critBase = 5;
+    int suerte = this->getSuerte();
+    float FC = 0.8;
+    float probCritico = critBase + (suerte * FC);
+    int randNum = rand() % 101;
+    if (randNum <= probCritico){
+        return true;
+    }
+    return false;
+}
+
+
+
+
 
 
 

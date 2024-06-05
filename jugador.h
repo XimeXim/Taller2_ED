@@ -23,6 +23,8 @@ private:
     int magia;
     int velocidad;
     int suerte;
+    int armaDMG;
+    int habilidadDMG;
     std::vector<objetos*> mochila;
     std::vector<habilidades*> skills;
     nodoHabitacion* habitacionActual;
@@ -32,9 +34,9 @@ public:
 
     //DOCUMENTAR
     jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
-            int fuerza, int magia, int velocidad, int suerte, const std::vector<objetos *> &mochila,
-            const std::vector<habilidades *> &skills, nodoHabitacion *habitacionActual,
-            const std::vector<float> &salasVisitadas);
+            int fuerza, int magia, int velocidad, int suerte, int armaDmg, int habilidadDmg,
+            const std::vector<objetos *> &mochila, const std::vector<habilidades *> &skills,
+            nodoHabitacion *habitacionActual, const std::vector<float> &salasVisitadas);
 
     virtual ~jugador();
 
@@ -90,6 +92,18 @@ public:
 
     void setHabitacionActual(nodoHabitacion *habitacionActual);
 
+    int getArmaDmg() const;
+
+    void setArmaDmg(int armaDmg);
+
+    int getHabilidadDmg() const;
+
+    void setHabilidadDmg(int habilidadDmg);
+
+    const std::vector<float> &getSalasVisitadas() const;
+
+    void setSalasVisitadas(const std::vector<float> &salasVisitadas);
+
     bool elegirIzq(nodoHabitacion* habitacionActual);
 
     bool elegirDer(nodoHabitacion* habitacionActual);
@@ -101,6 +115,12 @@ public:
     bool subirNivel();
 
     void recuperarPH(nodoHabitacion* habitacionActual);
+
+    int combatDMG();
+
+    int skillDMG();
+
+    bool critico(int DMG);
 
 
 
