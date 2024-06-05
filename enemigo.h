@@ -30,7 +30,12 @@ public:
     enemigo(const std::string &nombre, int nivel, int oroSoltado, int puntosHabilidad, int vida, int feurza, int magia,
             int velocidad, int suerte, const std::string &debilidad, const std::vector<habilidades *> &skillsEnemigo);
 
+    enemigo(const std::string &nombre, int nivel, int oroSoltado, int vida, int feurza, int magia, int velocidad,
+            int suerte, const std::string &debilidad, const std::vector<habilidades *> &skillsEnemigo);
+
     virtual ~enemigo();
+
+    void addListaEnemigos(enemigo enemy);
 
     const std::string &getNombre() const;
 

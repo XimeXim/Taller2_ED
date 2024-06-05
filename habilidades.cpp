@@ -4,12 +4,21 @@
 
 #include "habilidades.h"
 
-habilidades::habilidades(const std::string &string, const std::string &descripcion, int danio, int nivel, bool ao_e) {
+habilidades::habilidades(const std::string &string, const std::string &descripcion, int danio, int nivel,std::string elemento, bool ao_e) {
     this->nombre=nombre;
     this->descripcion=descripcion;
     this->danio=danio;
     this->nivel=nivel;
     this->elemento=elemento;
+    this->AoE=AoE;
+}
+
+habilidades::habilidades() {
+    this->nombre="";
+    this->descripcion="";
+    this->danio=0;
+    this->nivel=0;
+    this->elemento="";
     this->AoE=AoE;
 }
 

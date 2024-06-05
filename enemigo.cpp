@@ -13,6 +13,14 @@ enemigo::enemigo(const std::string &nombre, int nivel, int oroSoltado, int punto
                                                                     suerte(suerte), debilidad(debilidad),
                                                                     skillsEnemigo(skillsEnemigo) {}
 
+enemigo::enemigo(const std::string &nombre, int nivel, int oroSoltado, int vida, int feurza,
+                 int magia, int velocidad, int suerte, const std::string &debilidad,
+                 const std::vector<habilidades *> &skillsEnemigo) : nombre(nombre), nivel(nivel),
+                                                                    oroSoltado(oroSoltado), vida(vida),
+                                                                    feurza(feurza), magia(magia), velocidad(velocidad),
+                                                                    suerte(suerte), debilidad(debilidad),
+                                                                    skillsEnemigo(skillsEnemigo) {}
+
 enemigo::~enemigo() {
 }
 

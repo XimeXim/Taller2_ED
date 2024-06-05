@@ -274,7 +274,7 @@ void menus::lecturaTXT(string nomArchivo) {
                 // llamar metodo para almacenarlos en minheap
                 habilidadesMinHeap(dato1,dato2,dato3,dato4,dato5,dato6);
             }else {
-
+                llenarItems(dato1,dato2,dato3,dato4,dato5,dato6);
             }
         }else if(cantDeDatos==8) {
             getline(stream, dato1, ',');
@@ -318,8 +318,13 @@ void menus::arregloEnemigos(std::string nombre, std::string nivel, std::string o
     int magic = stoi(ma);
     int speed = stoi(spd);
     int luck = stoi(su);
+    std::vector<habilidades *> habilidadEnemy;
+    if(listaHabilidades == "NINGUNA") {
+        habilidadEnemy[0]= new habilidades();
+    }
 
-    
+    enemigo* enemy = new enemigo(nombre,level,oro,health,ataque,magic,speed,luck,debilidad,habilidadEnemy);
+    addListaEnemigos(*enemy);
 }
 
 void menus::habilidadesMinHeap(string nombre,string descripcion,string dano, string niv,string elemento,string aoe) {
@@ -327,7 +332,7 @@ void menus::habilidadesMinHeap(string nombre,string descripcion,string dano, str
     int nivel = stoi(niv);
     bool AoE = stringToBool(aoe);
 
-    habilidades* habilidad = new habilidades(nombre, descripcion, danio, nivel, AoE);
+    habilidades* habilidad = new habilidades(nombre, descripcion, danio, nivel, elemento,AoE);
     nodoHabilidad* nodo = new nodoHabilidad(*habilidad);
     minHeap->insertar(nodo);
 }
@@ -342,8 +347,25 @@ void menus::habitacionesAVL(string enemigo1,string enemigo2, string enemigo3, st
     int danger = stoi(peligro);
 
     habitacion* habitaciones = new habitacion(enemy1,enemy2,enemy3,enemy4,enemy5,items,bolsasOro,danger);
-    nodoHabitacion* nodo_habitacion = new nodoHabitacion(habitaciones) ;
+    nodoHabitacion* nodo_habitacion = new nodoHabitacion(*habitaciones) ;
     //avl->insertarNodoAVL(nodo_habitacion,habitaciones,)
+}
+
+void menus::addListaEnemigos(const enemigo &enemy) {
+    listaEnemigos[largoEnemys]= enemy;
+    largoEnemys++;
+}
+
+void menus::llenarItems(string nombre,string descripcion,string efectoSec,string coste,string estadistica,string valorMejora) {
+    int costos = stoi(coste);
+    int valor = stoi(valorMejora);
+
+    objetos* item = new objetos(nombre,descripcion,efectoSec,costos,estadistica,valor);
+    addListaItem(*item);
+}
+void menus::addListaItem(objetos items) {
+    listaObjetos[largoObj]= items;
+    largoObj++;
 }
 
 

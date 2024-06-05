@@ -20,8 +20,10 @@ private:
 public:
 
     //DOCUMENTAR
-    habilidades(const std::string & string, const std::string & descripcion, int danio, int nivel, bool ao_e);
+    habilidades(const std::string &string, const std::string &descripcion, int danio, int nivel, std::string elemento,
+                bool ao_e);
 
+    habilidades();
     virtual ~habilidades();
 
     const std::string &getNombre() const;

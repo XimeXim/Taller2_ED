@@ -14,6 +14,7 @@
 #include "AVL.h"
 #include "MinHeap.h"
 #include "enemigo.h"
+#include "objetos.h"
 
 
 class menus {
@@ -21,7 +22,10 @@ class menus {
 private:
     MinHeap* minHeap;
     AVL* avl;
-    std::vector<enemigo*> listaEnemigos;
+    enemigo* listaEnemigos;
+    int largoEnemys=0;
+    int largoObj=0;
+    objetos* listaObjetos;
 
 public:
 
@@ -40,6 +44,13 @@ void habilidadesMinHeap(std::string nombre, std::string descripcion, std::string
 
     void habitacionesAVL(std::string enemigo1, std::string enemigo2, std::string enemigo3, std::string enemigo4,
                          std::string enemigo5, std::string cantObjetos, std::string cantBolsasOro, std::string peligro);
+
+    void addListaEnemigos(const enemigo &enemy);
+
+    void llenarItems(std::string nombre, std::string descripcion, std::string efectoSec, std::string coste,
+                     std::string estadistica, std::string valorMejora);
+
+    void addListaItem(objetos items);
 
     void lecturaTXT(std::string nomArchivo);
 
