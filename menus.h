@@ -22,10 +22,10 @@ class menus {
 private:
     MinHeap* minHeap;
     AVL* avl;
-    enemigo* listaEnemigos;
+    std::vector<enemigo*> listaEnemigos;
     int largoEnemys=0;
     int largoObj=0;
-    objetos* listaObjetos;
+    std::vector<objetos*> listaObjetos;
 
 public:
 
@@ -42,15 +42,21 @@ void menuHabilidades();
 void habilidadesMinHeap(std::string nombre, std::string descripcion, std::string dano, std::string niv,
                       std::string elemento, std::string aoe);
 
-    void habitacionesAVL(std::string enemigo1, std::string enemigo2, std::string enemigo3, std::string enemigo4,
-                         std::string enemigo5, std::string cantObjetos, std::string cantBolsasOro, std::string peligro);
+    static void habitacionesAVL(std::string enemigo1, std::string enemigo2, std::string enemigo3, std::string enemigo4,
+                                std::string enemigo5, std::string cantObjetos, std::string cantBolsasOro, std::string peligro);
 
-    void addListaEnemigos(const enemigo &enemy);
+    void addListaEnemigos(enemigo *enemy);
 
     void llenarItems(std::string nombre, std::string descripcion, std::string efectoSec, std::string coste,
                      std::string estadistica, std::string valorMejora);
 
     void addListaItem(objetos items);
+
+    void imprimirEnemigos(std::vector<enemigo*>lista) const;
+
+    void imprimirObjetos(std::vector<objetos *> lista) const;
+
+    static int metodoValidacionStoi(std::string dato, int cambio);
 
     void lecturaTXT(std::string nomArchivo);
 

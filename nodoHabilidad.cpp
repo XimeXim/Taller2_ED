@@ -4,23 +4,20 @@
 
 #include "nodoHabilidad.h"
 
-nodoHabilidad::nodoHabilidad(habilidades hability) {
+nodoHabilidad::nodoHabilidad(const class habilidades &hability): skills(nullptr), skillIzquierda(nullptr), skillDerecha(nullptr) {
     this->hability = hability;
 }
+nodoHabilidad::nodoHabilidad(class habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha)
+        : skills(&skills), skillIzquierda(skillIzquierda), skillDerecha(skillDerecha) {}
 
-nodoHabilidad::nodoHabilidad(const habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha)
-        : skills(skills), skillIzquierda(skillIzquierda), skillDerecha(skillDerecha) {}
+nodoHabilidad::~nodoHabilidad() = default;
 
-nodoHabilidad::~nodoHabilidad() {
-
+habilidades & nodoHabilidad::getSkills() const {
+    return *skills;
 }
 
-const habilidades &nodoHabilidad::getSkills() const {
-    return skills;
-}
-
-void nodoHabilidad::setSkills(const habilidades &skills) {
-    nodoHabilidad::skills = skills;
+void nodoHabilidad::setSkills(class  habilidades &skills) {
+    this->skills = &skills;
 }
 
 nodoHabilidad *nodoHabilidad::getSkillIzquierda() const {

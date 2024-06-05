@@ -22,6 +22,9 @@ habilidades::habilidades() {
     this->AoE=AoE;
 }
 
+habilidades::~habilidades() {
+}
+
 
 const std::string &habilidades::getNombre() const {
     return nombre;

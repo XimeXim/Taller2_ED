@@ -2,15 +2,15 @@ NOMBRE,DESCRIPCION,EFECTOSECUNDARIO,COSTE,ESTADISTICA,VALORMEJORA
 SOMBRA DUAL,Por alguna razón sientes que tu sombre te persigue...,Este item si lo tienes en la mochila te da un 50% de probabilidades que tu último ataque se repita,1000,NINGUNA,0
 ORBE OMNIPOTENTE,Te sientes imparable,Tu personaje recibe un 50% del daño que le hagan,4000,NINGUNA,0
 AYUDA DE ARES,La fuerza de Ares se encuentra contigo,Obtienes un 50% de probabilidad de golpe crítico adicional,600,NINGUNA,0
-POCION DE VIDA,¿Qué es ese extraño líquido rojo?… por alguna razón se ve nutritivo…, Cura un 50% de tu vida máxima, 50, NINGUNA,0
-POCION DE MANÁ,¿Qué es ese extraño líquido azul?… por alguna razón se ve refrescante…, Cura un 50% de tus puntos de habilidad máximos, 50, NINGUNA,0
-ADRENALINA,Tus sentidos se agudizan, Sobrevives un golpe letal quedando a 1 de Hp (solo una vez por combate), 1000, NINGUNA,0
+POCION DE VIDA,¿Qué es ese extraño líquido rojo?… por alguna razón se ve nutritivo…, Cura un 50% de tu vida máxima,50, NINGUNA,0
+POCION DE MANÁ,¿Qué es ese extraño líquido azul?… por alguna razón se ve refrescante…, Cura un 50% de tus puntos de habilidad máximos,50, NINGUNA,0
+ADRENALINA,Tus sentidos se agudizan, Sobrevives un golpe letal quedando a 1 de Hp (solo una vez por combate),1000, NINGUNA,0
 SOMBRERO DE MAGO, Dicen que un buen mago siempre lleva sombrero, Objeto mágico que te aumenta la magia en 20,500,MAGIA,20
 AMULETO, Bonito amuleto con una vara innecesariamente grande dibujada en el, Objeto mágico que te aumenta la magia en 5,500,MAGIA,5
 DEPORTIVAS,Me pregunto si necesito mantener B presionado para correr…, Aumentan la velocidad del usuario en 10,500,VELOCIDAD,10
-CHAMPIÑON  CARISMATICO, Que extraño que tenga cara… Pero me siento más grande cuando lo llevo conmigo, Aumenta el HP del usuario en 50 puntos, 500,VIDA,50
+CHAMPIÑON  CARISMATICO, Que extraño que tenga cara… Pero me siento más grande cuando lo llevo conmigo, Aumenta el HP del usuario en 50 puntos,500,VIDA,50
 TREBOL DE 4 HOJAS,¿Por qué hay un trebol en una cueva como esta?,Trebol de 4 hojas que aumenta la suerte del portador en 10,300,SUERTE,10
 ESPADA DE HIERRO, Una espada que efectivamente está hecha de hierro, espada con daño base de 20,150,NINGUNA,0
-ESPADA DE PLATA, Espada plateada con un gran brillo,Espada con daño base de 50, 1000,NINGUNA,0
+ESPADA DE PLATA, Espada plateada con un gran brillo,Espada con daño base de 50,1000,NINGUNA,0
 LIBRO GIGANTE, ¿Por qué este libro trae tantas demostraciones matemáticas?,Libro que te hace subir 1 nivel,100,NINGUNA,0
-GUANTELETE DESLUMBRANTE, Este guante gigante es de un color rosado muy llamativo…, Este objeto permite realizar golpes críticos,  1500,NINGUNA,0
+GUANTELETE DESLUMBRANTE, Este guante gigante es de un color rosado muy llamativo…, Este objeto permite realizar golpes críticos,1500,NINGUNA,0

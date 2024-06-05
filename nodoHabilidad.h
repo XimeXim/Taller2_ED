@@ -19,15 +19,15 @@ private:
 public:
 
     //DOCUMENTAR
-    nodoHabilidad(habilidades hability);
+    nodoHabilidad(const class habilidades &hability);
 
-    nodoHabilidad(const habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha);
+    nodoHabilidad(class habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha);
 
     virtual ~nodoHabilidad();
 
-    const habilidades &getSkills() const;
+    class habilidades &getSkills() const;
 
-    void setSkills(const habilidades &skills);
+    void setSkills(class habilidades &skills);
 
     nodoHabilidad *getSkillIzquierda() const;
 

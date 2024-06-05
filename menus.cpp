@@ -8,6 +8,7 @@
 #include "habitacion.h"
 
 #include <vector>
+#include <exception>
 
 #include "iostream"
 #include "fstream"
@@ -21,13 +22,7 @@ void menus::menuPrincipal() {
     while (opcionMenuPrincipal != 3){
 
         //AQUI DEBE IR LA LECTURA DE LOS 4 ARCHIVOS DE TEXTO
-        string txt1 ="Enemigos.txt";
-        lecturaTXT(txt1);
-        txt1 ="Habitaciones.txt";
-        lecturaTXT(txt1);
-        txt1 ="Items.txt";
-        lecturaTXT(txt1);
-        txt1 ="Habilidades.txt";
+        string txt1 ="Habitaciones.txt";
         lecturaTXT(txt1);
 
 
@@ -46,7 +41,7 @@ void menus::menuPrincipal() {
         switch (opcionMenuPrincipal){
             case 1:
                 //AQUI SE DEBE HACER UNA FUNCION QUE PREGUNTE EL NOMBRE DEL PERSONAJE Y LO GUARDE
-                menuJuego();
+                    menuJuego();
                 break;
 
             case 2:
@@ -61,6 +56,13 @@ void menus::menuPrincipal() {
 }
 
 void menus::menuJuego() {
+
+    string txt1 ="Items.txt";
+    lecturaTXT(txt1);
+    string txt2 ="Habilidades.txt";
+    lecturaTXT(txt2);
+    string txt3 ="Enemigos.txt";
+    lecturaTXT(txt3);
 
     int opcionMenuJuego = 0;
     while (opcionMenuJuego != 6){
@@ -272,7 +274,7 @@ void menus::lecturaTXT(string nomArchivo) {
             getline(stream, dato6, ',');
             if(habilidades) {
                 // llamar metodo para almacenarlos en minheap
-                habilidadesMinHeap(dato1,dato2,dato3,dato4,dato5,dato6);
+              //  habilidadesMinHeap(dato1,dato2,dato3,dato4,dato5,dato6);
             }else {
                 llenarItems(dato1,dato2,dato3,dato4,dato5,dato6);
             }
@@ -286,7 +288,7 @@ void menus::lecturaTXT(string nomArchivo) {
             getline(stream, dato7, ',');
             getline(stream, dato8, ',');
             // llamar metodo para almacenarlos en min o alv
-            habitacionesAVL(dato1,dato2, dato3, dato4, dato5, dato6, dato7, dato8);
+            //habitacionesAVL(dato1,dato2, dato3, dato4, dato5, dato6, dato7, dato8);
         }else if (cantDeDatos == 10) {
             getline(stream, dato1, ',');
             getline(stream, dato2, ',');
@@ -299,7 +301,8 @@ void menus::lecturaTXT(string nomArchivo) {
             getline(stream, dato9, ',');
             getline(stream, dato10, ',');
             // llamar metodo para almacenarlos en min o alv
-            arregloEnemigos(dato1,dato2,dato3,dato4,dato5,dato6,dato7,dato8,dato9,dato10);
+            //arregloEnemigos(dato1,dato2,dato3,dato4,dato5,dato6,dato7,dato8,dato9,dato10);
+            //imprimirEnemigos(listaEnemigos);
         }
     }
 }
@@ -311,61 +314,119 @@ void menus::arregloEnemigos(std::string nombre, std::string nivel, std::string o
     std::string atk, std::string ma, std::string spd, std::string su, std::string debilidad,
     std::string listaHabilidades) {
 
-    int level = stoi(nivel);
-    int oro = stoi(oroDropeable);
-    int health = stoi(hp);
-    int ataque = stoi(atk);
-    int magic = stoi(ma);
-    int speed = stoi(spd);
-    int luck = stoi(su);
-    std::vector<habilidades *> habilidadEnemy;
-    if(listaHabilidades == "NINGUNA") {
-        habilidadEnemy[0]= new habilidades();
-    }
+    try {
+        int level = stoi(nivel);
+        int oro = stoi(oroDropeable);
+        int health = stoi(hp);
+        int ataque = stoi(atk);
+        int magic = stoi(ma);
+        int speed = stoi(spd);
+        int luck = stoi(su);
+        std::vector<habilidades *> habilidadEnemy;
+        if(listaHabilidades == "NINGUNA") {
+            habilidadEnemy[0]= new habilidades();
+        }
 
-    enemigo* enemy = new enemigo(nombre,level,oro,health,ataque,magic,speed,luck,debilidad,habilidadEnemy);
-    addListaEnemigos(*enemy);
+        auto* enemy = new enemigo(nombre,level,oro,health,ataque,magic,speed,luck,debilidad,habilidadEnemy);
+        addListaEnemigos(enemy);
+
+        for (int i = 0; i < largoEnemys; ++i) {
+            std::cout << "Nombre: " << listaEnemigos[i]->getNombre() << ", Nivel: " << listaEnemigos[i]->getNivel() << std::endl;
+        }
+
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Error: El valor de coste o valorMejora no es un número válido: " << e.what() << std::endl;
+    } catch (const std::out_of_range& e) {
+        std::cerr << "Error: El valor de coste o valorMejora está fuera del rango permitido: " << e.what() << std::endl;
+    }
 }
 
 void menus::habilidadesMinHeap(string nombre,string descripcion,string dano, string niv,string elemento,string aoe) {
-    int danio = stoi(dano);
-    int nivel = stoi(niv);
-    bool AoE = stringToBool(aoe);
 
-    habilidades* habilidad = new habilidades(nombre, descripcion, danio, nivel, elemento,AoE);
-    nodoHabilidad* nodo = new nodoHabilidad(*habilidad);
-    minHeap->insertar(nodo);
+    try {
+
+        int danio = stoi(dano);
+        int nivel = stoi(niv);
+        bool AoE = stringToBool(aoe);
+
+        auto* habilidad = new habilidades(nombre, descripcion, danio, nivel, elemento,AoE);
+        auto* nodo = new nodoHabilidad(*habilidad);
+        minHeap->insertar(nodo);
+
+        for (int i = 0; i < largoEnemys; ++i) {
+            std::cout << "Nombre: " << listaEnemigos[i]->getNombre() << ", Nivel: " << listaEnemigos[i]->getNivel() << std::endl;
+        }
+
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Error: El valor de coste o valorMejora no es un número válido: " << e.what() << std::endl;
+    } catch (const std::out_of_range& e) {
+        std::cerr << "Error: El valor de coste o valorMejora está fuera del rango permitido: " << e.what() << std::endl;
+    }
 }
 void menus::habitacionesAVL(string enemigo1,string enemigo2, string enemigo3, string enemigo4, string enemigo5, string cantObjetos, string cantBolsasOro, string peligro) {
-    int enemy1 = stoi(enemigo1);
-    int enemy2 = stoi(enemigo2);
-    int enemy3 = stoi(enemigo3);
-    int enemy4 = stoi(enemigo4);
-    int enemy5 = stoi(enemigo5);
-    int items = stoi(cantObjetos);
-    int bolsasOro = stoi(cantBolsasOro);
-    int danger = stoi(peligro);
 
-    habitacion* habitaciones = new habitacion(enemy1,enemy2,enemy3,enemy4,enemy5,items,bolsasOro,danger);
-    nodoHabitacion* nodo_habitacion = new nodoHabitacion(*habitaciones) ;
-    //avl->insertarNodoAVL(nodo_habitacion,habitaciones,)
+    try {
+        int enemy1 = stoi(enemigo1);
+        int enemy2 = stoi(enemigo2);
+        int enemy3 = stoi(enemigo3);
+        int enemy4 = stoi(enemigo4);
+        int enemy5 = stoi(enemigo5);
+        int items = stoi(cantObjetos);
+        int bolsasOro = stoi(cantBolsasOro);
+        int danger = stoi(peligro);
+
+        auto habitaciones = new habitacion(enemy1,enemy2,enemy3,enemy4,enemy5,items,bolsasOro,danger);
+        auto* nodo_habitacion = new nodoHabitacion(*habitaciones) ;
+        //avl->insertarNodoAVL(nodo_habitacion,habitaciones,)
+
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Error: El valor de coste o valorMejora no es un número válido: " << e.what() << std::endl;
+    } catch (const std::out_of_range& e) {
+        std::cerr << "Error: El valor de coste o valorMejora está fuera del rango permitido: " << e.what() << std::endl;
+    }
 }
 
-void menus::addListaEnemigos(const enemigo &enemy) {
+void menus::addListaEnemigos(enemigo *enemy) {
     listaEnemigos[largoEnemys]= enemy;
     largoEnemys++;
 }
 
-void menus::llenarItems(string nombre,string descripcion,string efectoSec,string coste,string estadistica,string valorMejora) {
-    int costos = stoi(coste);
-    int valor = stoi(valorMejora);
+void menus::llenarItems(string nombre, string descripcion, string efectoSec, string coste, string estadistica, string valorMejora) {
+    try {
+        int costos = std::stoi(coste);
+        int valor = std::stoi(valorMejora);
 
-    objetos* item = new objetos(nombre,descripcion,efectoSec,costos,estadistica,valor);
-    addListaItem(*item);
+        auto item = new objetos(nombre, descripcion, efectoSec, costos, estadistica, valor);
+        addListaItem(*item);
+
+        for (int i = 0; i < largoObj; ++i) {
+            std::cout << "Nombre: " << listaObjetos[i]->getNombre() << ", Nivel: " << listaObjetos[i]->getDescripcion() << std::endl;
+        }
+
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Error: El valor de coste o valorMejora no es un número válido: " << e.what() << std::endl;
+    } catch (const std::out_of_range& e) {
+        std::cerr << "Error: El valor de coste o valorMejora está fuera del rango permitido: " << e.what() << std::endl;
+    }
 }
+
+
+
+
+
 void menus::addListaItem(objetos items) {
-    listaObjetos[largoObj]= items;
+    listaObjetos[largoObj]= &items;
     largoObj++;
+}
+void menus:: imprimirEnemigos(std::vector<enemigo*> lista) const {
+    for (int i = 0; i < largoEnemys; ++i) {
+        std::cout << "Nombre: " << listaEnemigos[i]->getNombre() << ", Nivel: " << listaEnemigos[i]->getNivel() << std::endl;
+    }
+}
+void menus:: imprimirObjetos(std::vector<objetos*> lista) const {
+    for (int i = 0; i < largoObj; ++i) {
+        std::cout << "Nombre: " << listaObjetos[i]->getNombre() << ", Descripcion: " << listaObjetos[i]->getDescripcion() << std::endl;
+    }
 }
 
 
