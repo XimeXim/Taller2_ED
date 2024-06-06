@@ -19,13 +19,30 @@ private:
 
 public:
 
-    //DOCUMENTAR
-    habilidades(const std::string &string, const std::string &descripcion, int danio, int nivel, std::string elemento,
+
+    /**
+     * Constructor de la clase habilidades
+     * @param nombre nombre de la habilidad
+     * @param descripcion descripcion de la habilidad
+     * @param danio daño que provoca la habilidad
+     * @param nivel nivel en el que se aprende la habilidad
+     * @param elemento elemento de la habilidad
+     * @param ao_e efecto en area de la habilidad
+     */
+    habilidades(const std::string &nombre, const std::string &descripcion, int danio, int nivel, std::string elemento,
                 bool ao_e);
 
+    /**
+     * Constructor vacio de la clase habilidades
+     */
     habilidades();
-    virtual ~habilidades();
 
+    /**
+     * Destructor de la clase habilidades
+     */
+    ~habilidades();
+
+    //METODOS GET'S & SET'S
     const std::string &getNombre() const;
 
     void setNombre(const std::string &nombre);
@@ -49,6 +66,8 @@ public:
     bool isAoE() const;
 
     void setAoE(bool aoE);
+
+
 
 };
 

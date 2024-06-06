@@ -18,9 +18,16 @@ private:
 
 public:
 
+    /**
+     * Constructor de la clase AVL
+     * @param habitacion nodo habitacion dentro del AVL
+     */
     explicit AVL(nodoHabitacion *habitacion);
 
-    virtual ~AVL();
+    /**
+     * Destructor de la clase AVL
+     */
+    ~AVL();
 
     nodoHabitacion *getHabitacion() const;
 
@@ -46,7 +53,7 @@ public:
     float difPeligrosIguales (nodoHabitacion* nodo);
 
     nodoHabitacion* insertarNodoAVL(nodoHabitacion* nodoAInsertar, class habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha, int alturaNodo,
-                         int factorBalance, float idNodoSala);
+                                    int factorBalance, float idNodoSala);
 
 
 };

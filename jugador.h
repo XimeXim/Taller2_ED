@@ -7,6 +7,7 @@
 #include "habilidades.h"
 #include "habitacion.h"
 #include "nodoHabitacion.h"
+#include "cstdlib"
 
 class jugador {
 
@@ -32,14 +33,36 @@ private:
 
 public:
 
-    //DOCUMENTAR
+    /**
+     * Constructor del jugador
+     * @param nombre nombre del jugador
+     * @param nivel nivel del jugador
+     * @param experiencia experiencia del jugador
+     * @param oro oro del jugador
+     * @param puntosSalud HP del jugador
+     * @param puntosHabilidad puntos de habilidad del jugador
+     * @param fuerza fuerza del jugador
+     * @param magia magia del jugador
+     * @param velocidad velocidad del jugador
+     * @param suerte suerte
+     * @param armaDmg daño de arma del jugador
+     * @param habilidadDmg daño de habilidad del jugador
+     * @param mochila objetos del jugador
+     * @param skills habilidades del jugador
+     * @param habitacionActual habitacion en la que se encuentra el jugador
+     * @param salasVisitadas
+     */
     jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
             int fuerza, int magia, int velocidad, int suerte, int armaDmg, int habilidadDmg,
             const std::vector<objetos *> &mochila, const std::vector<habilidades *> &skills,
             nodoHabitacion *habitacionActual, const std::vector<float> &salasVisitadas);
 
-    virtual ~jugador();
+    /**
+     * Destructor del jugador
+     */
+    ~jugador();
 
+    //METODOS GET'S & SET'S
     const std::string &getNombre() const;
 
     void setNombre(const std::string &nombre);
@@ -88,39 +111,80 @@ public:
 
     void setSkills(const std::vector<habilidades *> &skills);
 
-    nodoHabitacion *getHabitacionActual() const;
-
-    void setHabitacionActual(nodoHabitacion *habitacionActual);
-
     int getArmaDmg() const;
 
     void setArmaDmg(int armaDmg);
-
-    int getHabilidadDmg() const;
-
-    void setHabilidadDmg(int habilidadDmg);
 
     const std::vector<float> &getSalasVisitadas() const;
 
     void setSalasVisitadas(const std::vector<float> &salasVisitadas);
 
+    nodoHabitacion *getHabitacionActual() const;
+
+    int getHabilidadDmg() const;
+
+    void setHabilidadDmg(int habilidadDmg);
+
+    void setHabitacionActual(nodoHabitacion *habitacionActual);
+
+    /**
+     * Metodo que selecciona la habitacion izquierda
+     * @param habitacionActual habitacion actual del jugador
+     * @return true si eligio izquierda, false si eligio derecha
+     */
     bool elegirIzq(nodoHabitacion* habitacionActual);
 
+    /**
+     * Metodo que selecciona la habitacion derecha
+     * @param habitacionActual habitacion actual del jugador
+     * @return true si eligio derecha, false si eligio izquierda
+     */
     bool elegirDer(nodoHabitacion* habitacionActual);
 
-    void salaVisitada();
+    /**
+     * Metodo que agrega el id de las sala visitadas por el jugador
+     * @param salasVisitadas salas ya visitadas
+     */
+    void salaVisitada(std::vector<float> salasVisitadas);
 
-    void verMapa();
+    /**
+     * Metodo que imprime un arreglo con las id de las salas visitadas con anterioridad
+     * @param salasVisitadas salas ya visitadas
+     */
+    void verMapa(std::vector<float> salasVisitadas);
 
+    /**
+     * Metodo que sube el nivel del jugador
+     * @return true si subio de nivel o false si no
+     */
     bool subirNivel();
 
+    /**
+     * Metodo que recupera puntos de habilidad
+     * @param habitacionActual habitacion actual donde esta el jugador
+     */
     void recuperarPH(nodoHabitacion* habitacionActual);
 
+    /**
+     * Metodo que calcula el daño de combate fisico
+     * @return el valor del daño fisico
+     */
     int combatDMG();
 
+    /**
+     * Metodo que calcula el daño de combate magico
+     * @return el valor del daño magico
+     */
     int skillDMG();
 
+    /**
+     * Metodo que calcula si el ataque es critico o no
+     * @param DMG daño fisico del jugador
+     * @return true si es un critico o false si no
+     */
     bool critico(int DMG);
+
+
 
 
 

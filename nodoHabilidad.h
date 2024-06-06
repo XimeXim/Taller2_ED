@@ -19,15 +19,29 @@ private:
 public:
 
     //DOCUMENTAR
-    nodoHabilidad(const class habilidades &hability);
+    /**
+     * Constructor del nodo habilidad
+     * @param hability habilidad que almacena
+     */
+    nodoHabilidad(habilidades hability);
 
-    nodoHabilidad(class habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha);
+    /**
+     * Constructor del nodo habilidad junto con sus hijos
+     * @param skills habilidad que almacena
+     * @param skillIzquierda nodo a la izquierda
+     * @param skillDerecha nodo a la derecha
+     */
+    nodoHabilidad(const habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha);
 
+    /**
+     * Destructor del nodoHabilidad;
+     */
     virtual ~nodoHabilidad();
 
-    class habilidades &getSkills() const;
+    //METODOS GET'S & SET'S
+    const habilidades &getSkills() const;
 
-    void setSkills(class habilidades &skills);
+    void setSkills(const habilidades &skills);
 
     nodoHabilidad *getSkillIzquierda() const;
 

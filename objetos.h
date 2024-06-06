@@ -19,12 +19,24 @@ private:
 
 public:
 
-    //DOCUMENTAR
+    /**
+     * constructor de la clase objeto
+     * @param nombre nombre del objeto
+     * @param descripcion descripcion del objeto
+     * @param efectoSecundario efecto secundario del objeto
+     * @param coste coste en oro del objeto
+     * @param estadistica estadisticas del objeto
+     * @param valorMejora mejoras que da el objeto
+     */
     objetos(const std::string &nombre, const std::string &descripcion, const std::string &efectoSecundario, int coste,
             const std::string &estadistica, int valorMejora);
 
-    virtual ~objetos();
+    /**
+     * Destructor de la clase objeto
+     */
+    ~objetos();
 
+    //METODOS GET'S & SET'S
     const std::string &getNombre() const;
 
     void setNombre(const std::string &nombre);

@@ -27,7 +27,6 @@ jugador::jugador(const string &nombre, int nivel, int experiencia, int oro, int 
                                                                                                   salasVisitadas) {}
 
 jugador::~jugador() {
-
 }
 
 const std::string &jugador::getNombre() const {
@@ -142,20 +141,20 @@ void jugador::setArmaDmg(int armaDmg) {
     armaDMG = armaDmg;
 }
 
-int jugador::getHabilidadDmg() const {
-    return habilidadDMG;
-}
-
-void jugador::setHabilidadDmg(int habilidadDmg) {
-    habilidadDMG = habilidadDmg;
-}
-
 const vector<float> &jugador::getSalasVisitadas() const {
     return salasVisitadas;
 }
 
 void jugador::setSalasVisitadas(const vector<float> &salasVisitadas) {
     jugador::salasVisitadas = salasVisitadas;
+}
+
+int jugador::getHabilidadDmg() const {
+    return habilidadDMG;
+}
+
+void jugador::setHabilidadDmg(int habilidadDmg) {
+    habilidadDMG = habilidadDmg;
 }
 
 bool jugador::elegirIzq(nodoHabitacion *habitacionActual) {
@@ -176,13 +175,13 @@ bool jugador::elegirDer(nodoHabitacion *habitacionActual) {
     return false;
 }
 
-void jugador::salaVisitada() {
+void jugador::salaVisitada(std::vector<float> salasVisitadas) {
 
     float idSalaVisitada = this->getHabitacionActual()->getIdNodoSala();
     salasVisitadas.push_back(idSalaVisitada);
 }
 
-void jugador::verMapa() {
+void jugador::verMapa(std::vector<float> salasVisitadas) {
 
     nodoHabitacion* salaVisitada;
     int largo = salasVisitadas.size();
@@ -256,6 +255,17 @@ bool jugador::critico(int DMG) {
     }
     return false;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
