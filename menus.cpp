@@ -16,6 +16,7 @@
 #include "MinHeap.h"
 using namespace std;
 
+
 /*
  * Este metodo contiene el menu principal, el cual realiza los llamados a los metodos pertinentes
  * a las opciones ingresadas.
@@ -249,6 +250,11 @@ void menus::menuHabilidades() {
 void menus::lecturaTXT(string nomArchivo) {
 
     fstream archivoTXT(nomArchivo);
+    if (!archivoTXT) {
+        cerr << "No se pudo abrir el archivo: " << nomArchivo << endl;
+        return;
+    }
+
     string linea = "";
     bool habilidades = false;
 
@@ -320,7 +326,8 @@ void menus::lecturaTXT(string nomArchivo) {
         }
     }
 }
-bool menus::stringToBool(string str){
+bool menus::stringToBool(string str) {
+    std::transform(str.begin(), str.end(), str.begin(), ::tolower);
     return (str == "true" || str == "1");
 }
 
@@ -341,7 +348,7 @@ void menus::arregloEnemigos(std::string nombre, std::string nivel, std::string o
             habilidadEnemy[0]= new habilidades();
         }
 
-        auto* enemy = new enemigo(nombre,level,oro,health,ataque,magic,speed,luck,debilidad,habilidadEnemy);
+        enemigo* enemy = new enemigo(nombre,level,oro,health,ataque,magic,speed,luck,debilidad,habilidadEnemy);
         addListaEnemigos(enemy);
 
         for (int i = 0; i < largoEnemys; ++i) {
@@ -363,8 +370,8 @@ void menus::habilidadesMinHeap(string nombre,string descripcion,string dano, str
         int nivel = stoi(niv);
         bool AoE = stringToBool(aoe);
 
-        auto* habilidad = new habilidades(nombre, descripcion, danio, nivel, elemento,AoE);
-        auto* nodo = new nodoHabilidad(*habilidad);
+        habilidades* habilidad = new habilidades(nombre, descripcion, danio, nivel, elemento,AoE);
+        nodoHabilidad* nodo = new nodoHabilidad(*habilidad);
         minHeap->insertar(nodo);
 
         for (int i = 0; i < largoEnemys; ++i) {
@@ -389,9 +396,9 @@ void menus::habitacionesAVL(string enemigo1,string enemigo2, string enemigo3, st
         int bolsasOro = stoi(cantBolsasOro);
         int danger = stoi(peligro);
 
-        auto habitaciones = new habitacion(enemy1,enemy2,enemy3,enemy4,enemy5,items,bolsasOro,danger);
-        auto* nodo_habitacion = new nodoHabitacion(*habitaciones) ;
-        //avl->insertarNodoAVL(nodo_habitacion,habitaciones,)
+        habitacion *habitaciones = new habitacion(enemy1, enemy2, enemy3, enemy4, enemy5, items, bolsasOro, danger);
+        nodoHabitacion* nodo_habitacion = new nodoHabitacion(*habitaciones) ;
+        avl->insertarNodoAVL(nodo_habitacion,habitaciones,);
 
     } catch (const std::invalid_argument& e) {
         std::cerr << "Error: El valor de coste o valorMejora no es un número válido: " << e.what() << std::endl;
@@ -410,7 +417,7 @@ void menus::llenarItems(string nombre, string descripcion, string efectoSec, str
         int costos = std::stoi(coste);
         int valor = std::stoi(valorMejora);
 
-        auto item = new objetos(nombre, descripcion, efectoSec, costos, estadistica, valor);
+        objetos* item = new objetos(nombre, descripcion, efectoSec, costos, estadistica, valor);
         addListaItem(*item);
 
         for (int i = 0; i < largoObj; ++i) {

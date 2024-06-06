@@ -105,6 +105,7 @@ void enemigo::setSkillsEnemigo(const std::vector<habilidades *> &skillsEnemigo) 
 }
 
 void enemigo::turnoATKEnemigo() {
+//enemigo ataca y se le resta al jugador segun habilidad
 }
 
 const std::string &enemigo::getDebilidad() const {
