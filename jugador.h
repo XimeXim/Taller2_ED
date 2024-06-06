@@ -3,13 +3,13 @@
 #include <string>
 #include <iostream>
 #include <vector>
-#include "objetos.h"
-#include "habilidades.h"
-#include "habitacion.h"
-#include "nodoHabitacion.h"
+#include "Objetos.h"
+#include "Habilidades.h"
+#include "Habitacion.h"
+#include "NodoHabitacion.h"
 #include "cstdlib"
 
-class jugador {
+class Jugador {
 
 private:
 
@@ -26,41 +26,41 @@ private:
     int suerte;
     int armaDMG;
     int habilidadDMG;
-    std::vector<objetos*> mochila;
-    std::vector<habilidades*> skills;
-    nodoHabitacion* habitacionActual;
+    std::vector<Objetos*> mochila;
+    std::vector<Habilidades*> skills;
+    NodoHabitacion* habitacionActual;
     std::vector<float> salasVisitadas;
 
 public:
 
     /**
-     * Constructor del jugador
-     * @param nombre nombre del jugador
-     * @param nivel nivel del jugador
-     * @param experiencia experiencia del jugador
-     * @param oro oro del jugador
-     * @param puntosSalud HP del jugador
-     * @param puntosHabilidad puntos de habilidad del jugador
-     * @param fuerza fuerza del jugador
-     * @param magia magia del jugador
-     * @param velocidad velocidad del jugador
+     * Constructor del Jugador
+     * @param nombre nombre del Jugador
+     * @param nivel nivel del Jugador
+     * @param experiencia experiencia del Jugador
+     * @param oro oro del Jugador
+     * @param puntosSalud HP del Jugador
+     * @param puntosHabilidad puntos de habilidad del Jugador
+     * @param fuerza fuerza del Jugador
+     * @param magia magia del Jugador
+     * @param velocidad velocidad del Jugador
      * @param suerte suerte
-     * @param armaDmg daño de arma del jugador
-     * @param habilidadDmg daño de habilidad del jugador
-     * @param mochila objetos del jugador
-     * @param skills habilidades del jugador
-     * @param habitacionActual habitacion en la que se encuentra el jugador
+     * @param armaDmg daño de arma del Jugador
+     * @param habilidadDmg daño de habilidad del Jugador
+     * @param mochila Objetos del Jugador
+     * @param skills Habilidades del Jugador
+     * @param habitacionActual Habitacion en la que se encuentra el Jugador
      * @param salasVisitadas
      */
-    jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
+    Jugador(const std::string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
             int fuerza, int magia, int velocidad, int suerte, int armaDmg, int habilidadDmg,
-            const std::vector<objetos *> &mochila, const std::vector<habilidades *> &skills,
-            nodoHabitacion *habitacionActual, const std::vector<float> &salasVisitadas);
+            const std::vector<Objetos *> &mochila, const std::vector<Habilidades *> &skills,
+            NodoHabitacion *habitacionActual, const std::vector<float> &salasVisitadas);
 
     /**
-     * Destructor del jugador
+     * Destructor del Jugador
      */
-    ~jugador();
+    ~Jugador();
 
     //METODOS GET'S & SET'S
     const std::string &getNombre() const;
@@ -103,13 +103,13 @@ public:
 
     void setSuerte(int suerte);
 
-    const std::vector<objetos *> &getMochila() const;
+    const std::vector<Objetos *> &getMochila() const;
 
-    void setMochila(const std::vector<objetos *> &mochila);
+    void setMochila(const std::vector<Objetos *> &mochila);
 
-    const std::vector<habilidades *> &getSkills() const;
+    const std::vector<Habilidades *> &getSkills() const;
 
-    void setSkills(const std::vector<habilidades *> &skills);
+    void setSkills(const std::vector<Habilidades *> &skills);
 
     int getArmaDmg() const;
 
@@ -119,30 +119,30 @@ public:
 
     void setSalasVisitadas(const std::vector<float> &salasVisitadas);
 
-    nodoHabitacion *getHabitacionActual() const;
+    NodoHabitacion *getHabitacionActual() const;
 
     int getHabilidadDmg() const;
 
     void setHabilidadDmg(int habilidadDmg);
 
-    void setHabitacionActual(nodoHabitacion *habitacionActual);
+    void setHabitacionActual(NodoHabitacion *habitacionActual);
 
     /**
-     * Metodo que selecciona la habitacion izquierda
-     * @param habitacionActual habitacion actual del jugador
+     * Metodo que selecciona la Habitacion izquierda
+     * @param habitacionActual Habitacion actual del Jugador
      * @return true si eligio izquierda, false si eligio derecha
      */
-    bool elegirIzq(nodoHabitacion* habitacionActual);
+    bool elegirIzq(NodoHabitacion* habitacionActual);
 
     /**
-     * Metodo que selecciona la habitacion derecha
-     * @param habitacionActual habitacion actual del jugador
+     * Metodo que selecciona la Habitacion derecha
+     * @param habitacionActual Habitacion actual del Jugador
      * @return true si eligio derecha, false si eligio izquierda
      */
-    bool elegirDer(nodoHabitacion* habitacionActual);
+    bool elegirDer(NodoHabitacion* habitacionActual);
 
     /**
-     * Metodo que agrega el id de las sala visitadas por el jugador
+     * Metodo que agrega el id de las sala visitadas por el Jugador
      * @param salasVisitadas salas ya visitadas
      */
     void salaVisitada(std::vector<float> salasVisitadas);
@@ -154,16 +154,16 @@ public:
     void verMapa(std::vector<float> salasVisitadas);
 
     /**
-     * Metodo que sube el nivel del jugador
+     * Metodo que sube el nivel del Jugador
      * @return true si subio de nivel o false si no
      */
     bool subirNivel();
 
     /**
      * Metodo que recupera puntos de habilidad
-     * @param habitacionActual habitacion actual donde esta el jugador
+     * @param habitacionActual Habitacion actual donde esta el Jugador
      */
-    void recuperarPH(nodoHabitacion* habitacionActual);
+    void recuperarPH(NodoHabitacion* habitacionActual);
 
     /**
      * Metodo que calcula el daño de combate fisico
@@ -179,7 +179,7 @@ public:
 
     /**
      * Metodo que calcula si el ataque es critico o no
-     * @param DMG daño fisico del jugador
+     * @param DMG daño fisico del Jugador
      * @return true si es un critico o false si no
      */
     bool critico(int DMG);

@@ -2,9 +2,9 @@
 // Created by Thomas on 21-05-2024.
 //
 
-#include "nodoHabitacion.h"
+#include "NodoHabitacion.h"
 
-nodoHabitacion::nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha,
+NodoHabitacion::NodoHabitacion(const Habitacion &sala, NodoHabitacion *habIzquierda, NodoHabitacion *habDerecha,
                                int alturaNodo, int factorBalance, float idNodoSala) : sala(sala),
                                                                                       habIzquierda(habIzquierda),
                                                                                       habDerecha(habDerecha),
@@ -12,62 +12,62 @@ nodoHabitacion::nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquie
                                                                                       factorBalance(factorBalance),
                                                                                       idNodoSala(idNodoSala) {}
 
-nodoHabitacion::nodoHabitacion(const habitacion &habitacion): sala(habitacion) {
+NodoHabitacion::NodoHabitacion(const Habitacion &habitacion): sala(habitacion) {
     this->sala = habitacion;
 }
 
-nodoHabitacion::~nodoHabitacion() {
+NodoHabitacion::~NodoHabitacion() {
 }
 
-const habitacion &nodoHabitacion::getSala() const {
+const Habitacion &NodoHabitacion::getSala() const {
     return sala;
 }
 
-void nodoHabitacion::setSala(const habitacion &sala) {
-    nodoHabitacion::sala = sala;
+void NodoHabitacion::setSala(const Habitacion &sala) {
+    NodoHabitacion::sala = sala;
 }
 
-nodoHabitacion *nodoHabitacion::getHabIzquierda() const {
+NodoHabitacion *NodoHabitacion::getHabIzquierda() const {
     return habIzquierda;
 }
 
-void nodoHabitacion::setHabIzquierda(nodoHabitacion *habIzquierda) {
-    nodoHabitacion::habIzquierda = habIzquierda;
+void NodoHabitacion::setHabIzquierda(NodoHabitacion *habIzquierda) {
+    NodoHabitacion::habIzquierda = habIzquierda;
 }
 
-nodoHabitacion *nodoHabitacion::getHabDerecha() const {
+NodoHabitacion *NodoHabitacion::getHabDerecha() const {
     return habDerecha;
 }
 
-void nodoHabitacion::setHabDerecha(nodoHabitacion *habDerecha) {
-    nodoHabitacion::habDerecha = habDerecha;
+void NodoHabitacion::setHabDerecha(NodoHabitacion *habDerecha) {
+    NodoHabitacion::habDerecha = habDerecha;
 }
 
-int nodoHabitacion::getAlturaNodo() const {
+int NodoHabitacion::getAlturaNodo() const {
     return alturaNodo;
 }
 
-void nodoHabitacion::setAlturaNodo(int profundidadNodo) {
-    nodoHabitacion::alturaNodo = alturaNodo;
+void NodoHabitacion::setAlturaNodo(int profundidadNodo) {
+    NodoHabitacion::alturaNodo = alturaNodo;
 }
 
-int nodoHabitacion::getFactorBalance() const {
+int NodoHabitacion::getFactorBalance() const {
     return factorBalance;
 }
 
-void nodoHabitacion::setFactorBalance(int factorBalance) {
-    nodoHabitacion::factorBalance = factorBalance;
+void NodoHabitacion::setFactorBalance(int factorBalance) {
+    NodoHabitacion::factorBalance = factorBalance;
 }
 
-float nodoHabitacion::getIdNodoSala() const {
+float NodoHabitacion::getIdNodoSala() const {
     return idNodoSala;
 }
 
-void nodoHabitacion::setIdNodoSala(float idNodoSala) {
-    nodoHabitacion::idNodoSala = idNodoSala;
+void NodoHabitacion::setIdNodoSala(float idNodoSala) {
+    NodoHabitacion::idNodoSala = idNodoSala;
 }
 
-int nodoHabitacion::calcularAltNodo(){
+int NodoHabitacion::calcularAltNodo(){
 
     int alturaIzq = (habIzquierda == nullptr) ? 0 : habIzquierda->calcularAltNodo();
     int alturaDer = (habDerecha == nullptr) ? 0 : habDerecha->calcularAltNodo();
@@ -75,7 +75,7 @@ int nodoHabitacion::calcularAltNodo(){
     return alturaNodo;
 }
 
-int nodoHabitacion::altNodoHab(nodoHabitacion *nodo) {
+int NodoHabitacion::altNodoHab(NodoHabitacion *nodo) {
 
     if (nodo == nullptr){
         return 0;
@@ -83,7 +83,7 @@ int nodoHabitacion::altNodoHab(nodoHabitacion *nodo) {
     return nodo->getAlturaNodo();
 }
 
-float nodoHabitacion::idNodoHabitacion(int peligroSala) {
+float NodoHabitacion::idNodoHabitacion(int peligroSala) {
 
     peligroSala = this->getSala().getPeligro();
     this->setIdNodoSala(peligroSala);

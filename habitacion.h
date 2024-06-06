@@ -6,7 +6,7 @@
 #define TALLER2_ED_HABITACION_H
 
 
-class habitacion {
+class Habitacion {
 
 private:
 
@@ -26,39 +26,39 @@ public:
 
     //DOCUMENTAR
     /**
-     * Constructor 1 de la habitacion
-     * @param enemigo1 enemigo 1 de la habitacion
-     * @param enemigo2 enemigo 2 de la habitacion
-     * @param enemigo3 enemigo 3 de la habitacion
-     * @param enemigo4 enemigo 4 de la habitacion
-     * @param enemigo5 enemigo 5 de la habitacion
-     * @param cantObjetos cantidad de objetos presentes en la habotacion
-     * @param cantBolsasOro cantidad de bolsas de oro de la habitacion
-     * @param peligro peligro de la habitacion
+     * Constructor 1 de la Habitacion
+     * @param enemigo1 Enemigo 1 de la Habitacion
+     * @param enemigo2 Enemigo 2 de la Habitacion
+     * @param enemigo3 Enemigo 3 de la Habitacion
+     * @param enemigo4 Enemigo 4 de la Habitacion
+     * @param enemigo5 Enemigo 5 de la Habitacion
+     * @param cantObjetos cantidad de Objetos presentes en la habotacion
+     * @param cantBolsasOro cantidad de bolsas de oro de la Habitacion
+     * @param peligro peligro de la Habitacion
      * @param salaBoss si la habotacion es la sala del boss
-     * @param tienda si la habitacion es una tienda
+     * @param tienda si la Habitacion es una tienda
      */
-    habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos, int cantBolsasOro,
+    Habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos, int cantBolsasOro,
                int peligro, bool salaBoss, bool tienda);
 
     /**
      * Constructor 2 de la habotacion
-     * @param enemigo1 enemigo 1 de la habitacion
-     * @param enemigo2 enemigo 2 de la habitacion
-     * @param enemigo3 enemigo 3 de la habitacion
-     * @param enemigo4 enemigo 4 de la habitacion
-     * @param enemigo5 enemigo 5 de la habitacion
-     * @param cantObjetos cantidad de objetos presentes en la habotacion
-     * @param cantBolsasOro cantidad de bolsas de oro de la habitacion
-     * @param peligro peligro de la habitacion
+     * @param enemigo1 Enemigo 1 de la Habitacion
+     * @param enemigo2 Enemigo 2 de la Habitacion
+     * @param enemigo3 Enemigo 3 de la Habitacion
+     * @param enemigo4 Enemigo 4 de la Habitacion
+     * @param enemigo5 Enemigo 5 de la Habitacion
+     * @param cantObjetos cantidad de Objetos presentes en la habotacion
+     * @param cantBolsasOro cantidad de bolsas de oro de la Habitacion
+     * @param peligro peligro de la Habitacion
      */
-    habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos, int cantBolsasOro,
+    Habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos, int cantBolsasOro,
                int peligro);
 
     /**
-     * Destructor de la habitacion
+     * Destructor de la Habitacion
      */
-    ~habitacion();
+    ~Habitacion();
 
     //METODOS GET'S & SET'S
     int getEnemigo1() const;

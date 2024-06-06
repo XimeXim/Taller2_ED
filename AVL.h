@@ -2,8 +2,8 @@
 // Created by Ximena on 24-05-2024.
 //
 #include <iostream>
-#include "nodoHabitacion.h"
-#include "habitacion.h"
+#include "NodoHabitacion.h"
+#include "Habitacion.h"
 #include "algorithm"
 
 
@@ -14,45 +14,96 @@ class AVL {
 
 private:
 
-    nodoHabitacion* habitacion;
+    NodoHabitacion* habitacion;
 
 public:
 
     /**
      * Constructor de la clase AVL
-     * @param habitacion nodo habitacion dentro del AVL
+     * @param habitacion nodo Habitacion dentro del AVL
      */
-    explicit AVL(nodoHabitacion *habitacion);
+    explicit AVL(NodoHabitacion *habitacion);
 
     /**
      * Destructor de la clase AVL
      */
     ~AVL();
 
-    nodoHabitacion *getHabitacion() const;
+    //METODOS GET'S & SET'S
+    NodoHabitacion *getHabitacion() const;
 
-    void setHabitacion(nodoHabitacion *habitacion);
+    void setHabitacion(NodoHabitacion *habitacion);
 
-    //DOCUMENTAR_TODO_HACIA_ABAJO
-    int alturaNodo(nodoHabitacion* nodo);
+    /**
+     * Metodo que retorna la altura del nodo
+     * @param nodo el nodo
+     * @return la altura
+     */
+    int alturaNodo(NodoHabitacion* nodo);
 
-    int calcularAltNodo(nodoHabitacion* nodo);
+    /**
+     * Metodo que calcula la altura del nodo
+     * @param nodo el nodo
+     * @return la altura calculada
+     */
+    int calcularAltNodo(NodoHabitacion* nodo);
 
-    int facBalanceNodo(nodoHabitacion* nodo);
+    /**
+     * Metodo que calcula el factor de balance de los nodos
+     * @param nodo el nodo
+     * @return el factor de balance del nodo
+     */
+    int facBalanceNodo(NodoHabitacion* nodo);
 
-    nodoHabitacion* rotacionRR(nodoHabitacion* nodoDesbalanceado);
+    /**
+     * Metodo rotacion RR
+     * @param nodoDesbalanceado el nodo que presenta el desbalance
+     * @return el nodo ya balanceado
+     */
+    NodoHabitacion* rotacionRR(NodoHabitacion* nodoDesbalanceado);
 
-    nodoHabitacion* rotacionLL(nodoHabitacion* nodoDesbalanceado);
+    /**
+     * Metodo rotacion LL
+     * @param nodoDesbalanceado el nodo que presenta el desbalance
+     * @return el nodo ya balanceado
+     */
+    NodoHabitacion* rotacionLL(NodoHabitacion* nodoDesbalanceado);
 
-    nodoHabitacion* rotacionLR(nodoHabitacion* nodoDesbalanceado);
+    /**
+     * Metodo rotacion LR
+     * @param nodoDesbalanceado el nodo que presenta el desbalance
+     * @return el nodo ya balanceado
+     */
+    NodoHabitacion* rotacionLR(NodoHabitacion* nodoDesbalanceado);
 
-    nodoHabitacion* rotacionRL(nodoHabitacion* nodoDesbalanceado);
+    /**
+     * Metodo rotacion RL
+     * @param nodoDesbalanceado el nodo que presenta el desbalance
+     * @return el nodo ya balanceado
+     */
+    NodoHabitacion* rotacionRL(NodoHabitacion* nodoDesbalanceado);
 
-    bool buscarNodoRepetido(nodoHabitacion* nodo, float idNodo);
+    /**
+     * Metodo que busca si hay un nodo con la misma id dentro del arbol
+     * @param nodo el nodo buscado
+     * @param idNodo la id del nodo buscado
+     * @return true si hay un nodo repetido o false si no
+     */
+    bool buscarNodoRepetido(NodoHabitacion* nodo, float idNodo);
 
-    float difPeligrosIguales (nodoHabitacion* nodo);
+    /**
+     * Metodo que asigna pequeñas diferencias a las ids para que no se repitan
+     * @param nodo el nodo
+     * @return la id con pequeños cambios
+     */
+    float difPeligrosIguales (NodoHabitacion* nodo);
 
-    nodoHabitacion* insertarNodoAVL(nodoHabitacion* nodoAInsertar);
+    /**
+     * Metodo que inserta los nodos dentro del arbol AVL
+     * @param nodoAInsertar el nodo que será insertado
+     * @return el nodo insertado
+     */
+    NodoHabitacion* insertarNodoAVL(NodoHabitacion* nodoAInsertar);
 
 
 };

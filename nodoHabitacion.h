@@ -4,19 +4,19 @@
 
 #ifndef TALLER2_ED_NODOHABITACION_H
 #define TALLER2_ED_NODOHABITACION_H
-#include "habitacion.h"
+#include "Habitacion.h"
 #include "algorithm"
 
 
 
-class nodoHabitacion {
+class NodoHabitacion {
 
 private:
 
     //PARAMETROS DE NODO HABITACION
-    habitacion sala;
-    nodoHabitacion* habIzquierda;
-    nodoHabitacion* habDerecha;
+    Habitacion sala;
+    NodoHabitacion* habIzquierda;
+    NodoHabitacion* habDerecha;
     int alturaNodo;
     int factorBalance;
     float idNodoSala;
@@ -25,40 +25,40 @@ public:
 
     //DOCUMENTAR
     /**
-     * Constructor de el nodo habitacion
+     * Constructor de el nodo Habitacion
      * @param sala sala que almacena el nodo
-     * @param habIzquierda habitacion a la izquierda
-     * @param habDerecha habitacion a la derecha
+     * @param habIzquierda Habitacion a la izquierda
+     * @param habDerecha Habitacion a la derecha
      * @param alturaNodo altura del nodo
      * @param factorBalance factor balance del nodo
      * @param idNodoSala id de la sala
      */
-    nodoHabitacion(const habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha, int alturaNodo,
+    NodoHabitacion(const Habitacion &sala, NodoHabitacion *habIzquierda, NodoHabitacion *habDerecha, int alturaNodo,
                    int factorBalance, float idNodoSala);
 
     /**
-     * Constructor de la habitacion segun su habitacion
+     * Constructor de la Habitacion segun su Habitacion
      * @param habitacion habotacion que almacena el nodo
      */
-    nodoHabitacion(const habitacion &habitacion);
+    NodoHabitacion(const Habitacion &habitacion);
 
     /**
-     * Destructor de la clase nodoHabitacion
+     * Destructor de la clase NodoHabitacion
      */
-    ~nodoHabitacion();
+    ~NodoHabitacion();
 
     //METODOS GET'S & SET'S
-    const habitacion &getSala() const;
+    const Habitacion &getSala() const;
 
-    void setSala(const habitacion &sala);
+    void setSala(const Habitacion &sala);
 
-    nodoHabitacion *getHabIzquierda() const;
+    NodoHabitacion *getHabIzquierda() const;
 
-    void setHabIzquierda(nodoHabitacion *habIzquierda);
+    void setHabIzquierda(NodoHabitacion *habIzquierda);
 
-    nodoHabitacion *getHabDerecha() const;
+    NodoHabitacion *getHabDerecha() const;
 
-    void setHabDerecha(nodoHabitacion *habDerecha);
+    void setHabDerecha(NodoHabitacion *habDerecha);
 
     int getAlturaNodo() const;
 
@@ -83,10 +83,10 @@ public:
      * @param nodo nodo del que retornará su altura
      * @return la altura del nodo
      */
-    int altNodoHab(nodoHabitacion* nodo);
+    int altNodoHab(NodoHabitacion* nodo);
 
     /**
-     * Metodo que asigna la id de la habitacion
+     * Metodo que asigna la id de la Habitacion
      * @param peligroSala peligro de la sala
      * @return la id de la sala
      */

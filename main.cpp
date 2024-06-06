@@ -1,7 +1,7 @@
 #include <iostream>
-#include "menus.h"
+#include "Sistema.h"
 int main()
 {
-    menus menu;
+    Sistema menu;
     menu.menuPrincipal();
 }

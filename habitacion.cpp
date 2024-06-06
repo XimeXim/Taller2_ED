@@ -2,9 +2,9 @@
 // Created by Thomas on 21-05-2024.
 //
 
-#include "habitacion.h"
+#include "Habitacion.h"
 
-habitacion::habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos,
+Habitacion::Habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos,
                        int cantBolsasOro, int peligro, bool salaBoss, bool tienda) : enemigo1(enemigo1),
                                                                                      enemigo2(enemigo2),
                                                                                      enemigo3(enemigo3),
@@ -16,7 +16,7 @@ habitacion::habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, i
                                                                                      salaBoss(salaBoss),
                                                                                      tienda(tienda) {}
 
-habitacion::habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos,
+Habitacion::Habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, int enemigo5, int cantObjetos,
                        int cantBolsasOro, int peligro) {
     this->enemigo1=enemigo1;
     this->enemigo2=enemigo2;
@@ -27,87 +27,87 @@ habitacion::habitacion(int enemigo1, int enemigo2, int enemigo3, int enemigo4, i
     this->cantBolsasOro=cantBolsasOro;
     this->peligro=peligro;
 }
-habitacion::~habitacion() {
+Habitacion::~Habitacion() {
 }
 
-int habitacion::getEnemigo1() const {
+int Habitacion::getEnemigo1() const {
     return enemigo1;
 }
 
-void habitacion::setEnemigo1(int enemigo1) {
-    habitacion::enemigo1 = enemigo1;
+void Habitacion::setEnemigo1(int enemigo1) {
+    Habitacion::enemigo1 = enemigo1;
 }
 
-int habitacion::getEnemigo2() const {
+int Habitacion::getEnemigo2() const {
     return enemigo2;
 }
 
-void habitacion::setEnemigo2(int enemigo2) {
-    habitacion::enemigo2 = enemigo2;
+void Habitacion::setEnemigo2(int enemigo2) {
+    Habitacion::enemigo2 = enemigo2;
 }
 
-int habitacion::getEnemigo3() const {
+int Habitacion::getEnemigo3() const {
     return enemigo3;
 }
 
-void habitacion::setEnemigo3(int enemigo3) {
-    habitacion::enemigo3 = enemigo3;
+void Habitacion::setEnemigo3(int enemigo3) {
+    Habitacion::enemigo3 = enemigo3;
 }
 
-int habitacion::getEnemigo4() const {
+int Habitacion::getEnemigo4() const {
     return enemigo4;
 }
 
-void habitacion::setEnemigo4(int enemigo4) {
-    habitacion::enemigo4 = enemigo4;
+void Habitacion::setEnemigo4(int enemigo4) {
+    Habitacion::enemigo4 = enemigo4;
 }
 
-int habitacion::getEnemigo5() const {
+int Habitacion::getEnemigo5() const {
     return enemigo5;
 }
 
-void habitacion::setEnemigo5(int enemigo5) {
-    habitacion::enemigo5 = enemigo5;
+void Habitacion::setEnemigo5(int enemigo5) {
+    Habitacion::enemigo5 = enemigo5;
 }
 
-int habitacion::getPeligro() const {
+int Habitacion::getPeligro() const {
     return peligro;
 }
 
-void habitacion::setPeligro(int peligro) {
-    habitacion::peligro = peligro;
+void Habitacion::setPeligro(int peligro) {
+    Habitacion::peligro = peligro;
 }
 
-int habitacion::getCantBolsasOro() const {
+int Habitacion::getCantBolsasOro() const {
     return cantBolsasOro;
 }
 
-void habitacion::setCantBolsasOro(int cantBolsasOro) {
-    habitacion::cantBolsasOro = cantBolsasOro;
+void Habitacion::setCantBolsasOro(int cantBolsasOro) {
+    Habitacion::cantBolsasOro = cantBolsasOro;
 }
 
-int habitacion::getCantObjetos() const {
+int Habitacion::getCantObjetos() const {
     return cantObjetos;
 }
 
-void habitacion::setCantObjetos(int cantObjetos) {
-    habitacion::cantObjetos = cantObjetos;
+void Habitacion::setCantObjetos(int cantObjetos) {
+    Habitacion::cantObjetos = cantObjetos;
 }
 
-bool habitacion::isSalaBoss() const {
+bool Habitacion::isSalaBoss() const {
     return salaBoss;
 }
 
-void habitacion::setSalaBoss(bool salaBoss) {
-    habitacion::salaBoss = salaBoss;
+void Habitacion::setSalaBoss(bool salaBoss) {
+    Habitacion::salaBoss = salaBoss;
 }
 
-bool habitacion::isTienda() const {
+bool Habitacion::isTienda() const {
     return tienda;
 }
 
-void habitacion::setTienda(bool tienda) {
-    habitacion::tienda = tienda;
+void Habitacion::setTienda(bool tienda) {
+    Habitacion::tienda = tienda;
 }
 
 

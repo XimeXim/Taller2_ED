@@ -2,13 +2,13 @@
 // Created by Thomas on 20-05-2024.
 //
 
-#include "jugador.h"
+#include "Jugador.h"
 using namespace std;
 
-jugador::jugador(const string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
+Jugador::Jugador(const string &nombre, int nivel, int experiencia, int oro, int puntosSalud, int puntosHabilidad,
                  int fuerza, int magia, int velocidad, int suerte, int armaDmg, int habilidadDmg,
-                 const vector<objetos *> &mochila, const vector<habilidades *> &skills,
-                 nodoHabitacion *habitacionActual, const vector<float> &salasVisitadas) : nombre(nombre), nivel(nivel),
+                 const vector<Objetos *> &mochila, const vector<Habilidades *> &skills,
+                 NodoHabitacion *habitacionActual, const vector<float> &salasVisitadas) : nombre(nombre), nivel(nivel),
                                                                                           experiencia(experiencia),
                                                                                           oro(oro),
                                                                                           puntosSalud(puntosSalud),
@@ -26,138 +26,138 @@ jugador::jugador(const string &nombre, int nivel, int experiencia, int oro, int 
                                                                                           salasVisitadas(
                                                                                                   salasVisitadas) {}
 
-jugador::~jugador() {
+Jugador::~Jugador() {
 }
 
-const std::string &jugador::getNombre() const {
+const std::string &Jugador::getNombre() const {
     return nombre;
 }
 
-void jugador::setNombre(const std::string &nombre) {
-    jugador::nombre = nombre;
+void Jugador::setNombre(const std::string &nombre) {
+    Jugador::nombre = nombre;
 }
 
-int jugador::getNivel() const {
+int Jugador::getNivel() const {
     return nivel;
 }
 
-void jugador::setNivel(int nivel) {
-    jugador::nivel = nivel;
+void Jugador::setNivel(int nivel) {
+    Jugador::nivel = nivel;
 }
 
-int jugador::getExperiencia() const {
+int Jugador::getExperiencia() const {
     return experiencia;
 }
 
-void jugador::setExperiencia(int experiencia) {
-    jugador::experiencia = experiencia;
+void Jugador::setExperiencia(int experiencia) {
+    Jugador::experiencia = experiencia;
 }
 
-int jugador::getOro() const {
+int Jugador::getOro() const {
     return oro;
 }
 
-void jugador::setOro(int oro) {
-    jugador::oro = oro;
+void Jugador::setOro(int oro) {
+    Jugador::oro = oro;
 }
 
-int jugador::getPuntosSalud() const {
+int Jugador::getPuntosSalud() const {
     return puntosSalud;
 }
 
-void jugador::setPuntosSalud(int puntosSalud) {
-    jugador::puntosSalud = puntosSalud;
+void Jugador::setPuntosSalud(int puntosSalud) {
+    Jugador::puntosSalud = puntosSalud;
 }
 
-int jugador::getPuntosHabilidad() const {
+int Jugador::getPuntosHabilidad() const {
     return puntosHabilidad;
 }
 
-void jugador::setPuntosHabilidad(int puntosHabilidad) {
-    jugador::puntosHabilidad = puntosHabilidad;
+void Jugador::setPuntosHabilidad(int puntosHabilidad) {
+    Jugador::puntosHabilidad = puntosHabilidad;
 }
 
-int jugador::getFuerza() const {
+int Jugador::getFuerza() const {
     return fuerza;
 }
 
-void jugador::setFuerza(int fuerza) {
-    jugador::fuerza = fuerza;
+void Jugador::setFuerza(int fuerza) {
+    Jugador::fuerza = fuerza;
 }
 
-int jugador::getMagia() const {
+int Jugador::getMagia() const {
     return magia;
 }
 
-void jugador::setMagia(int magia) {
-    jugador::magia = magia;
+void Jugador::setMagia(int magia) {
+    Jugador::magia = magia;
 }
 
-int jugador::getVelocidad() const {
+int Jugador::getVelocidad() const {
     return velocidad;
 }
 
-void jugador::setVelocidad(int velocidad) {
-    jugador::velocidad = velocidad;
+void Jugador::setVelocidad(int velocidad) {
+    Jugador::velocidad = velocidad;
 }
 
-int jugador::getSuerte() const {
+int Jugador::getSuerte() const {
     return suerte;
 }
 
-void jugador::setSuerte(int suerte) {
-    jugador::suerte = suerte;
+void Jugador::setSuerte(int suerte) {
+    Jugador::suerte = suerte;
 }
 
-const std::vector<objetos *> &jugador::getMochila() const {
+const std::vector<Objetos *> &Jugador::getMochila() const {
     return mochila;
 }
 
-void jugador::setMochila(const std::vector<objetos *> &mochila) {
-    jugador::mochila = mochila;
+void Jugador::setMochila(const std::vector<Objetos *> &mochila) {
+    Jugador::mochila = mochila;
 }
 
-const std::vector<habilidades *> &jugador::getSkills() const {
+const std::vector<Habilidades *> &Jugador::getSkills() const {
     return skills;
 }
 
-void jugador::setSkills(const std::vector<habilidades *> &skills) {
-    jugador::skills = skills;
+void Jugador::setSkills(const std::vector<Habilidades *> &skills) {
+    Jugador::skills = skills;
 }
 
-nodoHabitacion *jugador::getHabitacionActual() const {
+NodoHabitacion *Jugador::getHabitacionActual() const {
     return habitacionActual;
 }
 
-void jugador::setHabitacionActual(nodoHabitacion *habitacionActual) {
-    jugador::habitacionActual = habitacionActual;
+void Jugador::setHabitacionActual(NodoHabitacion *habitacionActual) {
+    Jugador::habitacionActual = habitacionActual;
 }
 
-int jugador::getArmaDmg() const {
+int Jugador::getArmaDmg() const {
     return armaDMG;
 }
 
-void jugador::setArmaDmg(int armaDmg) {
+void Jugador::setArmaDmg(int armaDmg) {
     armaDMG = armaDmg;
 }
 
-const vector<float> &jugador::getSalasVisitadas() const {
+const vector<float> &Jugador::getSalasVisitadas() const {
     return salasVisitadas;
 }
 
-void jugador::setSalasVisitadas(const vector<float> &salasVisitadas) {
-    jugador::salasVisitadas = salasVisitadas;
+void Jugador::setSalasVisitadas(const vector<float> &salasVisitadas) {
+    Jugador::salasVisitadas = salasVisitadas;
 }
 
-int jugador::getHabilidadDmg() const {
+int Jugador::getHabilidadDmg() const {
     return habilidadDMG;
 }
 
-void jugador::setHabilidadDmg(int habilidadDmg) {
+void Jugador::setHabilidadDmg(int habilidadDmg) {
     habilidadDMG = habilidadDmg;
 }
 
-bool jugador::elegirIzq(nodoHabitacion *habitacionActual) {
+bool Jugador::elegirIzq(NodoHabitacion *habitacionActual) {
 
     if (habitacionActual->getHabIzquierda() != nullptr){
         setHabitacionActual(habitacionActual->getHabIzquierda());
@@ -166,7 +166,7 @@ bool jugador::elegirIzq(nodoHabitacion *habitacionActual) {
     return false;
 }
 
-bool jugador::elegirDer(nodoHabitacion *habitacionActual) {
+bool Jugador::elegirDer(NodoHabitacion *habitacionActual) {
 
     if (habitacionActual->getHabDerecha() != nullptr){
         setHabitacionActual(habitacionActual->getHabDerecha());
@@ -175,15 +175,15 @@ bool jugador::elegirDer(nodoHabitacion *habitacionActual) {
     return false;
 }
 
-void jugador::salaVisitada(std::vector<float> salasVisitadas) {
+void Jugador::salaVisitada(std::vector<float> salasVisitadas) {
 
     float idSalaVisitada = this->getHabitacionActual()->getIdNodoSala();
     salasVisitadas.push_back(idSalaVisitada);
 }
 
-void jugador::verMapa(std::vector<float> salasVisitadas) {
+void Jugador::verMapa(std::vector<float> salasVisitadas) {
 
-    nodoHabitacion* salaVisitada;
+    NodoHabitacion* salaVisitada;
     int largo = salasVisitadas.size();
     int aux = 0;
     cout << "Las habitaciones visitadas son: "<< endl;
@@ -193,7 +193,7 @@ void jugador::verMapa(std::vector<float> salasVisitadas) {
     }
 }
 
-bool jugador::subirNivel() {
+bool Jugador::subirNivel() {
 
     int experiencia = this->getExperiencia();
     int nivel = this->getNivel();
@@ -210,7 +210,7 @@ bool jugador::subirNivel() {
     return false;
 }
 
-void jugador::recuperarPH(nodoHabitacion* habitacionActual) {
+void Jugador::recuperarPH(NodoHabitacion* habitacionActual) {
 
     int puntosHab = this->getPuntosHabilidad();
     if (elegirDer(habitacionActual) || elegirIzq(habitacionActual)){
@@ -221,7 +221,7 @@ void jugador::recuperarPH(nodoHabitacion* habitacionActual) {
     }
 }
 
-int jugador::combatDMG() {
+int Jugador::combatDMG() {
 
     int dmgArma = this->getArmaDmg();
     int STMA = this->getFuerza();
@@ -233,7 +233,7 @@ int jugador::combatDMG() {
     return combatDMG;
 }
 
-int jugador::skillDMG() {
+int Jugador::skillDMG() {
 
     int dmgHabilidad = this->getHabilidadDmg();
     int STMA = this->getMagia();
@@ -242,7 +242,7 @@ int jugador::skillDMG() {
     return magicDMG;
 }
 
-bool jugador::critico(int DMG) {
+bool Jugador::critico(int DMG) {
 
     srand(time(NULL));
     int critBase = 5;

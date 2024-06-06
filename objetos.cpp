@@ -2,62 +2,62 @@
 // Created by Thomas on 20-05-2024.
 //
 
-#include "objetos.h"
+#include "Objetos.h"
 
-objetos::objetos(const std::string &nombre, const std::string &descripcion, const std::string &efectoSecundario,
+Objetos::Objetos(const std::string &nombre, const std::string &descripcion, const std::string &efectoSecundario,
                  int coste, const std::string &estadistica, int valorMejora) : nombre(nombre), descripcion(descripcion),
                                                                                efectoSecundario(efectoSecundario),
                                                                                coste(coste), estadistica(estadistica),
                                                                                valorMejora(valorMejora) {}
 
-objetos::~objetos() {
+Objetos::~Objetos() {
 
 }
 
-const std::string &objetos::getNombre() const {
+const std::string &Objetos::getNombre() const {
     return nombre;
 }
 
-void objetos::setNombre(const std::string &nombre) {
-    objetos::nombre = nombre;
+void Objetos::setNombre(const std::string &nombre) {
+    Objetos::nombre = nombre;
 }
 
-const std::string &objetos::getDescripcion() const {
+const std::string &Objetos::getDescripcion() const {
     return descripcion;
 }
 
-void objetos::setDescripcion(const std::string &descripcion) {
-    objetos::descripcion = descripcion;
+void Objetos::setDescripcion(const std::string &descripcion) {
+    Objetos::descripcion = descripcion;
 }
 
-const std::string &objetos::getEfectoSecundario() const {
+const std::string &Objetos::getEfectoSecundario() const {
     return efectoSecundario;
 }
 
-void objetos::setEfectoSecundario(const std::string &efectoSecundario) {
-    objetos::efectoSecundario = efectoSecundario;
+void Objetos::setEfectoSecundario(const std::string &efectoSecundario) {
+    Objetos::efectoSecundario = efectoSecundario;
 }
 
-int objetos::getCoste() const {
+int Objetos::getCoste() const {
     return coste;
 }
 
-void objetos::setCoste(int coste) {
-    objetos::coste = coste;
+void Objetos::setCoste(int coste) {
+    Objetos::coste = coste;
 }
 
-const std::string &objetos::getEstadistica() const {
+const std::string &Objetos::getEstadistica() const {
     return estadistica;
 }
 
-void objetos::setEstadistica(const std::string &estadistica) {
-    objetos::estadistica = estadistica;
+void Objetos::setEstadistica(const std::string &estadistica) {
+    Objetos::estadistica = estadistica;
 }
 
-int objetos::getValorMejora() const {
+int Objetos::getValorMejora() const {
     return valorMejora;
 }
 
-void objetos::setValorMejora(int valorMejora) {
-    objetos::valorMejora = valorMejora;
+void Objetos::setValorMejora(int valorMejora) {
+    Objetos::valorMejora = valorMejora;
 }

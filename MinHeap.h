@@ -2,7 +2,7 @@
 // Created by Ximena on 24-05-2024.
 //
 #include <iostream>
-#include "nodoHabilidad.h"
+#include "NodoHabilidad.h"
 #ifndef MINHEAP_H
 #define MINHEAP_H
 
@@ -10,7 +10,7 @@
 
 class MinHeap {
 private:
-    nodoHabilidad* min_heap_habilidad;
+    NodoHabilidad* min_heap_habilidad;
     int capacidad;
     int tamano;
 
@@ -28,16 +28,16 @@ public:
     MinHeap(int capacidad);
 
     /**
-     * Metodo que inserta las habilidades en el min heap
+     * Metodo que inserta las Habilidades en el min heap
      * @param nodo_habilidad nodo que almacena una habilidad
      */
-    void insertar(const nodoHabilidad *nodo_habilidad);
+    void insertar(const NodoHabilidad *nodo_habilidad);
 
     /**
      * Metodo que devuelve la raiz
      * @return la raiz
      */
-    nodoHabilidad devolverRaiz();
+    NodoHabilidad devolverRaiz();
 
     /**
      * metodo que ordena el arbol como min heap
@@ -46,7 +46,7 @@ public:
     void heapifyOrden(int i);
 
     /**
-     * Metodo que elimina las habilidades del arbol min heap
+     * Metodo que elimina las Habilidades del arbol min heap
      * @return 0 si se eliminó correctamente o un 1 si no
      */
     int eliminacion();

@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class objetos {
+class Objetos {
 
 private:
 
@@ -28,13 +28,13 @@ public:
      * @param estadistica estadisticas del objeto
      * @param valorMejora mejoras que da el objeto
      */
-    objetos(const std::string &nombre, const std::string &descripcion, const std::string &efectoSecundario, int coste,
+    Objetos(const std::string &nombre, const std::string &descripcion, const std::string &efectoSecundario, int coste,
             const std::string &estadistica, int valorMejora);
 
     /**
      * Destructor de la clase objeto
      */
-    ~objetos();
+    ~Objetos();
 
     //METODOS GET'S & SET'S
     const std::string &getNombre() const;

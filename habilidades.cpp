@@ -2,9 +2,9 @@
 // Created by Thomas on 20-05-2024.
 //
 
-#include "habilidades.h"
+#include "Habilidades.h"
 
-habilidades::habilidades(const std::string &string, const std::string &descripcion, int danio, int nivel,std::string elemento, bool ao_e) {
+Habilidades::Habilidades(const std::string &string, const std::string &descripcion, int danio, int nivel, std::string elemento, bool ao_e) {
     this->nombre=nombre;
     this->descripcion=descripcion;
     this->danio=danio;
@@ -13,7 +13,7 @@ habilidades::habilidades(const std::string &string, const std::string &descripci
     this->AoE=AoE;
 }
 
-habilidades::habilidades() {
+Habilidades::Habilidades() {
     this->nombre="";
     this->descripcion="";
     this->danio=0;
@@ -22,54 +22,54 @@ habilidades::habilidades() {
     this->AoE=AoE;
 }
 
-habilidades::~habilidades() {
+Habilidades::~Habilidades() {
 }
 
 
-const std::string &habilidades::getNombre() const {
+const std::string &Habilidades::getNombre() const {
     return nombre;
 }
 
-void habilidades::setNombre(const std::string &nombre) {
-    habilidades::nombre = nombre;
+void Habilidades::setNombre(const std::string &nombre) {
+    Habilidades::nombre = nombre;
 }
 
-const std::string &habilidades::getDescripcion() const {
+const std::string &Habilidades::getDescripcion() const {
     return descripcion;
 }
 
-void habilidades::setDescripcion(const std::string &descripcion) {
-    habilidades::descripcion = descripcion;
+void Habilidades::setDescripcion(const std::string &descripcion) {
+    Habilidades::descripcion = descripcion;
 }
 
-int habilidades::getDanio() const {
+int Habilidades::getDanio() const {
     return danio;
 }
 
-void habilidades::setDanio(int danio) {
-    habilidades::danio = danio;
+void Habilidades::setDanio(int danio) {
+    Habilidades::danio = danio;
 }
 
-int habilidades::getNivel() const {
+int Habilidades::getNivel() const {
     return nivel;
 }
 
-void habilidades::setNivel(int nivel) {
-    habilidades::nivel = nivel;
+void Habilidades::setNivel(int nivel) {
+    Habilidades::nivel = nivel;
 }
 
-const std::string &habilidades::getElemento() const {
+const std::string &Habilidades::getElemento() const {
     return elemento;
 }
 
-void habilidades::setElemento(const std::string &elemento) {
-    habilidades::elemento = elemento;
+void Habilidades::setElemento(const std::string &elemento) {
+    Habilidades::elemento = elemento;
 }
 
-bool habilidades::isAoE() const {
+bool Habilidades::isAoE() const {
     return AoE;
 }
 
-void habilidades::setAoE(bool aoE) {
+void Habilidades::setAoE(bool aoE) {
     AoE = aoE;
 }

@@ -6,20 +6,20 @@
 using namespace std;
 
 
-AVL::AVL(nodoHabitacion *habitacion) : habitacion(habitacion) {}
+AVL::AVL(NodoHabitacion *habitacion) : habitacion(habitacion) {}
 
 AVL::~AVL() {
 }
 
-nodoHabitacion *AVL::getHabitacion() const {
+NodoHabitacion *AVL::getHabitacion() const {
     return habitacion;
 }
 
-void AVL::setHabitacion(nodoHabitacion *habitacion) {
+void AVL::setHabitacion(NodoHabitacion *habitacion) {
     AVL::habitacion = habitacion;
 }
 
-int AVL::alturaNodo(nodoHabitacion* nodo) {
+int AVL::alturaNodo(NodoHabitacion* nodo) {
 
     if (nodo == nullptr){
         return 0;
@@ -27,7 +27,7 @@ int AVL::alturaNodo(nodoHabitacion* nodo) {
     return nodo->calcularAltNodo();
 }
 
-int AVL::facBalanceNodo(nodoHabitacion *nodo) {
+int AVL::facBalanceNodo(NodoHabitacion *nodo) {
 
     if (nodo == nullptr){
         return 0;
@@ -35,10 +35,10 @@ int AVL::facBalanceNodo(nodoHabitacion *nodo) {
     return alturaNodo(nodo->getHabIzquierda()) - alturaNodo(nodo->getHabDerecha());
 }
 
-nodoHabitacion* AVL::rotacionRR(nodoHabitacion* nodoDesbalanceado) {
+NodoHabitacion* AVL::rotacionRR(NodoHabitacion* nodoDesbalanceado) {
 
-    nodoHabitacion* nuevaRaiz = nodoDesbalanceado->getHabIzquierda();
-    nodoHabitacion* subArbolDer = nuevaRaiz->getHabDerecha();
+    NodoHabitacion* nuevaRaiz = nodoDesbalanceado->getHabIzquierda();
+    NodoHabitacion* subArbolDer = nuevaRaiz->getHabDerecha();
     nuevaRaiz->setHabDerecha(nodoDesbalanceado);
     nodoDesbalanceado->setHabIzquierda(subArbolDer);
     int altNodoDesbalanceado = std::max(alturaNodo(nodoDesbalanceado->getHabIzquierda()), alturaNodo(nodoDesbalanceado->getHabDerecha())) + 1;
@@ -48,10 +48,10 @@ nodoHabitacion* AVL::rotacionRR(nodoHabitacion* nodoDesbalanceado) {
     return nuevaRaiz;
 }
 
-nodoHabitacion* AVL::rotacionLL(nodoHabitacion* nodoDesbalanceado) {
+NodoHabitacion* AVL::rotacionLL(NodoHabitacion* nodoDesbalanceado) {
 
-    nodoHabitacion* nuevaRaiz = nodoDesbalanceado->getHabDerecha();
-    nodoHabitacion* subArbolIzq = nuevaRaiz->getHabIzquierda();
+    NodoHabitacion* nuevaRaiz = nodoDesbalanceado->getHabDerecha();
+    NodoHabitacion* subArbolIzq = nuevaRaiz->getHabIzquierda();
     nuevaRaiz->setHabIzquierda(nodoDesbalanceado);
     nodoDesbalanceado->setHabDerecha(subArbolIzq);
     int altNodoDesbalanceado = std::max(alturaNodo(nodoDesbalanceado->getHabIzquierda()), alturaNodo(nodoDesbalanceado->getHabDerecha())) + 1;
@@ -61,19 +61,19 @@ nodoHabitacion* AVL::rotacionLL(nodoHabitacion* nodoDesbalanceado) {
     return nuevaRaiz;
 }
 
-nodoHabitacion* AVL::rotacionLR(nodoHabitacion* nodoDesbalanceado){
+NodoHabitacion* AVL::rotacionLR(NodoHabitacion* nodoDesbalanceado){
 
     nodoDesbalanceado->setHabIzquierda(rotacionLL(nodoDesbalanceado->getHabIzquierda()));
     return rotacionRR(nodoDesbalanceado);
 }
 
-nodoHabitacion* AVL::rotacionRL(nodoHabitacion* nodoDesbalanceado){
+NodoHabitacion* AVL::rotacionRL(NodoHabitacion* nodoDesbalanceado){
 
     nodoDesbalanceado->setHabDerecha(rotacionRR(nodoDesbalanceado->getHabDerecha()));
     return rotacionLL(nodoDesbalanceado);
 }
 
-bool AVL::buscarNodoRepetido(nodoHabitacion* nodo, float idNodo) {
+bool AVL::buscarNodoRepetido(NodoHabitacion* nodo, float idNodo) {
 
     if (nodo == nullptr){
         return false;
@@ -89,7 +89,7 @@ bool AVL::buscarNodoRepetido(nodoHabitacion* nodo, float idNodo) {
     }
 }
 
-float AVL::difPeligrosIguales(nodoHabitacion *nodoAEncontrar) {
+float AVL::difPeligrosIguales(NodoHabitacion *nodoAEncontrar) {
 
     bool repetido = buscarNodoRepetido(nodoAEncontrar, nodoAEncontrar->getIdNodoSala());
     float peligroNodo = nodoAEncontrar->getIdNodoSala();
@@ -101,7 +101,7 @@ float AVL::difPeligrosIguales(nodoHabitacion *nodoAEncontrar) {
     return peligroNodo;
 }
 
-nodoHabitacion* AVL::insertarNodoAVL(nodoHabitacion* nodoAInsertar) {
+NodoHabitacion* AVL::insertarNodoAVL(NodoHabitacion* nodoAInsertar) {
 
     if (nodoAInsertar == nullptr){
         return nullptr;

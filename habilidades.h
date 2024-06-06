@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class habilidades {
+class Habilidades {
 
 private:
 
@@ -21,7 +21,7 @@ public:
 
 
     /**
-     * Constructor de la clase habilidades
+     * Constructor de la clase Habilidades
      * @param nombre nombre de la habilidad
      * @param descripcion descripcion de la habilidad
      * @param danio daño que provoca la habilidad
@@ -29,18 +29,18 @@ public:
      * @param elemento elemento de la habilidad
      * @param ao_e efecto en area de la habilidad
      */
-    habilidades(const std::string &nombre, const std::string &descripcion, int danio, int nivel, std::string elemento,
+    Habilidades(const std::string &nombre, const std::string &descripcion, int danio, int nivel, std::string elemento,
                 bool ao_e);
 
     /**
-     * Constructor vacio de la clase habilidades
+     * Constructor vacio de la clase Habilidades
      */
-    habilidades();
+    Habilidades();
 
     /**
-     * Destructor de la clase habilidades
+     * Destructor de la clase Habilidades
      */
-    ~habilidades();
+    ~Habilidades();
 
     //METODOS GET'S & SET'S
     const std::string &getNombre() const;

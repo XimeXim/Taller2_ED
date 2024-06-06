@@ -26,14 +26,14 @@ MinHeap::MinHeap(int capacidad)
 {
     this->tamano = 0;
     this->capacidad = capacidad;
-    //this->min_heap_habilidad = new nodoHabilidad[capacidad];
+    //this->min_heap_habilidad = new NodoHabilidad[capacidad];
 }
 
-nodoHabilidad MinHeap::devolverRaiz() {
+NodoHabilidad MinHeap::devolverRaiz() {
     return min_heap_habilidad[0];
 }
 
-void MinHeap::insertar(const nodoHabilidad* nodo_habilidad) {
+void MinHeap::insertar(const NodoHabilidad* nodo_habilidad) {
 
     if(tamano == capacidad) {
         cout<<"Habilidadeds han sido llenadas!"<< endl;
@@ -44,7 +44,7 @@ void MinHeap::insertar(const nodoHabilidad* nodo_habilidad) {
     min_heap_habilidad[i] = *(nodo_habilidad);
     while (i != 0 && min_heap_habilidad[habilidadPadre(i)].getSkills().getNivel() > min_heap_habilidad[i].getSkills().getNivel())
     {
-        nodoHabilidad aux = min_heap_habilidad[i];
+        NodoHabilidad aux = min_heap_habilidad[i];
         min_heap_habilidad[i] = min_heap_habilidad[habilidadPadre(i)];
         min_heap_habilidad[habilidadPadre(i)] = aux;
         i = habilidadPadre(i);
@@ -66,7 +66,7 @@ void MinHeap::heapifyOrden(int i) {
     }
 
     if (menor!=i) {
-        nodoHabilidad aux = min_heap_habilidad[i];
+        NodoHabilidad aux = min_heap_habilidad[i];
         min_heap_habilidad[i]=min_heap_habilidad[menor];
         min_heap_habilidad[menor]=aux;
         heapifyOrden(menor);
@@ -84,7 +84,7 @@ int MinHeap::eliminacion() {
         tamano--;
         return 0;
     }
-    nodoHabilidad* raiz = &min_heap_habilidad[0];
+    NodoHabilidad* raiz = &min_heap_habilidad[0];
     min_heap_habilidad[0] = min_heap_habilidad[tamano-1];
     tamano--;
     heapifyOrden(0);
@@ -95,7 +95,7 @@ void MinHeap::imprimir() {
 
     for (int i = 0; i < tamano; i++)
     {
-        //aca deberia imprimir el listado de habilidades obtenidas creo
+        //aca deberia imprimir el listado de Habilidades obtenidas creo
     }
 }
 

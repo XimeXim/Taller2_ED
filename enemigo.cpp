@@ -2,118 +2,118 @@
 // Created by Thomas on 20-05-2024.
 //
 
-#include "enemigo.h"
+#include "Enemigo.h"
 
-enemigo::enemigo(const std::string &nombre, int nivel, int oroSoltado, int puntosHabilidad, int vida, int feurza,
+Enemigo::Enemigo(const std::string &nombre, int nivel, int oroSoltado, int puntosHabilidad, int vida, int feurza,
                  int magia, int velocidad, int suerte, const std::string &debilidad,
-                 const std::vector<habilidades *> &skillsEnemigo) : nombre(nombre), nivel(nivel),
+                 const std::vector<Habilidades *> &skillsEnemigo) : nombre(nombre), nivel(nivel),
                                                                     oroSoltado(oroSoltado),
                                                                     puntosHabilidad(puntosHabilidad), vida(vida),
                                                                     feurza(feurza), magia(magia), velocidad(velocidad),
                                                                     suerte(suerte), debilidad(debilidad),
                                                                     skillsEnemigo(skillsEnemigo) {}
 
-enemigo::enemigo(const std::string &nombre, int nivel, int oroSoltado, int vida, int feurza,
+Enemigo::Enemigo(const std::string &nombre, int nivel, int oroSoltado, int vida, int feurza,
                  int magia, int velocidad, int suerte, const std::string &debilidad,
-                 const std::vector<habilidades *> &skillsEnemigo) : nombre(nombre), nivel(nivel),
+                 const std::vector<Habilidades *> &skillsEnemigo) : nombre(nombre), nivel(nivel),
                                                                     oroSoltado(oroSoltado), vida(vida),
                                                                     feurza(feurza), magia(magia), velocidad(velocidad),
                                                                     suerte(suerte), debilidad(debilidad),
                                                                     skillsEnemigo(skillsEnemigo) {}
 
-enemigo::~enemigo() {
+Enemigo::~Enemigo() {
 }
 
-const std::string &enemigo::getNombre() const {
+const std::string &Enemigo::getNombre() const {
     return nombre;
 }
 
-void enemigo::setNombre(const std::string &nombre) {
-    enemigo::nombre = nombre;
+void Enemigo::setNombre(const std::string &nombre) {
+    Enemigo::nombre = nombre;
 }
 
-int enemigo::getNivel() const {
+int Enemigo::getNivel() const {
     return nivel;
 }
 
-void enemigo::setNivel(int nivel) {
-    enemigo::nivel = nivel;
+void Enemigo::setNivel(int nivel) {
+    Enemigo::nivel = nivel;
 }
 
-int enemigo::getOroSoltado() const {
+int Enemigo::getOroSoltado() const {
     return oroSoltado;
 }
 
-void enemigo::setOroSoltado(int oroSoltado) {
-    enemigo::oroSoltado = oroSoltado;
+void Enemigo::setOroSoltado(int oroSoltado) {
+    Enemigo::oroSoltado = oroSoltado;
 }
 
-int enemigo::getPuntosHabilidad() const {
+int Enemigo::getPuntosHabilidad() const {
     return puntosHabilidad;
 }
 
-void enemigo::setPuntosHabilidad(int puntosHabilidad) {
-    enemigo::puntosHabilidad = puntosHabilidad;
+void Enemigo::setPuntosHabilidad(int puntosHabilidad) {
+    Enemigo::puntosHabilidad = puntosHabilidad;
 }
 
-int enemigo::getVida() const {
+int Enemigo::getVida() const {
     return vida;
 }
 
-void enemigo::setVida(int vida) {
-    enemigo::vida = vida;
+void Enemigo::setVida(int vida) {
+    Enemigo::vida = vida;
 }
 
-int enemigo::getFeurza() const {
+int Enemigo::getFeurza() const {
     return feurza;
 }
 
-void enemigo::setFeurza(int feurza) {
-    enemigo::feurza = feurza;
+void Enemigo::setFeurza(int feurza) {
+    Enemigo::feurza = feurza;
 }
 
-int enemigo::getMagia() const {
+int Enemigo::getMagia() const {
     return magia;
 }
 
-void enemigo::setMagia(int magia) {
-    enemigo::magia = magia;
+void Enemigo::setMagia(int magia) {
+    Enemigo::magia = magia;
 }
 
-int enemigo::getVelocidad() const {
+int Enemigo::getVelocidad() const {
     return velocidad;
 }
 
-void enemigo::setVelocidad(int velocidad) {
-    enemigo::velocidad = velocidad;
+void Enemigo::setVelocidad(int velocidad) {
+    Enemigo::velocidad = velocidad;
 }
 
-int enemigo::getSuerte() const {
+int Enemigo::getSuerte() const {
     return suerte;
 }
 
-void enemigo::setSuerte(int suerte) {
-    enemigo::suerte = suerte;
+void Enemigo::setSuerte(int suerte) {
+    Enemigo::suerte = suerte;
 }
 
-const std::vector<habilidades *> &enemigo::getSkillsEnemigo() const {
+const std::vector<Habilidades *> &Enemigo::getSkillsEnemigo() const {
     return skillsEnemigo;
 }
 
-void enemigo::setSkillsEnemigo(const std::vector<habilidades *> &skillsEnemigo) {
-    enemigo::skillsEnemigo = skillsEnemigo;
+void Enemigo::setSkillsEnemigo(const std::vector<Habilidades *> &skillsEnemigo) {
+    Enemigo::skillsEnemigo = skillsEnemigo;
 }
 
-void enemigo::turnoATKEnemigo() {
-//enemigo ataca y se le resta al jugador segun habilidad
+void Enemigo::turnoATKEnemigo() {
+//Enemigo ataca y se le resta al Jugador segun habilidad
 }
 
-const std::string &enemigo::getDebilidad() const {
+const std::string &Enemigo::getDebilidad() const {
     return debilidad;
 }
 
-void enemigo::setDebilidad(const std::string &debilidad) {
-    enemigo::debilidad = debilidad;
+void Enemigo::setDebilidad(const std::string &debilidad) {
+    Enemigo::debilidad = debilidad;
 }
 
 
