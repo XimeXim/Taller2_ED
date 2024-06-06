@@ -2,7 +2,7 @@
 // Created by Thomas on 21-05-2024.
 //
 
-#include "nodoHabilidad.h"
+#include "NodoHabilidad.h"
 
 nodoHabilidad::nodoHabilidad(const class habilidades &hability): skills(nullptr), skillIzquierda(nullptr), skillDerecha(nullptr) {
     this->hability = hability;

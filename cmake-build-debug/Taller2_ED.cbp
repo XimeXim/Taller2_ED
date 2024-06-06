@@ -88,61 +88,64 @@
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/AVL.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Enemigo.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Enemigo.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Habilidades.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Habilidades.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Habitacion.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Habitacion.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Jugador.cpp">
+			<Option target="Taller2_ED"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Jugador.h">
+			<Option target="Taller2_ED"/>
+		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/MinHeap.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/MinHeap.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/enemigo.cpp">
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/NodoHabilidad.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/enemigo.h">
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/NodoHabitacion.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/habilidades.cpp">
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/NodoHabitacion.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/habilidades.h">
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Objetos.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/habitacion.cpp">
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Objetos.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/habitacion.h">
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Sistema.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/jugador.cpp">
-			<Option target="Taller2_ED"/>
-		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/jugador.h">
+		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Sistema.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/main.cpp">
-			<Option target="Taller2_ED"/>
-		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/menus.cpp">
-			<Option target="Taller2_ED"/>
-		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/menus.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabilidad.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabilidad.h">
-			<Option target="Taller2_ED"/>
-		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabitacion.cpp">
-			<Option target="Taller2_ED"/>
-		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabitacion.h">
-			<Option target="Taller2_ED"/>
-		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/objetos.cpp">
-			<Option target="Taller2_ED"/>
-		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/objetos.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
 		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/CMakeLists.txt">

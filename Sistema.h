@@ -15,6 +15,7 @@
 #include "MinHeap.h"
 #include "Enemigo.h"
 #include "Objetos.h"
+#include "Jugador.h"
 
 
 class Sistema {
@@ -26,6 +27,7 @@ private:
     int largoEnemys=0;
     int largoObj=0;
     Objetos* listaObjetos;
+    Jugador personaje;
 
 public:
 
