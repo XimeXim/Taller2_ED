@@ -52,8 +52,7 @@ public:
 
     float difPeligrosIguales (nodoHabitacion* nodo);
 
-    nodoHabitacion* insertarNodoAVL(nodoHabitacion* nodoAInsertar, class habitacion &sala, nodoHabitacion *habIzquierda, nodoHabitacion *habDerecha, int alturaNodo,
-                                    int factorBalance, float idNodoSala);
+    nodoHabitacion* insertarNodoAVL(nodoHabitacion* nodoAInsertar);
 
 
 };

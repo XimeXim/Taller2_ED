@@ -101,34 +101,34 @@ float AVL::difPeligrosIguales(nodoHabitacion *nodoAEncontrar) {
     return peligroNodo;
 }
 
-nodoHabitacion* AVL::insertarNodoAVL(nodoHabitacion* nodoAInsertar, class habitacion& sala, nodoHabitacion* habIzquierda, nodoHabitacion* habDerecha, int alturaNodo,
-                          int factorBalance, float idNodoSala) {//revisar  y cambiar
+nodoHabitacion* AVL::insertarNodoAVL(nodoHabitacion* nodoAInsertar) {
 
     if (nodoAInsertar == nullptr){
-        return new nodoHabitacion(sala, habIzquierda, habDerecha, alturaNodo, factorBalance, idNodoSala);
+        return nullptr;
     }
     float peligroNodoAInsertar = difPeligrosIguales(nodoAInsertar);
-    if (idNodoSala < peligroNodoAInsertar){
-        nodoAInsertar->setHabIzquierda(insertarNodoAVL(nodoAInsertar->getHabIzquierda(), sala, habIzquierda, habDerecha, alturaNodo, factorBalance, idNodoSala));
+    float idSala = nodoAInsertar->getIdNodoSala();
+    if (idSala < peligroNodoAInsertar){
+        nodoAInsertar->setHabIzquierda(insertarNodoAVL(nodoAInsertar->getHabIzquierda()));
     }
-    else if (idNodoSala > peligroNodoAInsertar){
-        nodoAInsertar->setHabDerecha(insertarNodoAVL(nodoAInsertar->getHabDerecha(), sala, habIzquierda, habDerecha, alturaNodo, factorBalance, idNodoSala));
+    else if (idSala > peligroNodoAInsertar){
+        nodoAInsertar->setHabDerecha(insertarNodoAVL(nodoAInsertar->getHabDerecha()));
     }
     else{
         return nodoAInsertar;
     }
     nodoAInsertar->setAlturaNodo(1 + max(this->alturaNodo(nodoAInsertar->getHabIzquierda()), this->alturaNodo(nodoAInsertar->getHabDerecha())));
     int facBalance = facBalanceNodo(nodoAInsertar);
-    if(facBalance > 1 && idNodoSala < nodoAInsertar->getHabIzquierda()->getIdNodoSala()){
+    if(facBalance > 1 && idSala < nodoAInsertar->getHabIzquierda()->getIdNodoSala()){
         return rotacionRR(nodoAInsertar);
     }
-    if (facBalance < -1 && idNodoSala > nodoAInsertar->getHabDerecha()->getIdNodoSala()){
+    if (facBalance < -1 && idSala > nodoAInsertar->getHabDerecha()->getIdNodoSala()){
         return rotacionLL(nodoAInsertar);
     }
-    if (facBalance > 1 && idNodoSala > nodoAInsertar->getHabIzquierda()->getIdNodoSala()){
+    if (facBalance > 1 && idSala > nodoAInsertar->getHabIzquierda()->getIdNodoSala()){
         return rotacionLR(nodoAInsertar);
     }
-    if (facBalance < -1 && idNodoSala < nodoAInsertar->getHabDerecha()->getIdNodoSala()){
+    if (facBalance < -1 && idSala < nodoAInsertar->getHabDerecha()->getIdNodoSala()){
         return rotacionRL(nodoAInsertar);
     }
     return nodoAInsertar;
