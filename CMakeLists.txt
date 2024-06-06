@@ -4,23 +4,23 @@ project(Taller2_ED)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(Taller2_ED main.cpp
-        menus.cpp
-        menus.h
-        jugador.h
-        jugador.cpp
-        jugador.h
-        enemigo.cpp
-        enemigo.h
-        objetos.cpp
-        objetos.h
-        habilidades.cpp
-        habilidades.h
-        habitacion.cpp
-        habitacion.h
-        nodoHabitacion.cpp
-        nodoHabitacion.h
-        nodoHabilidad.cpp
-        nodoHabilidad.h
+        Sistema.cpp
+        Sistema.h
+        Jugador.h
+        Jugador.cpp
+        Jugador.h
+        Enemigo.cpp
+        Enemigo.h
+        Objetos.cpp
+        Objetos.h
+        Habilidades.cpp
+        Habilidades.h
+        Habitacion.cpp
+        Habitacion.h
+        NodoHabitacion.cpp
+        NodoHabitacion.h
+        NodoHabilidad.cpp
+        NodoHabilidad.h
         AVL.cpp
         AVL.h
         MinHeap.cpp
