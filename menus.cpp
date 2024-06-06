@@ -349,10 +349,10 @@ void menus::arregloEnemigos(std::string nombre, std::string nivel, std::string o
         }
 
         enemigo* enemy = new enemigo(nombre,level,oro,health,ataque,magic,speed,luck,debilidad,habilidadEnemy);
-        addListaEnemigos(enemy);
+        addListaEnemigos(*enemy);
 
         for (int i = 0; i < largoEnemys; ++i) {
-            std::cout << "Nombre: " << listaEnemigos[i]->getNombre() << ", Nivel: " << listaEnemigos[i]->getNivel() << std::endl;
+            std::cout << "Nombre: " << listaEnemigos[i].getNombre() << ", Nivel: " << listaEnemigos[i].getNivel() << std::endl;
         }
 
     } catch (const std::invalid_argument& e) {
@@ -375,7 +375,7 @@ void menus::habilidadesMinHeap(string nombre,string descripcion,string dano, str
         minHeap->insertar(nodo);
 
         for (int i = 0; i < largoEnemys; ++i) {
-            std::cout << "Nombre: " << listaEnemigos[i]->getNombre() << ", Nivel: " << listaEnemigos[i]->getNivel() << std::endl;
+            std::cout << "Nombre: " << listaEnemigos[i].getNombre() << ", Nivel: " << listaEnemigos[i].getNivel() << std::endl;
         }
 
     } catch (const std::invalid_argument& e) {
@@ -398,7 +398,7 @@ void menus::habitacionesAVL(string enemigo1,string enemigo2, string enemigo3, st
 
         habitacion *habitaciones = new habitacion(enemy1, enemy2, enemy3, enemy4, enemy5, items, bolsasOro, danger);
         nodoHabitacion* nodo_habitacion = new nodoHabitacion(*habitaciones) ;
-        avl->insertarNodoAVL(nodo_habitacion,habitaciones,);
+        avl->insertarNodoAVL(nodo_habitacion);
 
     } catch (const std::invalid_argument& e) {
         std::cerr << "Error: El valor de coste o valorMejora no es un número válido: " << e.what() << std::endl;
@@ -407,8 +407,8 @@ void menus::habitacionesAVL(string enemigo1,string enemigo2, string enemigo3, st
     }
 }
 
-void menus::addListaEnemigos(enemigo *enemy) {
-    listaEnemigos[largoEnemys]= enemy;
+void menus::addListaEnemigos(enemigo enemy) {
+    listaEnemigos[largoEnemys] = enemy;
     largoEnemys++;
 }
 
@@ -421,7 +421,7 @@ void menus::llenarItems(string nombre, string descripcion, string efectoSec, str
         addListaItem(*item);
 
         for (int i = 0; i < largoObj; ++i) {
-            std::cout << "Nombre: " << listaObjetos[i]->getNombre() << ", Nivel: " << listaObjetos[i]->getDescripcion() << std::endl;
+            std::cout << "Nombre: " << listaObjetos[i].getNombre() << ", Nivel: " << listaObjetos[i].getDescripcion() << std::endl;
         }
 
     } catch (const std::invalid_argument& e) {
@@ -432,21 +432,18 @@ void menus::llenarItems(string nombre, string descripcion, string efectoSec, str
 }
 
 
-
-
-
 void menus::addListaItem(objetos items) {
-    listaObjetos[largoObj]= &items;
+    listaObjetos[largoObj]= items;
     largoObj++;
 }
 void menus:: imprimirEnemigos(std::vector<enemigo*> lista) const {
     for (int i = 0; i < largoEnemys; ++i) {
-        std::cout << "Nombre: " << listaEnemigos[i]->getNombre() << ", Nivel: " << listaEnemigos[i]->getNivel() << std::endl;
+        std::cout << "Nombre: " << listaEnemigos[i].getNombre() << ", Nivel: " << listaEnemigos[i].getNivel() << std::endl;
     }
 }
 void menus:: imprimirObjetos(std::vector<objetos*> lista) const {
     for (int i = 0; i < largoObj; ++i) {
-        std::cout << "Nombre: " << listaObjetos[i]->getNombre() << ", Descripcion: " << listaObjetos[i]->getDescripcion() << std::endl;
+        std::cout << "Nombre: " << listaObjetos[i].getNombre() << ", Descripcion: " << listaObjetos[i].getDescripcion() << std::endl;
     }
 }
 

@@ -12,7 +12,7 @@ nodoHabilidad::nodoHabilidad(class habilidades &skills, nodoHabilidad *skillIzqu
 
 nodoHabilidad::~nodoHabilidad() = default;
 
-habilidades & nodoHabilidad::getSkills() const {
+class habilidades &nodoHabilidad::getSkills() const {
     return *skills;
 }
 

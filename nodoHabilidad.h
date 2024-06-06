@@ -33,6 +33,9 @@ public:
      */
     nodoHabilidad(const habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha);
 
+    nodoHabilidad(const habilidades &hability);
+
+    nodoHabilidad(habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha);
     /**
      * Destructor del nodoHabilidad;
      */
@@ -41,7 +44,7 @@ public:
     //METODOS GET'S & SET'S
     const habilidades &getSkills() const;
 
-    void setSkills(const habilidades &skills);
+    void setSkills(habilidades &skills);
 
     nodoHabilidad *getSkillIzquierda() const;
 

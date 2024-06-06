@@ -114,6 +114,8 @@ public:
     const std::vector<habilidades *> &getSkillsEnemigo() const;
 
     void setSkillsEnemigo(const std::vector<habilidades *> &skillsEnemigo);
+
+    void turnoATKEnemigo();
 };
 
 

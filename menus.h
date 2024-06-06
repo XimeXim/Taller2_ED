@@ -14,6 +14,7 @@
 #include "AVL.h"
 #include "MinHeap.h"
 #include "enemigo.h"
+#include "jugador.h"
 #include "objetos.h"
 
 
@@ -26,6 +27,7 @@ private:
     int largoEnemys=0;
     int largoObj=0;
     objetos* listaObjetos;
+    jugador personaje;
 
 public:
 
@@ -83,7 +85,7 @@ public:
      * Lista de enemigos presentes en la habitacion
      * @param enemy enemigo de la habitacion
      */
-    void addListaEnemigos(const enemigo &enemy);
+    void addListaEnemigos(enemigo enemy);
 
     /**
      * Metodo que guarda datos de los objetos
@@ -102,6 +104,10 @@ public:
      * @param items objetos del jugador
      */
     void addListaItem(objetos items);
+
+    void imprimirEnemigos(std::vector<enemigo *> lista) const;
+
+    void imprimirObjetos(std::vector<objetos *> lista) const;
 
     /**
      * Metodo que realiza la lectura de los archivos txt

@@ -20,3 +20,11 @@
 73	1256	7393373209815434	CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj	7b76779c5fdebe0f
 23	1294	7393373210201987	CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj	1af6cd9d2a407ca0
 19	1448	7393373211725639	CMakeFiles/Taller2_ED.dir/jugador.cpp.obj	ca3c2afb4aa6b3ad
+73	254	7393440979572697	CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj	58caef4244e4e5fc
+76	346	7393440980485179	CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj	ffc2af5282b1f13e
+82	736	7393440984388125	CMakeFiles/Taller2_ED.dir/AVL.cpp.obj	f3f6adf88f235215
+66	738	7393440984398155	CMakeFiles/Taller2_ED.dir/objetos.cpp.obj	d88e005d8fe332f2
+70	749	7393440984530871	CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj	74d22103eba19b05
+85	762	7393440984663516	CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj	7b76779c5fdebe0f
+19	823	7393440985270633	CMakeFiles/Taller2_ED.dir/main.cpp.obj	3bf94a1ce4186f19
+60	992	7393440986953820	CMakeFiles/Taller2_ED.dir/jugador.cpp.obj	ca3c2afb4aa6b3ad
