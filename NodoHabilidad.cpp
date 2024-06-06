@@ -4,34 +4,36 @@
 
 #include "NodoHabilidad.h"
 
-nodoHabilidad::nodoHabilidad(const class habilidades &hability): skills(nullptr), skillIzquierda(nullptr), skillDerecha(nullptr) {
-    this->hability = hability;
-}
-nodoHabilidad::nodoHabilidad(class habilidades &skills, nodoHabilidad *skillIzquierda, nodoHabilidad *skillDerecha)
+
+NodoHabilidad::NodoHabilidad(class Habilidades &skills, NodoHabilidad *skillIzquierda, NodoHabilidad *skillDerecha)
         : skills(&skills), skillIzquierda(skillIzquierda), skillDerecha(skillDerecha) {}
 
-nodoHabilidad::~nodoHabilidad() = default;
+NodoHabilidad::NodoHabilidad(Habilidades *habilidad) {
+    this->hability = habilidad;
+}
 
-class habilidades &nodoHabilidad::getSkills() const {
+NodoHabilidad::~NodoHabilidad() = default;
+
+const Habilidades &NodoHabilidad::getSkills() const {
     return *skills;
 }
 
-void nodoHabilidad::setSkills(class  habilidades &skills) {
+void NodoHabilidad::setSkills(class  Habilidades &skills) {
     this->skills = &skills;
 }
 
-nodoHabilidad *nodoHabilidad::getSkillIzquierda() const {
+NodoHabilidad *NodoHabilidad::getSkillIzquierda() const {
     return skillIzquierda;
 }
 
-void nodoHabilidad::setSkillIzquierda(nodoHabilidad *skillIzquierda) {
-    nodoHabilidad::skillIzquierda = skillIzquierda;
+void NodoHabilidad::setSkillIzquierda(NodoHabilidad *skillIzquierda) {
+    NodoHabilidad::skillIzquierda = skillIzquierda;
 }
 
-nodoHabilidad *nodoHabilidad::getSkillDerecha() const {
+NodoHabilidad *NodoHabilidad::getSkillDerecha() const {
     return skillDerecha;
 }
 
-void nodoHabilidad::setSkillDerecha(nodoHabilidad *skillDerecha) {
-    nodoHabilidad::skillDerecha = skillDerecha;
+void NodoHabilidad::setSkillDerecha(NodoHabilidad *skillDerecha) {
+    NodoHabilidad::skillDerecha = skillDerecha;
 }

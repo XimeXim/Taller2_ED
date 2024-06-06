@@ -26,6 +26,25 @@ Jugador::Jugador(const string &nombre, int nivel, int experiencia, int oro, int 
                                                                                           salasVisitadas(
                                                                                                   salasVisitadas) {}
 
+Jugador::Jugador() {
+    this->nombre="";
+    this->nivel=0;
+    this->experiencia=0;
+    this->oro=0;
+    this->puntosSalud=0;
+    this->puntosHabilidad=0;
+    this->fuerza=0;
+    this->magia=0;
+    this->velocidad=0;
+    this->suerte=0;
+    this->armaDMG=0;
+    this->habilidadDMG=0;
+    this->mochila;
+    this->skills;
+    this->habitacionActual;
+    this->salasVisitadas;
+}
+
 Jugador::~Jugador() {
 }
 
@@ -175,13 +194,13 @@ bool Jugador::elegirDer(NodoHabitacion *habitacionActual) {
     return false;
 }
 
-void Jugador::salaVisitada(std::vector<float> salasVisitadas) {
+void Jugador::salaVisitada() {
 
     float idSalaVisitada = this->getHabitacionActual()->getIdNodoSala();
     salasVisitadas.push_back(idSalaVisitada);
 }
 
-void Jugador::verMapa(std::vector<float> salasVisitadas) {
+void Jugador::verMapa() {
 
     NodoHabitacion* salaVisitada;
     int largo = salasVisitadas.size();

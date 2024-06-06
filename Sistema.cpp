@@ -17,6 +17,10 @@
 using namespace std;
 
 
+Sistema::Sistema(){
+    menuPrincipal();
+}
+
 /*
  * Este metodo contiene el menu principal, el cual realiza los llamados a los metodos pertinentes
  * a las opciones ingresadas.
@@ -25,11 +29,6 @@ void Sistema::menuPrincipal() {
 
     int opcionMenuPrincipal = 0;
     while (opcionMenuPrincipal != 3){
-
-        //Se realiza la llamada al metodo de lectura del archivo para el archivo habitaciones.txt
-        string txt1 ="Habitaciones.txt";
-        lecturaTXT(txt1);
-
 
         cout << "Bienvenido al GOTY" << endl;
         cout << "Cuentame viajero..." << endl;
@@ -66,13 +65,15 @@ void Sistema::menuPrincipal() {
  */
 void Sistema::menuJuego() {
 
-    //Se llaman los metodos de lectura para el resto de os archivos.
-    string txt1 ="Items.txt";
+    //Se llaman los metodos de lectura para los archivos.
+    string txt1 ="Habitaciones.txt";
     lecturaTXT(txt1);
-    string txt2 ="Habilidades.txt";
+    string txt2 ="Items.txt";
     lecturaTXT(txt2);
-    string txt3 ="Enemigos.txt";
+    string txt3 ="Habilidades.txt";
     lecturaTXT(txt3);
+    string txt4 ="Enemigos.txt";
+    lecturaTXT(txt4);
 
     int opcionMenuJuego = 0;
     while (opcionMenuJuego != 6){
@@ -294,7 +295,7 @@ void Sistema::lecturaTXT(string nomArchivo) {
             getline(stream, dato6, ',');
             if(habilidades) {
                 // llamar metodo para almacenarlos en minheap
-              //  habilidadesMinHeap(dato1,dato2,dato3,dato4,dato5,dato6);
+                habilidadesMinHeap(dato1,dato2,dato3,dato4,dato5,dato6);
             }else {
                 llenarItems(dato1,dato2,dato3,dato4,dato5,dato6);
             }
@@ -308,7 +309,7 @@ void Sistema::lecturaTXT(string nomArchivo) {
             getline(stream, dato7, ',');
             getline(stream, dato8, ',');
             // llamar metodo para almacenarlos en min o alv
-            //habitacionesAVL(dato1,dato2, dato3, dato4, dato5, dato6, dato7, dato8);
+            habitacionesAVL(dato1,dato2, dato3, dato4, dato5, dato6, dato7, dato8);
         }else if (cantDeDatos == 10) {
             getline(stream, dato1, ',');
             getline(stream, dato2, ',');
@@ -321,8 +322,8 @@ void Sistema::lecturaTXT(string nomArchivo) {
             getline(stream, dato9, ',');
             getline(stream, dato10, ',');
             // llamar metodo para almacenarlos en min o alv
-            //arregloEnemigos(dato1,dato2,dato3,dato4,dato5,dato6,dato7,dato8,dato9,dato10);
-            //imprimirEnemigos(listaEnemigos);
+            arregloEnemigos(dato1,dato2,dato3,dato4,dato5,dato6,dato7,dato8,dato9,dato10);
+            imprimirEnemigos(listaEnemigos);
         }
     }
 }
@@ -349,7 +350,7 @@ void Sistema::arregloEnemigos(std::string nombre, std::string nivel, std::string
         }
 
         Enemigo* enemy = new Enemigo(nombre, level, oro, health, ataque, magic, speed, luck, debilidad, habilidadEnemy);
-        addListaEnemigos(enemy);
+        addListaEnemigos(*enemy);
 
         for (int i = 0; i < largoEnemys; ++i) {
             std::cout << "Nombre: " << listaEnemigos[i]->getNombre() << ", Nivel: " << listaEnemigos[i]->getNivel() << std::endl;
@@ -371,7 +372,7 @@ void Sistema::habilidadesMinHeap(string nombre, string descripcion, string dano,
         bool AoE = stringToBool(aoe);
 
         Habilidades* habilidad = new Habilidades(nombre, descripcion, danio, nivel, elemento, AoE);
-        NodoHabilidad* nodo = new NodoHabilidad(*habilidad);
+        NodoHabilidad* nodo = new NodoHabilidad(habilidad);
         minHeap->insertar(nodo);
 
         for (int i = 0; i < largoEnemys; ++i) {
@@ -398,7 +399,7 @@ void Sistema::habitacionesAVL(string enemigo1, string enemigo2, string enemigo3,
 
         Habitacion *habitaciones = new Habitacion(enemy1, enemy2, enemy3, enemy4, enemy5, items, bolsasOro, danger);
         NodoHabitacion* nodo_habitacion = new NodoHabitacion(*habitaciones) ;
-        avl->insertarNodoAVL(nodo_habitacion,habitaciones,);
+        avl->insertarNodoAVL(nodo_habitacion);
 
     } catch (const std::invalid_argument& e) {
         std::cerr << "Error: El valor de coste o valorMejora no es un número válido: " << e.what() << std::endl;
@@ -407,8 +408,8 @@ void Sistema::habitacionesAVL(string enemigo1, string enemigo2, string enemigo3,
     }
 }
 
-void Sistema::addListaEnemigos(Enemigo *enemy) {
-    listaEnemigos[largoEnemys]= enemy;
+void Sistema::addListaEnemigos(Enemigo enemy) {
+    listaEnemigos[largoEnemys]= &enemy;
     largoEnemys++;
 }
 
@@ -421,7 +422,7 @@ void Sistema::llenarItems(string nombre, string descripcion, string efectoSec, s
         addListaItem(*item);
 
         for (int i = 0; i < largoObj; ++i) {
-            std::cout << "Nombre: " << listaObjetos[i]->getNombre() << ", Nivel: " << listaObjetos[i]->getDescripcion() << std::endl;
+            std::cout << "Nombre: " << listaObjetos[i].getNombre() << ", Nivel: " << listaObjetos[i].getDescripcion() << std::endl;
         }
 
     } catch (const std::invalid_argument& e) {
@@ -436,7 +437,7 @@ void Sistema::llenarItems(string nombre, string descripcion, string efectoSec, s
 
 
 void Sistema::addListaItem(Objetos items) {
-    listaObjetos[largoObj]= &items;
+    listaObjetos[largoObj] = items;
     largoObj++;
 }
 void Sistema:: imprimirEnemigos(std::vector<Enemigo*> lista) const {
@@ -446,7 +447,7 @@ void Sistema:: imprimirEnemigos(std::vector<Enemigo*> lista) const {
 }
 void Sistema:: imprimirObjetos(std::vector<Objetos*> lista) const {
     for (int i = 0; i < largoObj; ++i) {
-        std::cout << "Nombre: " << listaObjetos[i]->getNombre() << ", Descripcion: " << listaObjetos[i]->getDescripcion() << std::endl;
+        std::cout << "Nombre: " << listaObjetos[i].getNombre() << ", Descripcion: " << listaObjetos[i].getDescripcion() << std::endl;
     }
 }
 

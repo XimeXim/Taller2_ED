@@ -23,7 +23,7 @@ class Sistema {
 private:
     MinHeap* minHeap;
     AVL* avl;
-    Enemigo* listaEnemigos;
+    std::vector<Enemigo *> listaEnemigos;
     int largoEnemys=0;
     int largoObj=0;
     Objetos* listaObjetos;
@@ -31,6 +31,9 @@ private:
 
 public:
 
+ Sistema(const Jugador &personaje);
+
+    Sistema();
     /**
      * Menu principal
      */
@@ -85,7 +88,7 @@ public:
      * Lista de enemigos presentes en la Habitacion
      * @param enemy Enemigo de la Habitacion
      */
-    void addListaEnemigos(const Enemigo &enemy);
+    void addListaEnemigos(Enemigo enemy);
 
     /**
      * Metodo que guarda datos de los Objetos
@@ -104,6 +107,10 @@ public:
      * @param items Objetos del Jugador
      */
     void addListaItem(Objetos items);
+
+    void imprimirEnemigos(std::vector<Enemigo *> lista) const;
+
+    void imprimirObjetos(std::vector<Objetos *> lista) const;
 
     /**
      * Metodo que realiza la lectura de los archivos txt

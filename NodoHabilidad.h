@@ -11,7 +11,7 @@ class NodoHabilidad {
 private:
 
     //PARAMETROS DE NODO HABILIDAD
-    Habilidades hability;
+    Habilidades *hability;
     Habilidades *skills;
     NodoHabilidad* skillIzquierda;
     NodoHabilidad* skillDerecha;
@@ -31,11 +31,13 @@ public:
      * @param skillIzquierda nodo a la izquierda
      * @param skillDerecha nodo a la derecha
      */
-    NodoHabilidad(const Habilidades &skills, NodoHabilidad *skillIzquierda, NodoHabilidad *skillDerecha);
 
     NodoHabilidad(const Habilidades &hability);
 
     NodoHabilidad(Habilidades &skills, NodoHabilidad *skillIzquierda, NodoHabilidad *skillDerecha);
+
+    NodoHabilidad(Habilidades * habilidad);
+
     /**
      * Destructor del NodoHabilidad;
      */
@@ -44,7 +46,7 @@ public:
     //METODOS GET'S & SET'S
     const Habilidades &getSkills() const;
 
-    void setSkills(Habilidades &skills);
+    void setSkills(Habilidades & skills);
 
     NodoHabilidad *getSkillIzquierda() const;
 

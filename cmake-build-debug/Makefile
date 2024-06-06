@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "E:\Clion\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "E:\Clion\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Thomas\Documents\GitHub\Taller2_ED
+CMAKE_SOURCE_DIR = "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"E:\Clion\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,7 +77,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"E:\Clion\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -152,102 +152,6 @@ AVL.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/AVL.cpp.s
 .PHONY : AVL.cpp.s
 
-Enemigo.obj: Enemigo.cpp.obj
-.PHONY : Enemigo.obj
-
-# target to build an object file
-Enemigo.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Enemigo.cpp.obj
-.PHONY : Enemigo.cpp.obj
-
-Enemigo.i: Enemigo.cpp.i
-.PHONY : Enemigo.i
-
-# target to preprocess a source file
-Enemigo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Enemigo.cpp.i
-.PHONY : Enemigo.cpp.i
-
-Enemigo.s: Enemigo.cpp.s
-.PHONY : Enemigo.s
-
-# target to generate assembly for a file
-Enemigo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Enemigo.cpp.s
-.PHONY : Enemigo.cpp.s
-
-Habilidades.obj: Habilidades.cpp.obj
-.PHONY : Habilidades.obj
-
-# target to build an object file
-Habilidades.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Habilidades.cpp.obj
-.PHONY : Habilidades.cpp.obj
-
-Habilidades.i: Habilidades.cpp.i
-.PHONY : Habilidades.i
-
-# target to preprocess a source file
-Habilidades.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Habilidades.cpp.i
-.PHONY : Habilidades.cpp.i
-
-Habilidades.s: Habilidades.cpp.s
-.PHONY : Habilidades.s
-
-# target to generate assembly for a file
-Habilidades.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Habilidades.cpp.s
-.PHONY : Habilidades.cpp.s
-
-Habitacion.obj: Habitacion.cpp.obj
-.PHONY : Habitacion.obj
-
-# target to build an object file
-Habitacion.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Habitacion.cpp.obj
-.PHONY : Habitacion.cpp.obj
-
-Habitacion.i: Habitacion.cpp.i
-.PHONY : Habitacion.i
-
-# target to preprocess a source file
-Habitacion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Habitacion.cpp.i
-.PHONY : Habitacion.cpp.i
-
-Habitacion.s: Habitacion.cpp.s
-.PHONY : Habitacion.s
-
-# target to generate assembly for a file
-Habitacion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Habitacion.cpp.s
-.PHONY : Habitacion.cpp.s
-
-Jugador.obj: Jugador.cpp.obj
-.PHONY : Jugador.obj
-
-# target to build an object file
-Jugador.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Jugador.cpp.obj
-.PHONY : Jugador.cpp.obj
-
-Jugador.i: Jugador.cpp.i
-.PHONY : Jugador.i
-
-# target to preprocess a source file
-Jugador.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Jugador.cpp.i
-.PHONY : Jugador.cpp.i
-
-Jugador.s: Jugador.cpp.s
-.PHONY : Jugador.s
-
-# target to generate assembly for a file
-Jugador.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Jugador.cpp.s
-.PHONY : Jugador.cpp.s
-
 MinHeap.obj: MinHeap.cpp.obj
 .PHONY : MinHeap.obj
 
@@ -272,53 +176,29 @@ MinHeap.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/MinHeap.cpp.s
 .PHONY : MinHeap.cpp.s
 
-NodoHabitacion.obj: NodoHabitacion.cpp.obj
-.PHONY : NodoHabitacion.obj
+NodoHabilidad.obj: NodoHabilidad.cpp.obj
+.PHONY : NodoHabilidad.obj
 
 # target to build an object file
-NodoHabitacion.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.obj
-.PHONY : NodoHabitacion.cpp.obj
+NodoHabilidad.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.obj
+.PHONY : NodoHabilidad.cpp.obj
 
-NodoHabitacion.i: NodoHabitacion.cpp.i
-.PHONY : NodoHabitacion.i
-
-# target to preprocess a source file
-NodoHabitacion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.i
-.PHONY : NodoHabitacion.cpp.i
-
-NodoHabitacion.s: NodoHabitacion.cpp.s
-.PHONY : NodoHabitacion.s
-
-# target to generate assembly for a file
-NodoHabitacion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.s
-.PHONY : NodoHabitacion.cpp.s
-
-Objetos.obj: Objetos.cpp.obj
-.PHONY : Objetos.obj
-
-# target to build an object file
-Objetos.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Objetos.cpp.obj
-.PHONY : Objetos.cpp.obj
-
-Objetos.i: Objetos.cpp.i
-.PHONY : Objetos.i
+NodoHabilidad.i: NodoHabilidad.cpp.i
+.PHONY : NodoHabilidad.i
 
 # target to preprocess a source file
-Objetos.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Objetos.cpp.i
-.PHONY : Objetos.cpp.i
+NodoHabilidad.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.i
+.PHONY : NodoHabilidad.cpp.i
 
-Objetos.s: Objetos.cpp.s
-.PHONY : Objetos.s
+NodoHabilidad.s: NodoHabilidad.cpp.s
+.PHONY : NodoHabilidad.s
 
 # target to generate assembly for a file
-Objetos.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Objetos.cpp.s
-.PHONY : Objetos.cpp.s
+NodoHabilidad.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.s
+.PHONY : NodoHabilidad.cpp.s
 
 Sistema.obj: Sistema.cpp.obj
 .PHONY : Sistema.obj
@@ -344,6 +224,102 @@ Sistema.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/Sistema.cpp.s
 .PHONY : Sistema.cpp.s
 
+enemigo.obj: enemigo.cpp.obj
+.PHONY : enemigo.obj
+
+# target to build an object file
+enemigo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj
+.PHONY : enemigo.cpp.obj
+
+enemigo.i: enemigo.cpp.i
+.PHONY : enemigo.i
+
+# target to preprocess a source file
+enemigo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/enemigo.cpp.i
+.PHONY : enemigo.cpp.i
+
+enemigo.s: enemigo.cpp.s
+.PHONY : enemigo.s
+
+# target to generate assembly for a file
+enemigo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/enemigo.cpp.s
+.PHONY : enemigo.cpp.s
+
+habilidades.obj: habilidades.cpp.obj
+.PHONY : habilidades.obj
+
+# target to build an object file
+habilidades.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj
+.PHONY : habilidades.cpp.obj
+
+habilidades.i: habilidades.cpp.i
+.PHONY : habilidades.i
+
+# target to preprocess a source file
+habilidades.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habilidades.cpp.i
+.PHONY : habilidades.cpp.i
+
+habilidades.s: habilidades.cpp.s
+.PHONY : habilidades.s
+
+# target to generate assembly for a file
+habilidades.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habilidades.cpp.s
+.PHONY : habilidades.cpp.s
+
+habitacion.obj: habitacion.cpp.obj
+.PHONY : habitacion.obj
+
+# target to build an object file
+habitacion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj
+.PHONY : habitacion.cpp.obj
+
+habitacion.i: habitacion.cpp.i
+.PHONY : habitacion.i
+
+# target to preprocess a source file
+habitacion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habitacion.cpp.i
+.PHONY : habitacion.cpp.i
+
+habitacion.s: habitacion.cpp.s
+.PHONY : habitacion.s
+
+# target to generate assembly for a file
+habitacion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/habitacion.cpp.s
+.PHONY : habitacion.cpp.s
+
+jugador.obj: jugador.cpp.obj
+.PHONY : jugador.obj
+
+# target to build an object file
+jugador.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/jugador.cpp.obj
+.PHONY : jugador.cpp.obj
+
+jugador.i: jugador.cpp.i
+.PHONY : jugador.i
+
+# target to preprocess a source file
+jugador.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/jugador.cpp.i
+.PHONY : jugador.cpp.i
+
+jugador.s: jugador.cpp.s
+.PHONY : jugador.s
+
+# target to generate assembly for a file
+jugador.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/jugador.cpp.s
+.PHONY : jugador.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -368,29 +344,53 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-nodoHabilidad.obj: nodoHabilidad.cpp.obj
-.PHONY : nodoHabilidad.obj
+nodoHabitacion.obj: nodoHabitacion.cpp.obj
+.PHONY : nodoHabitacion.obj
 
 # target to build an object file
-nodoHabilidad.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj
-.PHONY : nodoHabilidad.cpp.obj
+nodoHabitacion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj
+.PHONY : nodoHabitacion.cpp.obj
 
-nodoHabilidad.i: nodoHabilidad.cpp.i
-.PHONY : nodoHabilidad.i
+nodoHabitacion.i: nodoHabitacion.cpp.i
+.PHONY : nodoHabitacion.i
 
 # target to preprocess a source file
-nodoHabilidad.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.i
-.PHONY : nodoHabilidad.cpp.i
+nodoHabitacion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.i
+.PHONY : nodoHabitacion.cpp.i
 
-nodoHabilidad.s: nodoHabilidad.cpp.s
-.PHONY : nodoHabilidad.s
+nodoHabitacion.s: nodoHabitacion.cpp.s
+.PHONY : nodoHabitacion.s
 
 # target to generate assembly for a file
-nodoHabilidad.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.s
-.PHONY : nodoHabilidad.cpp.s
+nodoHabitacion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.s
+.PHONY : nodoHabitacion.cpp.s
+
+objetos.obj: objetos.cpp.obj
+.PHONY : objetos.obj
+
+# target to build an object file
+objetos.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/objetos.cpp.obj
+.PHONY : objetos.cpp.obj
+
+objetos.i: objetos.cpp.i
+.PHONY : objetos.i
+
+# target to preprocess a source file
+objetos.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/objetos.cpp.i
+.PHONY : objetos.cpp.i
+
+objetos.s: objetos.cpp.s
+.PHONY : objetos.s
+
+# target to generate assembly for a file
+objetos.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Taller2_ED.dir\build.make CMakeFiles/Taller2_ED.dir/objetos.cpp.s
+.PHONY : objetos.cpp.s
 
 # Help Target
 help:
@@ -404,36 +404,36 @@ help:
 	@echo ... AVL.obj
 	@echo ... AVL.i
 	@echo ... AVL.s
-	@echo ... Enemigo.obj
-	@echo ... Enemigo.i
-	@echo ... Enemigo.s
-	@echo ... Habilidades.obj
-	@echo ... Habilidades.i
-	@echo ... Habilidades.s
-	@echo ... Habitacion.obj
-	@echo ... Habitacion.i
-	@echo ... Habitacion.s
-	@echo ... Jugador.obj
-	@echo ... Jugador.i
-	@echo ... Jugador.s
 	@echo ... MinHeap.obj
 	@echo ... MinHeap.i
 	@echo ... MinHeap.s
-	@echo ... NodoHabitacion.obj
-	@echo ... NodoHabitacion.i
-	@echo ... NodoHabitacion.s
-	@echo ... Objetos.obj
-	@echo ... Objetos.i
-	@echo ... Objetos.s
+	@echo ... NodoHabilidad.obj
+	@echo ... NodoHabilidad.i
+	@echo ... NodoHabilidad.s
 	@echo ... Sistema.obj
 	@echo ... Sistema.i
 	@echo ... Sistema.s
+	@echo ... enemigo.obj
+	@echo ... enemigo.i
+	@echo ... enemigo.s
+	@echo ... habilidades.obj
+	@echo ... habilidades.i
+	@echo ... habilidades.s
+	@echo ... habitacion.obj
+	@echo ... habitacion.i
+	@echo ... habitacion.s
+	@echo ... jugador.obj
+	@echo ... jugador.i
+	@echo ... jugador.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... nodoHabilidad.obj
-	@echo ... nodoHabilidad.i
-	@echo ... nodoHabilidad.s
+	@echo ... nodoHabitacion.obj
+	@echo ... nodoHabitacion.i
+	@echo ... nodoHabitacion.s
+	@echo ... objetos.obj
+	@echo ... objetos.i
+	@echo ... objetos.s
 .PHONY : help
 
 

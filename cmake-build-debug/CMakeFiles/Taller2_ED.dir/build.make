@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "E:\Clion\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "E:\Clion\CLion 2024.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Thomas\Documents\GitHub\Taller2_ED
+CMAKE_SOURCE_DIR = "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Taller2_ED.dir/depend.make
@@ -69,170 +69,170 @@ include CMakeFiles/Taller2_ED.dir/progress.make
 include CMakeFiles/Taller2_ED.dir/flags.make
 
 CMakeFiles/Taller2_ED.dir/main.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/main.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/main.cpp
+CMakeFiles/Taller2_ED.dir/main.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/main.cpp
 CMakeFiles/Taller2_ED.dir/main.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Taller2_ED.dir/main.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/main.cpp.obj -MF CMakeFiles\Taller2_ED.dir\main.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\main.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Taller2_ED.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/main.cpp.obj -MF CMakeFiles\Taller2_ED.dir\main.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\main.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\main.cpp"
 
 CMakeFiles/Taller2_ED.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/main.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\main.cpp > CMakeFiles\Taller2_ED.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\main.cpp" > CMakeFiles\Taller2_ED.dir\main.cpp.i
 
 CMakeFiles/Taller2_ED.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/main.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\main.cpp -o CMakeFiles\Taller2_ED.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\main.cpp" -o CMakeFiles\Taller2_ED.dir\main.cpp.s
 
 CMakeFiles/Taller2_ED.dir/Sistema.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/Sistema.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/Sistema.cpp
+CMakeFiles/Taller2_ED.dir/Sistema.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/Sistema.cpp
 CMakeFiles/Taller2_ED.dir/Sistema.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Taller2_ED.dir/Sistema.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/Sistema.cpp.obj -MF CMakeFiles\Taller2_ED.dir\Sistema.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\Sistema.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\Sistema.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Taller2_ED.dir/Sistema.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/Sistema.cpp.obj -MF CMakeFiles\Taller2_ED.dir\Sistema.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\Sistema.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\Sistema.cpp"
 
 CMakeFiles/Taller2_ED.dir/Sistema.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/Sistema.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\Sistema.cpp > CMakeFiles\Taller2_ED.dir\Sistema.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\Sistema.cpp" > CMakeFiles\Taller2_ED.dir\Sistema.cpp.i
 
 CMakeFiles/Taller2_ED.dir/Sistema.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/Sistema.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\Sistema.cpp -o CMakeFiles\Taller2_ED.dir\Sistema.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\Sistema.cpp" -o CMakeFiles\Taller2_ED.dir\Sistema.cpp.s
 
-CMakeFiles/Taller2_ED.dir/Jugador.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/Jugador.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/Jugador.cpp
-CMakeFiles/Taller2_ED.dir/Jugador.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Taller2_ED.dir/Jugador.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/Jugador.cpp.obj -MF CMakeFiles\Taller2_ED.dir\Jugador.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\Jugador.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\Jugador.cpp
+CMakeFiles/Taller2_ED.dir/jugador.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/jugador.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/jugador.cpp
+CMakeFiles/Taller2_ED.dir/jugador.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Taller2_ED.dir/jugador.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/jugador.cpp.obj -MF CMakeFiles\Taller2_ED.dir\jugador.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\jugador.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\jugador.cpp"
 
-CMakeFiles/Taller2_ED.dir/Jugador.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/Jugador.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\Jugador.cpp > CMakeFiles\Taller2_ED.dir\Jugador.cpp.i
+CMakeFiles/Taller2_ED.dir/jugador.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/jugador.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\jugador.cpp" > CMakeFiles\Taller2_ED.dir\jugador.cpp.i
 
-CMakeFiles/Taller2_ED.dir/Jugador.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/Jugador.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\Jugador.cpp -o CMakeFiles\Taller2_ED.dir\Jugador.cpp.s
+CMakeFiles/Taller2_ED.dir/jugador.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/jugador.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\jugador.cpp" -o CMakeFiles\Taller2_ED.dir\jugador.cpp.s
 
-CMakeFiles/Taller2_ED.dir/Enemigo.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/Enemigo.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/Enemigo.cpp
-CMakeFiles/Taller2_ED.dir/Enemigo.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Taller2_ED.dir/Enemigo.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/Enemigo.cpp.obj -MF CMakeFiles\Taller2_ED.dir\Enemigo.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\Enemigo.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\Enemigo.cpp
+CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/enemigo.cpp
+CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj -MF CMakeFiles\Taller2_ED.dir\enemigo.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\enemigo.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\enemigo.cpp"
 
-CMakeFiles/Taller2_ED.dir/Enemigo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/Enemigo.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\Enemigo.cpp > CMakeFiles\Taller2_ED.dir\Enemigo.cpp.i
+CMakeFiles/Taller2_ED.dir/enemigo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/enemigo.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\enemigo.cpp" > CMakeFiles\Taller2_ED.dir\enemigo.cpp.i
 
-CMakeFiles/Taller2_ED.dir/Enemigo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/Enemigo.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\Enemigo.cpp -o CMakeFiles\Taller2_ED.dir\Enemigo.cpp.s
+CMakeFiles/Taller2_ED.dir/enemigo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/enemigo.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\enemigo.cpp" -o CMakeFiles\Taller2_ED.dir\enemigo.cpp.s
 
-CMakeFiles/Taller2_ED.dir/Objetos.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/Objetos.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/Objetos.cpp
-CMakeFiles/Taller2_ED.dir/Objetos.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Taller2_ED.dir/Objetos.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/Objetos.cpp.obj -MF CMakeFiles\Taller2_ED.dir\Objetos.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\Objetos.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\Objetos.cpp
+CMakeFiles/Taller2_ED.dir/objetos.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/objetos.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/objetos.cpp
+CMakeFiles/Taller2_ED.dir/objetos.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Taller2_ED.dir/objetos.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/objetos.cpp.obj -MF CMakeFiles\Taller2_ED.dir\objetos.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\objetos.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\objetos.cpp"
 
-CMakeFiles/Taller2_ED.dir/Objetos.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/Objetos.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\Objetos.cpp > CMakeFiles\Taller2_ED.dir\Objetos.cpp.i
+CMakeFiles/Taller2_ED.dir/objetos.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/objetos.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\objetos.cpp" > CMakeFiles\Taller2_ED.dir\objetos.cpp.i
 
-CMakeFiles/Taller2_ED.dir/Objetos.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/Objetos.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\Objetos.cpp -o CMakeFiles\Taller2_ED.dir\Objetos.cpp.s
+CMakeFiles/Taller2_ED.dir/objetos.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/objetos.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\objetos.cpp" -o CMakeFiles\Taller2_ED.dir\objetos.cpp.s
 
-CMakeFiles/Taller2_ED.dir/Habilidades.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/Habilidades.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/Habilidades.cpp
-CMakeFiles/Taller2_ED.dir/Habilidades.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Taller2_ED.dir/Habilidades.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/Habilidades.cpp.obj -MF CMakeFiles\Taller2_ED.dir\Habilidades.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\Habilidades.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\Habilidades.cpp
+CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/habilidades.cpp
+CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj -MF CMakeFiles\Taller2_ED.dir\habilidades.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\habilidades.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\habilidades.cpp"
 
-CMakeFiles/Taller2_ED.dir/Habilidades.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/Habilidades.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\Habilidades.cpp > CMakeFiles\Taller2_ED.dir\Habilidades.cpp.i
+CMakeFiles/Taller2_ED.dir/habilidades.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/habilidades.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\habilidades.cpp" > CMakeFiles\Taller2_ED.dir\habilidades.cpp.i
 
-CMakeFiles/Taller2_ED.dir/Habilidades.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/Habilidades.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\Habilidades.cpp -o CMakeFiles\Taller2_ED.dir\Habilidades.cpp.s
+CMakeFiles/Taller2_ED.dir/habilidades.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/habilidades.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\habilidades.cpp" -o CMakeFiles\Taller2_ED.dir\habilidades.cpp.s
 
-CMakeFiles/Taller2_ED.dir/Habitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/Habitacion.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/Habitacion.cpp
-CMakeFiles/Taller2_ED.dir/Habitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Taller2_ED.dir/Habitacion.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/Habitacion.cpp.obj -MF CMakeFiles\Taller2_ED.dir\Habitacion.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\Habitacion.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\Habitacion.cpp
+CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/habitacion.cpp
+CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj -MF CMakeFiles\Taller2_ED.dir\habitacion.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\habitacion.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\habitacion.cpp"
 
-CMakeFiles/Taller2_ED.dir/Habitacion.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/Habitacion.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\Habitacion.cpp > CMakeFiles\Taller2_ED.dir\Habitacion.cpp.i
+CMakeFiles/Taller2_ED.dir/habitacion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/habitacion.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\habitacion.cpp" > CMakeFiles\Taller2_ED.dir\habitacion.cpp.i
 
-CMakeFiles/Taller2_ED.dir/Habitacion.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/Habitacion.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\Habitacion.cpp -o CMakeFiles\Taller2_ED.dir\Habitacion.cpp.s
+CMakeFiles/Taller2_ED.dir/habitacion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/habitacion.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\habitacion.cpp" -o CMakeFiles\Taller2_ED.dir\habitacion.cpp.s
 
-CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/NodoHabitacion.cpp
-CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.obj -MF CMakeFiles\Taller2_ED.dir\NodoHabitacion.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\NodoHabitacion.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\NodoHabitacion.cpp
+CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/nodoHabitacion.cpp
+CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj -MF CMakeFiles\Taller2_ED.dir\nodoHabitacion.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\nodoHabitacion.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\nodoHabitacion.cpp"
 
-CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\NodoHabitacion.cpp > CMakeFiles\Taller2_ED.dir\NodoHabitacion.cpp.i
+CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\nodoHabitacion.cpp" > CMakeFiles\Taller2_ED.dir\nodoHabitacion.cpp.i
 
-CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\NodoHabitacion.cpp -o CMakeFiles\Taller2_ED.dir\NodoHabitacion.cpp.s
+CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\nodoHabitacion.cpp" -o CMakeFiles\Taller2_ED.dir\nodoHabitacion.cpp.s
 
-CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabilidad.cpp
-CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj -MF CMakeFiles\Taller2_ED.dir\nodoHabilidad.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\nodoHabilidad.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\nodoHabilidad.cpp
+CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
+CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/NodoHabilidad.cpp
+CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.obj -MF CMakeFiles\Taller2_ED.dir\NodoHabilidad.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\NodoHabilidad.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\NodoHabilidad.cpp"
 
-CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\nodoHabilidad.cpp > CMakeFiles\Taller2_ED.dir\nodoHabilidad.cpp.i
+CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\NodoHabilidad.cpp" > CMakeFiles\Taller2_ED.dir\NodoHabilidad.cpp.i
 
-CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\nodoHabilidad.cpp -o CMakeFiles\Taller2_ED.dir\nodoHabilidad.cpp.s
+CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\NodoHabilidad.cpp" -o CMakeFiles\Taller2_ED.dir\NodoHabilidad.cpp.s
 
 CMakeFiles/Taller2_ED.dir/AVL.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/AVL.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/AVL.cpp
+CMakeFiles/Taller2_ED.dir/AVL.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/AVL.cpp
 CMakeFiles/Taller2_ED.dir/AVL.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Taller2_ED.dir/AVL.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/AVL.cpp.obj -MF CMakeFiles\Taller2_ED.dir\AVL.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\AVL.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\AVL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Taller2_ED.dir/AVL.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/AVL.cpp.obj -MF CMakeFiles\Taller2_ED.dir\AVL.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\AVL.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\AVL.cpp"
 
 CMakeFiles/Taller2_ED.dir/AVL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/AVL.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\AVL.cpp > CMakeFiles\Taller2_ED.dir\AVL.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\AVL.cpp" > CMakeFiles\Taller2_ED.dir\AVL.cpp.i
 
 CMakeFiles/Taller2_ED.dir/AVL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/AVL.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\AVL.cpp -o CMakeFiles\Taller2_ED.dir\AVL.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\AVL.cpp" -o CMakeFiles\Taller2_ED.dir\AVL.cpp.s
 
 CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj: CMakeFiles/Taller2_ED.dir/flags.make
-CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj: C:/Users/Thomas/Documents/GitHub/Taller2_ED/MinHeap.cpp
+CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj: C:/Users/Ximena/OneDrive\ -\ alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/MinHeap.cpp
 CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj: CMakeFiles/Taller2_ED.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj -MF CMakeFiles\Taller2_ED.dir\MinHeap.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\MinHeap.cpp.obj -c C:\Users\Thomas\Documents\GitHub\Taller2_ED\MinHeap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj -MF CMakeFiles\Taller2_ED.dir\MinHeap.cpp.obj.d -o CMakeFiles\Taller2_ED.dir\MinHeap.cpp.obj -c "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\MinHeap.cpp"
 
 CMakeFiles/Taller2_ED.dir/MinHeap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Taller2_ED.dir/MinHeap.cpp.i"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Thomas\Documents\GitHub\Taller2_ED\MinHeap.cpp > CMakeFiles\Taller2_ED.dir\MinHeap.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\MinHeap.cpp" > CMakeFiles\Taller2_ED.dir\MinHeap.cpp.i
 
 CMakeFiles/Taller2_ED.dir/MinHeap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Taller2_ED.dir/MinHeap.cpp.s"
-	"E:\Clion\CLion 2024.1.1\bin\mingw\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Thomas\Documents\GitHub\Taller2_ED\MinHeap.cpp -o CMakeFiles\Taller2_ED.dir\MinHeap.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\MinHeap.cpp" -o CMakeFiles\Taller2_ED.dir\MinHeap.cpp.s
 
 # Object files for target Taller2_ED
 Taller2_ED_OBJECTS = \
 "CMakeFiles/Taller2_ED.dir/main.cpp.obj" \
 "CMakeFiles/Taller2_ED.dir/Sistema.cpp.obj" \
-"CMakeFiles/Taller2_ED.dir/Jugador.cpp.obj" \
-"CMakeFiles/Taller2_ED.dir/Enemigo.cpp.obj" \
-"CMakeFiles/Taller2_ED.dir/Objetos.cpp.obj" \
-"CMakeFiles/Taller2_ED.dir/Habilidades.cpp.obj" \
-"CMakeFiles/Taller2_ED.dir/Habitacion.cpp.obj" \
-"CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.obj" \
-"CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/jugador.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/objetos.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj" \
+"CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.obj" \
 "CMakeFiles/Taller2_ED.dir/AVL.cpp.obj" \
 "CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj"
 
@@ -241,20 +241,20 @@ Taller2_ED_EXTERNAL_OBJECTS =
 
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/main.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/Sistema.cpp.obj
-Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/Jugador.cpp.obj
-Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/Enemigo.cpp.obj
-Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/Objetos.cpp.obj
-Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/Habilidades.cpp.obj
-Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/Habitacion.cpp.obj
-Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/NodoHabitacion.cpp.obj
-Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/nodoHabilidad.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/jugador.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/enemigo.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/objetos.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/habilidades.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/habitacion.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/nodoHabitacion.cpp.obj
+Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/NodoHabilidad.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/AVL.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/MinHeap.cpp.obj
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/build.make
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/linkLibs.rsp
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/objects1.rsp
 Taller2_ED.exe: CMakeFiles/Taller2_ED.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Taller2_ED.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Taller2_ED.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Taller2_ED.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -266,6 +266,6 @@ CMakeFiles/Taller2_ED.dir/clean:
 .PHONY : CMakeFiles/Taller2_ED.dir/clean
 
 CMakeFiles/Taller2_ED.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Thomas\Documents\GitHub\Taller2_ED C:\Users\Thomas\Documents\GitHub\Taller2_ED C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug C:\Users\Thomas\Documents\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles\Taller2_ED.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED" "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED" "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug" "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug" "C:\Users\Ximena\OneDrive - alumnos.ucn.cl\Documentos\GitHub\Taller2_ED\cmake-build-debug\CMakeFiles\Taller2_ED.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/Taller2_ED.dir/depend
 

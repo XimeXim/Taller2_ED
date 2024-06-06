@@ -57,6 +57,8 @@ public:
             const std::vector<Objetos *> &mochila, const std::vector<Habilidades *> &skills,
             NodoHabitacion *habitacionActual, const std::vector<float> &salasVisitadas);
 
+    Jugador();
+
     /**
      * Destructor del Jugador
      */
@@ -145,13 +147,13 @@ public:
      * Metodo que agrega el id de las sala visitadas por el Jugador
      * @param salasVisitadas salas ya visitadas
      */
-    void salaVisitada(std::vector<float> salasVisitadas);
+    void salaVisitada();
 
     /**
      * Metodo que imprime un arreglo con las id de las salas visitadas con anterioridad
      * @param salasVisitadas salas ya visitadas
      */
-    void verMapa(std::vector<float> salasVisitadas);
+    void verMapa();
 
     /**
      * Metodo que sube el nivel del Jugador

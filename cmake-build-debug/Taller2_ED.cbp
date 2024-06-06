@@ -8,147 +8,147 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Taller2_ED">
-				<Option output="C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Taller2_ED.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug"/>
+				<Option output="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Taller2_ED.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 Taller2_ED"/>
-					<CompileFile command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 Taller2_ED"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Taller2_ED/fast">
-				<Option output="C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Taller2_ED.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug"/>
+				<Option output="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Taller2_ED.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="E:/Clion/CLion 2024.1.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 Taller2_ED/fast"/>
-					<CompileFile command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 Taller2_ED/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="E:/Clion/CLion 2024.1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Thomas/Documents/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/AVL.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/AVL.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/AVL.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/AVL.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Enemigo.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/Enemigo.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Enemigo.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/MinHeap.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Habilidades.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/MinHeap.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Habilidades.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/NodoHabilidad.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Habitacion.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/NodoHabilidad.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Habitacion.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/Sistema.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Jugador.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/Sistema.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Jugador.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/enemigo.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/MinHeap.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/enemigo.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/MinHeap.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/habilidades.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/NodoHabilidad.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/habilidades.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/NodoHabitacion.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/habitacion.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/NodoHabitacion.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/habitacion.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Objetos.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/jugador.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Objetos.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/jugador.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Sistema.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/main.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/Sistema.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/nodoHabitacion.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/main.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/nodoHabitacion.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabilidad.cpp">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/objetos.cpp">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/nodoHabilidad.h">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/objetos.h">
 			<Option target="Taller2_ED"/>
 		</Unit>
-		<Unit filename="C:/Users/Thomas/Documents/GitHub/Taller2_ED/CMakeLists.txt">
+		<Unit filename="C:/Users/Ximena/OneDrive - alumnos.ucn.cl/Documentos/GitHub/Taller2_ED/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

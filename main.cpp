@@ -3,5 +3,4 @@
 int main()
 {
     Sistema menu;
-    menu.menuPrincipal();
 }
